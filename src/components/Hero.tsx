@@ -31,9 +31,10 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
 
   return (
     <section
+      className="hero-section"
       style={{
-        paddingTop: "140px",
-        paddingBottom: "80px",
+        paddingTop: "clamp(95px, 14vw, 130px)",
+        paddingBottom: "clamp(48px, 8vw, 80px)",
         position: "relative",
         overflow: "hidden",
         background: "radial-gradient(ellipse at 80% 20%, rgba(255, 102, 0, 0.08) 0%, rgba(0, 112, 243, 0.05) 40%, rgba(250, 251, 254, 1) 75%)",
@@ -69,8 +70,8 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "48px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+            gap: "clamp(28px, 5vw, 48px)",
             alignItems: "center",
           }}
         >
@@ -81,15 +82,15 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: "10px",
-                marginBottom: "20px",
+                gap: "8px",
+                marginBottom: "16px",
                 color: "#EA580C",
-                fontSize: "0.95rem",
+                fontSize: "clamp(0.82rem, 2.2vw, 0.95rem)",
                 fontWeight: 800,
                 letterSpacing: "0.02em",
               }}
             >
-              <SparksFlameVector size={22} animate={true} />
+              <SparksFlameVector size={20} animate={true} />
               <span>
                 {lang === "en"
                   ? "“Innovation Starts Here” • STEAMORA CO. LTD"
@@ -100,12 +101,12 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
             {/* Main Headline */}
             <h1
               style={{
-                fontSize: "clamp(2.4rem, 4.5vw, 3.8rem)",
+                fontSize: "clamp(1.95rem, 4.2vw, 3.6rem)",
                 fontWeight: 900,
                 letterSpacing: "-0.03em",
                 color: "#0F172A",
                 lineHeight: 1.15,
-                marginBottom: "20px",
+                marginBottom: "16px",
               }}
             >
               {lang === "en" ? (
@@ -124,10 +125,10 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
             {/* Subtitle */}
             <p
               style={{
-                fontSize: "1.1rem",
+                fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
                 color: "#475569",
-                marginBottom: "32px",
-                lineHeight: 1.65,
+                marginBottom: "24px",
+                lineHeight: 1.6,
                 maxWidth: "540px",
               }}
             >
@@ -138,11 +139,12 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
 
             {/* 4 Pillars Mini-Row */}
             <div
+              className="hero-pillars-grid"
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(2, 1fr)",
-                gap: "12px",
-                marginBottom: "32px",
+                gap: "10px",
+                marginBottom: "28px",
                 maxWidth: "520px",
               }}
             >
@@ -252,41 +254,54 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
             </div>
 
             {/* CTA Buttons */}
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "16px", marginBottom: "28px" }}>
+            <div
+              className="hero-cta-buttons"
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "12px",
+                marginBottom: "24px",
+              }}
+            >
               <button
                 onClick={onOpenBooking}
+                className="hero-btn-primary"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "10px",
-                  padding: "15px 30px",
+                  justifyContent: "center",
+                  gap: "8px",
+                  padding: "13px 26px",
                   borderRadius: "30px",
                   background: "linear-gradient(135deg, #FF6600 0%, #FF8533 100%)",
                   color: "#FFFFFF",
-                  fontSize: "1.05rem",
+                  fontSize: "1rem",
                   fontWeight: 800,
-                  boxShadow: "0 12px 28px rgba(255, 102, 0, 0.35)",
+                  boxShadow: "0 10px 24px rgba(255, 102, 0, 0.35)",
                   transition: "all 0.2s ease",
                   cursor: "pointer",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-2px)")}
                 onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
               >
                 <span>{lang === "en" ? "Book A Session" : "Jiunge Nasi Sasa"}</span>
-                <ArrowRight size={18} />
+                <ArrowRight size={17} />
               </button>
 
               <button
                 onClick={onOpenFlyerModal}
+                className="hero-btn-secondary"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
+                  justifyContent: "center",
                   gap: "8px",
-                  padding: "14px 24px",
+                  padding: "13px 22px",
                   borderRadius: "30px",
                   background: "#FFFFFF",
                   color: "#0F172A",
-                  fontSize: "0.95rem",
+                  fontSize: "0.92rem",
                   fontWeight: 700,
                   border: "1px solid #CBD5E1",
                   boxShadow: "0 4px 12px rgba(15, 23, 42, 0.05)",
@@ -302,7 +317,7 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                   e.currentTarget.style.borderColor = "#CBD5E1";
                 }}
               >
-                <DocumentFlyerVector size={20} />
+                <DocumentFlyerVector size={18} />
                 <span>{lang === "en" ? "View Official Flyers" : "Tazama Tangazo Rasmi"}</span>
               </button>
             </div>
@@ -313,21 +328,21 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "center",
-                gap: "20px",
-                fontSize: "0.85rem",
+                gap: "12px 18px",
+                fontSize: "0.82rem",
                 color: "#64748B",
               }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <CheckCircle2 size={16} color="#10B981" />
-                <span>{lang === "en" ? "Ages 3 - 17 Years Welcome" : "Watoto Miaka 3 - 17 Wanakaribishwa"}</span>
+                <CheckCircle2 size={15} color="#10B981" />
+                <span>{lang === "en" ? "Ages 3 - 17 Years Welcome" : "Watoto Miaka 3 - 17"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <ShieldCheck size={16} color="#0070F3" />
-                <span>{lang === "en" ? "Certified STEAM Instructors" : "Wakufunzi Walioidhinishwa"}</span>
+                <ShieldCheck size={15} color="#0070F3" />
+                <span>{lang === "en" ? "Certified Instructors" : "Wakufunzi Walioidhinishwa"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <Award size={16} color="#FF6600" />
+                <Award size={15} color="#FF6600" />
                 <span>{lang === "en" ? "STEAMORA Certified" : "Imethibitishwa na STEAMORA"}</span>
               </div>
             </div>
@@ -367,38 +382,40 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
             {/* Card beneath Canvas explaining hands-on kit */}
             <div
               style={{
-                marginTop: "16px",
+                marginTop: "14px",
                 background: "#FFFFFF",
                 borderRadius: "18px",
-                padding: "16px 20px",
+                padding: "14px 18px",
                 border: "1px solid #E2E8F0",
-                boxShadow: "0 8px 24px rgba(15, 23, 42, 0.06)",
+                boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
                 display: "flex",
+                flexWrap: "wrap",
                 alignItems: "center",
                 justifyContent: "space-between",
-                gap: "16px",
+                gap: "12px",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0, flex: "1 1 240px" }}>
                 <div
                   style={{
-                    width: "44px",
-                    height: "44px",
+                    width: "40px",
+                    height: "40px",
                     borderRadius: "12px",
                     background: "rgba(0, 112, 243, 0.1)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     color: "#0070F3",
+                    flexShrink: 0,
                   }}
                 >
-                  <Zap size={22} />
+                  <Zap size={20} />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: "0.95rem", fontWeight: 800, color: "#0F172A", margin: 0 }}>
+                  <h4 style={{ fontSize: "0.9rem", fontWeight: 800, color: "#0F172A", margin: 0 }}>
                     {lang === "en" ? "Physical Kits for Every Learner" : "Vifaa Halisi vya Kila Mwanafunzi"}
                   </h4>
-                  <p style={{ fontSize: "0.78rem", color: "#64748B", margin: 0 }}>
+                  <p style={{ fontSize: "0.75rem", color: "#64748B", margin: 0 }}>
                     {lang === "en"
                       ? "Arduino, motors, 3D printers, circuits & chemistry lab apparatus."
                       : "Arduino, mota, printa za 3D, saketi za umeme na vifaa vya maabara."}
@@ -416,6 +433,7 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                   padding: "8px 16px",
                   borderRadius: "20px",
                   whiteSpace: "nowrap",
+                  cursor: "pointer",
                 }}
               >
                 {lang === "en" ? "Join Now" : "Jiunge"}
@@ -424,6 +442,27 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 580px) {
+          .hero-cta-buttons {
+            flex-direction: column !important;
+            width: 100% !important;
+          }
+          .hero-btn-primary,
+          .hero-btn-secondary {
+            width: 100% !important;
+          }
+          .hero-pillars-grid {
+            grid-template-columns: 1fr 1fr !important;
+          }
+        }
+        @media (max-width: 380px) {
+          .hero-pillars-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

@@ -83,8 +83,8 @@ export default function MobileLabSection({ onOpenBooking, lang }: MobileLabSecti
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: "48px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+              gap: "clamp(28px, 4vw, 48px)",
               alignItems: "center",
               position: "relative",
               zIndex: 1,
@@ -107,11 +107,11 @@ export default function MobileLabSection({ onOpenBooking, lang }: MobileLabSecti
 
               <h2
                 style={{
-                  fontSize: "clamp(2rem, 3.5vw, 2.8rem)",
+                  fontSize: "clamp(1.9rem, 3.5vw, 2.8rem)",
                   fontWeight: 900,
                   color: "#FFFFFF",
                   lineHeight: 1.2,
-                  marginBottom: "18px",
+                  marginBottom: "16px",
                 }}
               >
                 {lang === "en" ? (
@@ -127,14 +127,14 @@ export default function MobileLabSection({ onOpenBooking, lang }: MobileLabSecti
                 )}
               </h2>
 
-              <p style={{ color: "#CBD5E1", fontSize: "1.05rem", lineHeight: 1.65, marginBottom: "28px" }}>
+              <p style={{ color: "#CBD5E1", fontSize: "1.05rem", lineHeight: 1.65, marginBottom: "24px" }}>
                 {lang === "en"
                   ? "Don't let location be a barrier. SPARKS 360° HUB transports our mobile science kits, robot fleets, 3D printers, and professional instructors right to your doorstep."
                   : "Usiwe na wasiwasi kuhusu umbali. SPARKS 360° HUB inasafirisha maabara yetu ya roboti, printa za 3D, na walimu waliobobea popote ulipo jijini Dar es Salaam."}
               </p>
 
               {/* Mission Checkpoints */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "32px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "28px" }}>
                 {(lang === "en"
                   ? [
                       "Experienced & Certified STEAM Instructors",
@@ -151,26 +151,28 @@ export default function MobileLabSection({ onOpenBooking, lang }: MobileLabSecti
                 ).map((item, idx) => (
                   <div key={idx} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                     <CheckCircle2 size={18} color="#10B981" style={{ flexShrink: 0 }} />
-                    <span style={{ fontSize: "0.95rem", color: "#F1F5F9", fontWeight: 600 }}>{item}</span>
+                    <span style={{ fontSize: "0.92rem", color: "#F1F5F9", fontWeight: 600 }}>{item}</span>
                   </div>
                 ))}
               </div>
 
               {/* Action Buttons */}
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
                 <button
                   onClick={onOpenBooking}
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
+                    justifyContent: "center",
                     gap: "8px",
                     background: "linear-gradient(135deg, #FF6600 0%, #FF8533 100%)",
                     color: "#FFFFFF",
-                    padding: "14px 28px",
+                    padding: "13px 26px",
                     borderRadius: "24px",
                     fontWeight: 800,
                     fontSize: "0.95rem",
                     boxShadow: "0 8px 24px rgba(255, 102, 0, 0.4)",
+                    cursor: "pointer",
                   }}
                 >
                   <span>{lang === "en" ? "Request Mobile Lab" : "Agiza Maabara Inayotembea"}</span>
@@ -184,14 +186,16 @@ export default function MobileLabSection({ onOpenBooking, lang }: MobileLabSecti
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
+                    justifyContent: "center",
                     gap: "8px",
                     background: "rgba(255, 255, 255, 0.12)",
                     color: "#FFFFFF",
-                    padding: "14px 24px",
+                    padding: "13px 22px",
                     borderRadius: "24px",
                     fontWeight: 700,
-                    fontSize: "0.95rem",
+                    fontSize: "0.92rem",
                     border: "1px solid rgba(255, 255, 255, 0.2)",
+                    textDecoration: "none",
                   }}
                 >
                   <span>WhatsApp: +255 749 998 820</span>
@@ -200,7 +204,7 @@ export default function MobileLabSection({ onOpenBooking, lang }: MobileLabSecti
             </div>
 
             {/* Right: Where We Reach Cards Grid */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: "14px" }}>
               {venues.map((venue, i) => (
                 <div
                   key={i}

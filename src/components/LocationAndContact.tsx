@@ -68,9 +68,9 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "28px",
-            marginBottom: "40px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+            gap: "clamp(20px, 3.5vw, 28px)",
+            marginBottom: "36px",
           }}
         >
           {/* Location 1: Main DIT Office */}
@@ -79,7 +79,7 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
             style={{
               background: "#FFFFFF",
               borderRadius: "24px",
-              padding: "32px",
+              padding: "clamp(20px, 4vw, 32px)",
               border: "1px solid #E2E8F0",
               boxShadow: "0 10px 25px rgba(15, 23, 42, 0.04)",
               display: "flex",

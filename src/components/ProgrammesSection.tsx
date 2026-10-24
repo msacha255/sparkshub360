@@ -188,12 +188,14 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
 
           {/* Filter Pills */}
           <div
+            className="horizontal-scroll-mobile"
             style={{
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
               gap: "8px",
-              marginTop: "28px",
+              marginTop: "24px",
+              padding: "4px 2px",
             }}
           >
             {[
@@ -206,14 +208,16 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                 key={f.id}
                 onClick={() => setActiveFilter(f.id)}
                 style={{
-                  padding: "8px 18px",
+                  padding: "8px 16px",
                   borderRadius: "24px",
-                  fontSize: "0.88rem",
+                  fontSize: "clamp(0.8rem, 2vw, 0.88rem)",
                   fontWeight: 700,
                   transition: "all 0.2s ease",
                   background: activeFilter === f.id ? "#0F172A" : "#F1F5F9",
                   color: activeFilter === f.id ? "#FFFFFF" : "#475569",
                   border: "none",
+                  whiteSpace: "nowrap",
+                  cursor: "pointer",
                 }}
               >
                 {lang === "en" ? f.labelEn : f.labelSw}
@@ -226,8 +230,8 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(290px, 1fr))",
-            gap: "28px",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))",
+            gap: "clamp(18px, 3.5vw, 28px)",
           }}
         >
           {filteredProgrammes.map((p) => (

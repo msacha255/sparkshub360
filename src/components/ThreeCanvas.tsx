@@ -534,15 +534,17 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
   return (
     <div
       ref={containerRef}
+      className="three-canvas-container"
       style={{
         position: "relative",
         width: "100%",
-        height: "500px",
+        height: "clamp(340px, 46vh, 480px)",
         borderRadius: "24px",
         overflow: "hidden",
         background: "radial-gradient(circle at 50% 45%, #1E293B 0%, #0F172A 70%, #020617 100%)",
         boxShadow: "0 20px 50px -10px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.1)",
         userSelect: "none",
+        touchAction: "pan-y",
       }}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
@@ -566,44 +568,44 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
       <div
         style={{
           position: "absolute",
-          top: "16px",
-          left: "16px",
-          right: "16px",
+          top: "12px",
+          left: "12px",
+          right: "12px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          flexWrap: "wrap",
-          gap: "10px",
+          gap: "8px",
           pointerEvents: "none",
         }}
       >
         <div
+          className="canvas-title-badge"
           style={{
             pointerEvents: "auto",
             display: "inline-flex",
             alignItems: "center",
-            gap: "8px",
+            gap: "6px",
             background: "rgba(15, 23, 42, 0.75)",
             backdropFilter: "blur(12px)",
-            padding: "6px 14px",
+            padding: "5px 12px",
             borderRadius: "30px",
             border: "1px solid rgba(255, 255, 255, 0.15)",
             color: "#FFFFFF",
-            fontSize: "0.85rem",
+            fontSize: "0.8rem",
             fontWeight: 600,
           }}
         >
           <span
             style={{
-              width: "8px",
-              height: "8px",
+              width: "7px",
+              height: "7px",
               borderRadius: "50%",
               backgroundColor: "#10B981",
-              boxShadow: "0 0 10px #10B981",
+              boxShadow: "0 0 8px #10B981",
               display: "inline-block",
             }}
           />
-          <span>Interactive 3D STEAM Lab</span>
+          <span className="canvas-title-text">Interactive 3D STEAM Lab</span>
         </div>
 
         {/* Model Switcher Buttons */}
@@ -611,10 +613,10 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
           style={{
             pointerEvents: "auto",
             display: "inline-flex",
-            gap: "4px",
+            gap: "3px",
             background: "rgba(15, 23, 42, 0.8)",
             backdropFilter: "blur(12px)",
-            padding: "4px",
+            padding: "3px",
             borderRadius: "30px",
             border: "1px solid rgba(255, 255, 255, 0.15)",
           }}
@@ -625,19 +627,19 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
               setSelectedHotspot("Robotics Rover Chassis & Ultrasonic Eye");
             }}
             style={{
-              padding: "6px 14px",
+              padding: "5px 11px",
               borderRadius: "20px",
-              fontSize: "0.8rem",
+              fontSize: "0.76rem",
               fontWeight: 700,
               color: activeModel === "rover" ? "#FFFFFF" : "#94A3B8",
               backgroundColor: activeModel === "rover" ? "#FF6600" : "transparent",
               transition: "all 0.2s ease",
               display: "inline-flex",
               alignItems: "center",
-              gap: "6px",
+              gap: "5px",
             }}
           >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="3" y="11" width="18" height="10" rx="3"/>
               <circle cx="12" cy="5" r="2"/>
               <path d="M12 7v4"/>
@@ -652,19 +654,19 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
               setSelectedHotspot("Holographic AI & Circuit Core");
             }}
             style={{
-              padding: "6px 14px",
+              padding: "5px 11px",
               borderRadius: "20px",
-              fontSize: "0.8rem",
+              fontSize: "0.76rem",
               fontWeight: 700,
               color: activeModel === "circuit" ? "#FFFFFF" : "#94A3B8",
               backgroundColor: activeModel === "circuit" ? "#0070F3" : "transparent",
               transition: "all 0.2s ease",
               display: "inline-flex",
               alignItems: "center",
-              gap: "6px",
+              gap: "5px",
             }}
           >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
             </svg>
             <span>{lang === "en" ? "Circuit" : "Saketi"}</span>
@@ -675,19 +677,19 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
               setSelectedHotspot("Science & STEAM Discovery Atom");
             }}
             style={{
-              padding: "6px 14px",
+              padding: "5px 11px",
               borderRadius: "20px",
-              fontSize: "0.8rem",
+              fontSize: "0.76rem",
               fontWeight: 700,
               color: activeModel === "atom" ? "#FFFFFF" : "#94A3B8",
               backgroundColor: activeModel === "atom" ? "#10B981" : "transparent",
               transition: "all 0.2s ease",
               display: "inline-flex",
               alignItems: "center",
-              gap: "6px",
+              gap: "5px",
             }}
           >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/>
               <path d="M8.5 2h7"/>
               <path d="M7 16h10"/>
@@ -697,174 +699,201 @@ export default function ThreeCanvas({ onInteract, lang = "en" }: ThreeCanvasProp
         </div>
       </div>
 
-      {/* Interactive Hotspot Details Badge */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "16px",
-          left: "16px",
-          pointerEvents: "auto",
-          maxWidth: "320px",
-          background: "rgba(15, 23, 42, 0.85)",
-          backdropFilter: "blur(14px)",
-          border: "1px solid rgba(255, 255, 255, 0.15)",
-          borderRadius: "16px",
-          padding: "12px 16px",
-          color: "#FFFFFF",
-          boxShadow: "0 10px 25px rgba(0, 0, 0, 0.4)",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-          <Eye size={15} color="#FF6600" />
-          <span style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "#FF8533", fontWeight: 700, letterSpacing: "0.05em" }}>
-            {lang === "en" ? "Inspect & Learn" : "Chunguza & Jifunze"}
-          </span>
-        </div>
-        <p style={{ fontSize: "0.9rem", fontWeight: 700, margin: 0 }}>
-          {activeModel === "rover" && (lang === "en" ? "Sparks 360° Explorer Robot" : "Roboti ya Sparks 360° Explorer")}
-          {activeModel === "circuit" && (lang === "en" ? "Electronic Circuit & AI Core" : "Saketi za Umeme & AI")}
-          {activeModel === "atom" && (lang === "en" ? "Atomic Science & Experiment" : "Majaribio ya Sayansi & 3D")}
-        </p>
-        <p style={{ fontSize: "0.78rem", color: "#94A3B8", marginTop: "4px", lineHeight: "1.4" }}>
-          {activeModel === "rover" &&
-            (lang === "en"
-              ? "Hands-on robotics assembly, ultrasonic obstacle detection & programmable motors for Tanzanian kids."
-              : "Kutengeneza magari ya roboti, vitambuzi vya vizuizi na kuendesha mota kwa mikono yao wenyewe.")}
-          {activeModel === "circuit" &&
-            (lang === "en"
-              ? "Practical breadboards, LED circuits, microcontrollers & machine learning logic."
-              : "Mizunguko ya umeme, taa za LED, mikonotroli na mantiki ya kiteknolojia.")}
-          {activeModel === "atom" &&
-            (lang === "en"
-              ? "Exciting chemistry, physics observation, and real 3D design creations."
-              : "Majaribio salama ya kemia, fizikia na kubuni vitu kupitia printa za 3D.")}
-        </p>
-      </div>
-
-      {/* Floating Canvas Controls (Rotate, Zoom, Burst) */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "16px",
-          right: "16px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "8px",
-          pointerEvents: "auto",
-        }}
-      >
-        <button
-          onClick={() => setIsRotating((prev) => !prev)}
-          title={
-            isRotating
-              ? lang === "en"
-                ? "Pause Auto-Rotation"
-                : "Sitisha Mzunguko"
-              : lang === "en"
-              ? "Start Auto-Rotation"
-              : "Anzisha Mzunguko"
-          }
-          style={{
-            width: "38px",
-            height: "38px",
-            borderRadius: "50%",
-            background: isRotating ? "rgba(255, 102, 0, 0.9)" : "rgba(15, 23, 42, 0.8)",
-            color: "#FFFFFF",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-            transition: "all 0.2s ease",
-          }}
-        >
-          <RotateCw size={16} />
-        </button>
-
-        <button
-          onClick={() => handleZoom("in")}
-          title={lang === "en" ? "Zoom In" : "Kuza"}
-          style={{
-            width: "38px",
-            height: "38px",
-            borderRadius: "50%",
-            background: "rgba(15, 23, 42, 0.8)",
-            color: "#FFFFFF",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-          }}
-        >
-          <ZoomIn size={16} />
-        </button>
-
-        <button
-          onClick={() => handleZoom("out")}
-          title={lang === "en" ? "Zoom Out" : "Punguza"}
-          style={{
-            width: "38px",
-            height: "38px",
-            borderRadius: "50%",
-            background: "rgba(15, 23, 42, 0.8)",
-            color: "#FFFFFF",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-          }}
-        >
-          <ZoomOut size={16} />
-        </button>
-
-        <button
-          onClick={triggerSparkBurst}
-          title={lang === "en" ? "Trigger Spark Energy!" : "Washa Cheche ya STEAM!"}
-          style={{
-            width: "38px",
-            height: "38px",
-            borderRadius: "50%",
-            background: "linear-gradient(135deg, #FF6600, #F59E0B)",
-            color: "#FFFFFF",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            border: "none",
-            boxShadow: "0 4px 14px rgba(255, 102, 0, 0.5)",
-          }}
-        >
-          <Zap size={16} />
-        </button>
-      </div>
-
       {/* Helpful Hint on hover */}
       <div
+        className="canvas-rotation-hint"
         style={{
           position: "absolute",
-          top: "65px",
+          top: "54px",
           left: "50%",
           transform: "translateX(-50%)",
           pointerEvents: "none",
           background: "rgba(0, 0, 0, 0.4)",
           backdropFilter: "blur(6px)",
-          padding: "4px 12px",
+          padding: "3px 10px",
           borderRadius: "16px",
-          color: "rgba(255, 255, 255, 0.7)",
-          fontSize: "0.72rem",
+          color: "rgba(255, 255, 255, 0.75)",
+          fontSize: "0.7rem",
           display: "flex",
           alignItems: "center",
-          gap: "6px",
+          gap: "5px",
+          whiteSpace: "nowrap",
         }}
       >
-        <Compass size={12} />
+        <Compass size={11} />
         <span>
           {lang === "en"
-            ? "Click & drag to rotate 360° | Scroll to zoom"
-            : "Bofya & zungusha 360° | Vuta kukuza"}
+            ? "Click & drag to rotate 360°"
+            : "Bofya & zungusha 360°"}
         </span>
       </div>
+
+      {/* Bottom Area: Info Card + Zoom/Rotate Controls (Responsive Grid / Row) */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "12px",
+          left: "12px",
+          right: "12px",
+          display: "flex",
+          alignItems: "flex-end",
+          justifyContent: "space-between",
+          gap: "10px",
+          pointerEvents: "none",
+        }}
+      >
+        {/* Interactive Hotspot Details Badge */}
+        <div
+          style={{
+            pointerEvents: "auto",
+            flex: 1,
+            maxWidth: "340px",
+            background: "rgba(15, 23, 42, 0.88)",
+            backdropFilter: "blur(14px)",
+            border: "1px solid rgba(255, 255, 255, 0.15)",
+            borderRadius: "16px",
+            padding: "10px 14px",
+            color: "#FFFFFF",
+            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.4)",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "2px" }}>
+            <Eye size={13} color="#FF6600" />
+            <span style={{ fontSize: "0.7rem", textTransform: "uppercase", color: "#FF8533", fontWeight: 700, letterSpacing: "0.05em" }}>
+              {lang === "en" ? "Inspect & Learn" : "Chunguza & Jifunze"}
+            </span>
+          </div>
+          <p style={{ fontSize: "0.85rem", fontWeight: 800, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            {activeModel === "rover" && (lang === "en" ? "Sparks 360° Explorer Robot" : "Roboti ya Sparks 360° Explorer")}
+            {activeModel === "circuit" && (lang === "en" ? "Electronic Circuit & AI Core" : "Saketi za Umeme & AI")}
+            {activeModel === "atom" && (lang === "en" ? "Atomic Science & Experiment" : "Majaribio ya Sayansi & 3D")}
+          </p>
+          <p
+            className="canvas-desc-text"
+            style={{ fontSize: "0.74rem", color: "#94A3B8", marginTop: "3px", lineHeight: "1.35", margin: "2px 0 0" }}
+          >
+            {activeModel === "rover" &&
+              (lang === "en"
+                ? "Robotics assembly, ultrasonic sensors & motor coding."
+                : "Uundaji wa magari ya roboti, vitambuzi na mota.")}
+            {activeModel === "circuit" &&
+              (lang === "en"
+                ? "Breadboards, LED circuits & microcontrollers."
+                : "Mizunguko ya umeme, taa za LED na mikonotroli.")}
+            {activeModel === "atom" &&
+              (lang === "en"
+                ? "Exciting chemistry, physics observation & 3D design."
+                : "Majaribio ya kemia, fizikia na maumbo ya 3D.")}
+          </p>
+        </div>
+
+        {/* Floating Canvas Controls (Rotate, Zoom, Burst) */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "6px",
+            pointerEvents: "auto",
+            flexShrink: 0,
+          }}
+        >
+          <button
+            onClick={() => setIsRotating((prev) => !prev)}
+            title={
+              isRotating
+                ? lang === "en"
+                  ? "Pause Auto-Rotation"
+                  : "Sitisha Mzunguko"
+                : lang === "en"
+                ? "Start Auto-Rotation"
+                : "Anzisha Mzunguko"
+            }
+            style={{
+              width: "34px",
+              height: "34px",
+              borderRadius: "50%",
+              background: isRotating ? "rgba(255, 102, 0, 0.9)" : "rgba(15, 23, 42, 0.8)",
+              color: "#FFFFFF",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+              transition: "all 0.2s ease",
+            }}
+          >
+            <RotateCw size={14} />
+          </button>
+
+          <button
+            onClick={() => handleZoom("in")}
+            title={lang === "en" ? "Zoom In" : "Kuza"}
+            style={{
+              width: "34px",
+              height: "34px",
+              borderRadius: "50%",
+              background: "rgba(15, 23, 42, 0.8)",
+              color: "#FFFFFF",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+            }}
+          >
+            <ZoomIn size={14} />
+          </button>
+
+          <button
+            onClick={() => handleZoom("out")}
+            title={lang === "en" ? "Zoom Out" : "Punguza"}
+            style={{
+              width: "34px",
+              height: "34px",
+              borderRadius: "50%",
+              background: "rgba(15, 23, 42, 0.8)",
+              color: "#FFFFFF",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+            }}
+          >
+            <ZoomOut size={14} />
+          </button>
+
+          <button
+            onClick={triggerSparkBurst}
+            title={lang === "en" ? "Trigger Spark Energy!" : "Washa Cheche ya STEAM!"}
+            style={{
+              width: "34px",
+              height: "34px",
+              borderRadius: "50%",
+              background: "linear-gradient(135deg, #FF6600, #F59E0B)",
+              color: "#FFFFFF",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: "none",
+              boxShadow: "0 4px 14px rgba(255, 102, 0, 0.5)",
+            }}
+          >
+            <Zap size={14} />
+          </button>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @media (max-width: 520px) {
+          .canvas-title-text {
+            display: none !important;
+          }
+          .canvas-rotation-hint {
+            display: none !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

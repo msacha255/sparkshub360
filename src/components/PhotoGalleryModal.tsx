@@ -132,8 +132,7 @@ export default function PhotoGalleryModal({ isOpen, onClose, lang }: PhotoGaller
           position: "relative",
           width: "100%",
           maxWidth: "850px",
-          maxHeight: "75vh",
-          height: "560px",
+          height: "clamp(280px, 52vh, 560px)",
           borderRadius: "20px",
           overflow: "hidden",
           background: "#000000",
@@ -156,21 +155,22 @@ export default function PhotoGalleryModal({ isOpen, onClose, lang }: PhotoGaller
           style={{
             position: "absolute",
             top: "50%",
-            left: "14px",
+            left: "10px",
             transform: "translateY(-50%)",
             background: "rgba(15, 23, 42, 0.75)",
             backdropFilter: "blur(8px)",
             border: "1px solid rgba(255, 255, 255, 0.2)",
             color: "#FFFFFF",
-            width: "44px",
-            height: "44px",
+            width: "40px",
+            height: "40px",
             borderRadius: "50%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
           }}
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={22} />
         </button>
 
         <button
@@ -178,21 +178,22 @@ export default function PhotoGalleryModal({ isOpen, onClose, lang }: PhotoGaller
           style={{
             position: "absolute",
             top: "50%",
-            right: "14px",
+            right: "10px",
             transform: "translateY(-50%)",
             background: "rgba(15, 23, 42, 0.75)",
             backdropFilter: "blur(8px)",
             border: "1px solid rgba(255, 255, 255, 0.2)",
             color: "#FFFFFF",
-            width: "44px",
-            height: "44px",
+            width: "40px",
+            height: "40px",
             borderRadius: "50%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
           }}
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={22} />
         </button>
 
         {/* Caption Overlay */}
@@ -202,15 +203,15 @@ export default function PhotoGalleryModal({ isOpen, onClose, lang }: PhotoGaller
             bottom: 0,
             left: 0,
             right: 0,
-            background: "linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%)",
-            padding: "20px 24px",
+            background: "linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.5) 70%, transparent 100%)",
+            padding: "clamp(12px, 3vw, 20px)",
             color: "#FFFFFF",
           }}
         >
-          <h4 style={{ fontSize: "1.1rem", fontWeight: 800, margin: "0 0 4px", color: "#FFFFFF" }}>
+          <h4 style={{ fontSize: "clamp(0.95rem, 2.5vw, 1.15rem)", fontWeight: 800, margin: "0 0 3px", color: "#FFFFFF" }}>
             {lang === "en" ? current.titleEn : current.titleSw}
           </h4>
-          <p style={{ fontSize: "0.85rem", color: "#CBD5E1", margin: 0, lineHeight: 1.4 }}>
+          <p style={{ fontSize: "clamp(0.75rem, 2vw, 0.85rem)", color: "#CBD5E1", margin: 0, lineHeight: 1.35 }}>
             {lang === "en" ? current.captionEn : current.captionSw}
           </p>
         </div>

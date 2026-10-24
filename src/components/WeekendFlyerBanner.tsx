@@ -62,21 +62,21 @@ export default function WeekendFlyerBanner({
             style={{
               background: "linear-gradient(90deg, #FF6600 0%, #F59E0B 50%, #059669 100%)",
               color: "#FFFFFF",
-              padding: "16px 24px",
+              padding: "14px clamp(14px, 3vw, 24px)",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
               flexWrap: "wrap",
-              gap: "12px",
+              gap: "10px",
             }}
           >
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-              <CelebrationVector size={28} animate={true} />
+              <CelebrationVector size={26} animate={true} />
               <div>
-                <h3 style={{ fontSize: "1.1rem", fontWeight: 800, color: "#FFFFFF", margin: 0 }}>
+                <h3 style={{ fontSize: "clamp(0.95rem, 2.5vw, 1.15rem)", fontWeight: 800, color: "#FFFFFF", margin: 0 }}>
                   {lang === "en" ? "PRACTICAL STEAM WEEKEND WORKSHOPS" : "WARSHA ZA VITENDO ZA STEAM ZA WIKENDI"}
                 </h3>
-                <p style={{ fontSize: "0.8rem", color: "rgba(255, 255, 255, 0.9)", margin: 0 }}>
+                <p style={{ fontSize: "0.78rem", color: "rgba(255, 255, 255, 0.9)", margin: 0 }}>
                   {lang === "en"
                     ? "Interactive Robotics, Electronics, AI & Science • Every Saturday"
                     : "Roboti, Saketi za Umeme, AI & Sayansi kwa Vitendo • Kila Jumamosi"}
@@ -90,10 +90,10 @@ export default function WeekendFlyerBanner({
                 alignItems: "center",
                 gap: "8px",
                 background: "rgba(255, 255, 255, 0.2)",
-                padding: "6px 16px",
+                padding: "5px 14px",
                 borderRadius: "20px",
                 fontWeight: 700,
-                fontSize: "0.85rem",
+                fontSize: "0.8rem",
               }}
             >
               <span>{lang === "en" ? "LEARN • PLAY • GROW • THRIVE" : "JIFUNZE • CHEZA • KUA • SHINDA"}</span>
@@ -102,10 +102,10 @@ export default function WeekendFlyerBanner({
 
           <div
             style={{
-              padding: "clamp(24px, 4vw, 48px)",
+              padding: "clamp(18px, 4vw, 44px)",
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: "40px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+              gap: "clamp(24px, 4vw, 40px)",
               alignItems: "center",
             }}
           >

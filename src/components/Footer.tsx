@@ -240,29 +240,51 @@ export default function Footer({ onOpenBooking, lang }: FooterProps) {
         href="https://wa.me/255749998820?text=Hello%20Sparks%20360%20Hub,%20I%20would%20like%20to%20inquire%20about%20practical%20STEAM%20learning%20for%20my%20child!"
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          position: "fixed",
-          bottom: "24px",
-          right: "24px",
-          zIndex: 90,
-          background: "#25D366",
-          color: "#FFFFFF",
-          borderRadius: "30px",
-          padding: "12px 20px",
-          display: "flex",
-          alignItems: "center",
-          gap: "8px",
-          boxShadow: "0 10px 25px rgba(37, 211, 102, 0.45)",
-          fontWeight: 700,
-          fontSize: "0.9rem",
-          transition: "transform 0.2s ease",
-        }}
-        onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
-        onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        className="floating-whatsapp-btn animate-pulse-green"
+        aria-label="Chat on WhatsApp (+255 749 998 820)"
       >
-        <WhatsAppKidVector size={22} />
-        <span>WhatsApp: +255 749 998 820</span>
+        <WhatsAppKidVector size={24} />
+        <span className="floating-whatsapp-text">WhatsApp Us</span>
       </a>
+
+      <style jsx>{`
+        .floating-whatsapp-btn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 90;
+          background: #25D366;
+          color: #FFFFFF;
+          border-radius: 30px;
+          padding: 11px 18px;
+          display: flex;
+          alignItems: center;
+          gap: 8px;
+          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+          font-weight: 800;
+          font-size: 0.88rem;
+          text-decoration: none;
+          transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .floating-whatsapp-btn:hover {
+          transform: scale(1.06);
+        }
+        @media (max-width: 640px) {
+          .floating-whatsapp-btn {
+            bottom: 16px;
+            right: 16px;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+          }
+          .floating-whatsapp-text {
+            display: none !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 }

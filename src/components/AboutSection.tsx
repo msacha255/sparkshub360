@@ -17,8 +17,8 @@ export default function AboutSection({ onOpenBooking, lang }: AboutSectionProps)
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "50px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+            gap: "clamp(30px, 5vw, 50px)",
             alignItems: "center",
           }}
         >
@@ -28,8 +28,8 @@ export default function AboutSection({ onOpenBooking, lang }: AboutSectionProps)
               style={{
                 position: "relative",
                 width: "100%",
-                height: "460px",
-                borderRadius: "28px",
+                height: "clamp(260px, 45vw, 440px)",
+                borderRadius: "24px",
                 overflow: "hidden",
                 boxShadow: "0 20px 50px rgba(15, 23, 42, 0.12)",
                 border: "1px solid #E2E8F0",
@@ -48,17 +48,17 @@ export default function AboutSection({ onOpenBooking, lang }: AboutSectionProps)
             <div
               style={{
                 position: "absolute",
-                bottom: "-20px",
-                right: "20px",
+                bottom: "-14px",
+                right: "14px",
                 background: "#FFFFFF",
-                borderRadius: "20px",
-                padding: "16px 20px",
-                boxShadow: "0 12px 32px rgba(15, 23, 42, 0.15)",
+                borderRadius: "18px",
+                padding: "12px 16px",
+                boxShadow: "0 10px 30px rgba(15, 23, 42, 0.15)",
                 border: "1px solid #E2E8F0",
                 display: "flex",
                 alignItems: "center",
-                gap: "12px",
-                maxWidth: "280px",
+                gap: "10px",
+                maxWidth: "270px",
               }}
             >
               <div

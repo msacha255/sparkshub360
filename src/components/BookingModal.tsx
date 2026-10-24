@@ -91,10 +91,10 @@ export default function BookingModal({
       <div
         style={{
           background: "#FFFFFF",
-          borderRadius: "28px",
+          borderRadius: "clamp(20px, 4vw, 28px)",
           width: "100%",
           maxWidth: "560px",
-          maxHeight: "90vh",
+          maxHeight: "92vh",
           overflowY: "auto",
           boxShadow: "0 25px 60px rgba(0, 0, 0, 0.35)",
           border: "1px solid #E2E8F0",
@@ -107,12 +107,13 @@ export default function BookingModal({
           style={{
             background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
             color: "#FFFFFF",
-            padding: "24px 28px",
-            borderTopLeftRadius: "28px",
-            borderTopRightRadius: "28px",
+            padding: "clamp(16px, 3.5vw, 22px)",
+            borderTopLeftRadius: "inherit",
+            borderTopRightRadius: "inherit",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            gap: "12px",
           }}
         >
           <div>
@@ -121,17 +122,17 @@ export default function BookingModal({
                 style={{
                   background: "#FF6600",
                   color: "#FFFFFF",
-                  fontSize: "0.7rem",
+                  fontSize: "0.68rem",
                   fontWeight: 800,
-                  padding: "2px 8px",
-                  borderRadius: "10px",
+                  padding: "2px 7px",
+                  borderRadius: "8px",
                 }}
               >
                 SPARKS 360° HUB
               </span>
-              <span style={{ fontSize: "0.75rem", color: "#94A3B8" }}>STEAMORA COMPANY LIMITED</span>
+              <span style={{ fontSize: "0.72rem", color: "#94A3B8" }}>STEAMORA COMPANY LIMITED</span>
             </div>
-            <h3 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#FFFFFF", margin: "4px 0 0" }}>
+            <h3 style={{ fontSize: "clamp(1.1rem, 3vw, 1.3rem)", fontWeight: 800, color: "#FFFFFF", margin: "4px 0 0" }}>
               {lang === "en" ? "Student Registration & Booking" : "Fomu ya Usajili wa Mwanafunzi"}
             </h3>
           </div>
@@ -148,6 +149,8 @@ export default function BookingModal({
               alignItems: "center",
               justifyContent: "center",
               border: "none",
+              cursor: "pointer",
+              flexShrink: 0,
             }}
           >
             <X size={20} />
@@ -155,42 +158,45 @@ export default function BookingModal({
         </div>
 
         {/* Modal Body */}
-        <div style={{ padding: "28px" }}>
+        <div style={{ padding: "clamp(16px, 3.5vw, 24px)" }}>
           {!isSubmitted ? (
-            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
+            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {/* Hotline Notification Banner */}
               <div
                 style={{
                   background: "#FFF8F3",
                   border: "1px solid #FFE4D6",
-                  borderRadius: "16px",
-                  padding: "14px 18px",
+                  borderRadius: "14px",
+                  padding: "12px 14px",
                   display: "flex",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  gap: "10px",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                  <PhoneCallKidVector size={28} animate={true} />
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0 }}>
+                  <PhoneCallKidVector size={26} animate={true} />
                   <div>
-                    <span style={{ fontSize: "0.75rem", color: "#64748B", fontWeight: 700, textTransform: "uppercase" }}>
-                      {lang === "en" ? "Direct Registration Hotline" : "Nambari Rasmi ya Usajili"}
+                    <span style={{ fontSize: "0.72rem", color: "#64748B", fontWeight: 700, textTransform: "uppercase" }}>
+                      {lang === "en" ? "Registration Hotline" : "Nambari ya Usajili"}
                     </span>
-                    <div style={{ fontSize: "1.1rem", fontWeight: 900, color: "#FF6600" }}>
+                    <div style={{ fontSize: "1.05rem", fontWeight: 900, color: "#FF6600" }}>
                       +255 749 998 820
                     </div>
                   </div>
                 </div>
 
-                <div style={{ textAlign: "right" }}>
+                <div>
                   <span
                     style={{
                       background: "#25D366",
                       color: "#FFFFFF",
-                      fontSize: "0.72rem",
+                      fontSize: "0.7rem",
                       fontWeight: 800,
-                      padding: "4px 10px",
-                      borderRadius: "10px",
+                      padding: "3px 8px",
+                      borderRadius: "8px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     {lang === "en" ? "WhatsApp Active" : "WhatsApp Inapatikana"}
@@ -200,7 +206,7 @@ export default function BookingModal({
 
               {/* Parent Name */}
               <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "6px" }}>
+                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "5px" }}>
                   {lang === "en" ? "Parent / Guardian Full Name *" : "Jina Kamili la Mzazi / Mlezi *"}
                 </label>
                 <input
@@ -211,10 +217,10 @@ export default function BookingModal({
                   onChange={(e) => setParentName(e.target.value)}
                   style={{
                     width: "100%",
-                    padding: "12px 14px",
+                    padding: "11px 14px",
                     borderRadius: "12px",
                     border: "1px solid #CBD5E1",
-                    fontSize: "0.95rem",
+                    fontSize: "16px",
                     outline: "none",
                   }}
                 />
@@ -222,7 +228,7 @@ export default function BookingModal({
 
               {/* Phone Number */}
               <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "6px" }}>
+                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "5px" }}>
                   {lang === "en" ? "Phone Number (WhatsApp Active) *" : "Namba ya Simu (WhatsApp) *"}
                 </label>
                 <input
@@ -233,19 +239,19 @@ export default function BookingModal({
                   onChange={(e) => setParentPhone(e.target.value)}
                   style={{
                     width: "100%",
-                    padding: "12px 14px",
+                    padding: "11px 14px",
                     borderRadius: "12px",
                     border: "1px solid #CBD5E1",
-                    fontSize: "0.95rem",
+                    fontSize: "16px",
                     outline: "none",
                   }}
                 />
               </div>
 
               {/* Child's Name & Age */}
-              <div style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr", gap: "12px" }}>
+              <div className="modal-child-grid" style={{ display: "grid", gap: "12px" }}>
                 <div>
-                  <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "6px" }}>
+                  <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "5px" }}>
                     {lang === "en" ? "Child's Name *" : "Jina la Mtoto *"}
                   </label>
                   <input
@@ -256,10 +262,10 @@ export default function BookingModal({
                     onChange={(e) => setChildName(e.target.value)}
                     style={{
                       width: "100%",
-                      padding: "12px 14px",
+                      padding: "11px 14px",
                       borderRadius: "12px",
                       border: "1px solid #CBD5E1",
-                      fontSize: "0.95rem",
+                      fontSize: "16px",
                       outline: "none",
                     }}
                   />
@@ -539,6 +545,7 @@ export default function BookingModal({
                   fontSize: "0.85rem",
                   fontWeight: 600,
                   marginTop: "6px",
+                  cursor: "pointer",
                 }}
               >
                 {lang === "en" ? "Close window" : "Funga dirisha"}
@@ -547,6 +554,17 @@ export default function BookingModal({
           )}
         </div>
       </div>
+
+      <style jsx>{`
+        .modal-child-grid {
+          grid-template-columns: 1.4fr 1fr;
+        }
+        @media (max-width: 480px) {
+          .modal-child-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

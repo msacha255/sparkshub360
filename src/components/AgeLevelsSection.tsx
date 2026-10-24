@@ -150,11 +150,12 @@ export default function AgeLevelsSection({ onOpenBooking, lang }: AgeLevelsSecti
 
         {/* 4 Age Tab Selector */}
         <div
+          className="age-tabs-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "12px",
-            marginBottom: "36px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
+            gap: "10px",
+            marginBottom: "32px",
           }}
         >
           {ageTiers.map((tier, idx) => {
@@ -167,7 +168,7 @@ export default function AgeLevelsSection({ onOpenBooking, lang }: AgeLevelsSecti
                   background: isSelected ? "#0F172A" : "#FFFFFF",
                   border: isSelected ? `2px solid ${tier.badgeColor}` : "1px solid #E2E8F0",
                   borderRadius: "16px",
-                  padding: "16px",
+                  padding: "clamp(12px, 2.5vw, 16px)",
                   textAlign: "left",
                   boxShadow: isSelected
                     ? "0 10px 25px rgba(15, 23, 42, 0.15)"
@@ -175,13 +176,14 @@ export default function AgeLevelsSection({ onOpenBooking, lang }: AgeLevelsSecti
                   transition: "all 0.2s ease",
                   display: "flex",
                   flexDirection: "column",
-                  gap: "6px",
+                  gap: "4px",
+                  cursor: "pointer",
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span
                     style={{
-                      fontSize: "1.1rem",
+                      fontSize: "clamp(0.95rem, 2.5vw, 1.1rem)",
                       fontWeight: 800,
                       color: isSelected ? tier.badgeColor : "#0F172A",
                     }}
@@ -190,8 +192,8 @@ export default function AgeLevelsSection({ onOpenBooking, lang }: AgeLevelsSecti
                   </span>
                   <span
                     style={{
-                      fontSize: "0.7rem",
-                      padding: "2px 8px",
+                      fontSize: "0.68rem",
+                      padding: "2px 7px",
                       borderRadius: "10px",
                       background: isSelected ? "rgba(255, 255, 255, 0.15)" : "#F1F5F9",
                       color: isSelected ? "#FFFFFF" : "#64748B",
@@ -203,7 +205,7 @@ export default function AgeLevelsSection({ onOpenBooking, lang }: AgeLevelsSecti
                 </div>
                 <div
                   style={{
-                    fontSize: "0.82rem",
+                    fontSize: "0.8rem",
                     fontWeight: 600,
                     color: isSelected ? "#E2E8F0" : "#64748B",
                   }}
@@ -222,10 +224,10 @@ export default function AgeLevelsSection({ onOpenBooking, lang }: AgeLevelsSecti
             borderRadius: "24px",
             border: "1px solid #E2E8F0",
             boxShadow: "0 16px 40px rgba(15, 23, 42, 0.06)",
-            padding: "clamp(24px, 4vw, 40px)",
+            padding: "clamp(20px, 4vw, 40px)",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "36px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+            gap: "clamp(24px, 4vw, 36px)",
             alignItems: "center",
           }}
         >
