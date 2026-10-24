@@ -19,7 +19,12 @@ import {
   CreditCard,
   ChevronRight,
 } from "lucide-react";
-import { SparksFlameVector, TanzaniaFlagVector, UKFlagVector } from "./KidVectors";
+import {
+  SparksFlameVector,
+  TanzaniaFlagVector,
+  UKFlagVector,
+  OfficialWhatsAppIcon,
+} from "./KidVectors";
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -385,177 +390,341 @@ export default function Navbar({ onOpenBooking, lang, setLang }: NavbarProps) {
             </button>
           </div>
         </div>
+      </header>
 
-        {/* Mobile Fullscreen Animated Drawer */}
-        {mobileMenuOpen && (
+      {/* Root-Level Mobile Side Navigation Drawer (Never trapped by header backdrop-filter) */}
+      {mobileMenuOpen && (
+        <div
+          className="mobile-side-nav-wrapper"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 99999,
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          {/* Backdrop overlay */}
           <div
+            className="mobile-side-nav-backdrop"
             style={{
               position: "fixed",
-              top: "102px",
+              top: 0,
               left: 0,
               right: 0,
               bottom: 0,
-              background: "rgba(15, 23, 42, 0.5)",
+              background: "rgba(15, 23, 42, 0.65)",
               backdropFilter: "blur(6px)",
-              zIndex: 75,
-              display: "flex",
-              flexDirection: "column",
+              WebkitBackdropFilter: "blur(6px)",
             }}
             onClick={() => setMobileMenuOpen(false)}
+          />
+
+          {/* Side Drawer Panel sliding in from the right */}
+          <aside
+            className="mobile-side-drawer-panel"
+            style={{
+              position: "relative",
+              width: "min(340px, 86vw)",
+              height: "100%",
+              maxHeight: "100dvh",
+              background: "#FFFFFF",
+              boxShadow: "-8px 0 32px rgba(15, 23, 42, 0.28)",
+              display: "flex",
+              flexDirection: "column",
+              zIndex: 1,
+              overflowY: "auto",
+              WebkitOverflowScrolling: "touch",
+            }}
+            onClick={(e) => e.stopPropagation()}
           >
+            {/* Top Drawer Header with Brand & Close Button */}
             <div
-              className="animate-drawer"
               style={{
-                background: "#FFFFFF",
-                borderBottomLeftRadius: "24px",
-                borderBottomRightRadius: "24px",
-                boxShadow: "0 20px 40px rgba(0, 0, 0, 0.18)",
-                padding: "16px 20px 24px",
-                maxHeight: "calc(100vh - 110px)",
-                overflowY: "auto",
+                padding: "16px 18px",
+                borderBottom: "1px solid #F1F5F9",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                background: "#FAFAFA",
+                position: "sticky",
+                top: 0,
+                zIndex: 10,
               }}
-              onClick={(e) => e.stopPropagation()}
             >
-              {/* Menu items list */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      padding: "12px 14px",
-                      borderRadius: "14px",
-                      background: "#F8FAFC",
-                      textDecoration: "none",
-                      border: "1px solid #F1F5F9",
-                      transition: "background 0.2s ease",
-                    }}
-                  >
-                    <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                      <div
-                        style={{
-                          width: "36px",
-                          height: "36px",
-                          borderRadius: "10px",
-                          background: "#FFFFFF",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          boxShadow: "0 2px 6px rgba(0, 0, 0, 0.05)",
-                          flexShrink: 0,
-                        }}
-                      >
-                        {link.icon}
-                      </div>
-                      <div>
-                        <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#0F172A" }}>
-                          {lang === "en" ? link.labelEn : link.labelSw}
-                        </div>
-                        <div style={{ fontSize: "0.72rem", color: "#64748B" }}>
-                          {lang === "en" ? link.descEn : link.descSw}
-                        </div>
-                      </div>
-                    </div>
-                    <ChevronRight size={18} color="#94A3B8" />
-                  </a>
-                ))}
-              </div>
-
-              {/* Quick Contact & Action Bar inside Drawer */}
-              <div
-                style={{
-                  marginTop: "16px",
-                  paddingTop: "16px",
-                  borderTop: "1px solid #E2E8F0",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "10px",
-                }}
-              >
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
-                  <a
-                    href="tel:+255749998820"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "6px",
-                      padding: "10px",
-                      borderRadius: "12px",
-                      background: "#F1F5F9",
-                      color: "#0F172A",
-                      fontSize: "0.82rem",
-                      fontWeight: 700,
-                      textDecoration: "none",
-                    }}
-                  >
-                    <Phone size={15} color="#FF6600" />
-                    <span>{lang === "en" ? "Call Us" : "Piga Simu"}</span>
-                  </a>
-
-                  <a
-                    href="https://wa.me/255749998820?text=Hello%20Sparks%20360%20Hub,%20I%20would%20like%20to%20register%20my%20child%20for%20practical%20STEAM%20learning!"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "6px",
-                      padding: "10px",
-                      borderRadius: "12px",
-                      background: "#ECFDF5",
-                      color: "#065F46",
-                      fontSize: "0.82rem",
-                      fontWeight: 700,
-                      border: "1px solid #A7F3D0",
-                      textDecoration: "none",
-                    }}
-                  >
-                    <MessageCircle size={15} color="#059669" />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-
-                {/* Primary Register Button inside Drawer */}
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    onOpenBooking();
-                  }}
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <div
                   style={{
-                    width: "100%",
-                    padding: "13px",
-                    borderRadius: "14px",
-                    background: "linear-gradient(135deg, #FF6600 0%, #FF8533 100%)",
-                    color: "#FFFFFF",
-                    fontWeight: 800,
-                    fontSize: "0.95rem",
-                    boxShadow: "0 6px 18px rgba(255, 102, 0, 0.35)",
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    background: "#FFFFFF",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    gap: "8px",
-                    border: "none",
-                    cursor: "pointer",
+                    boxShadow: "0 2px 8px rgba(255, 102, 0, 0.15)",
+                    border: "1px solid #FFE4D6",
+                    flexShrink: 0,
                   }}
                 >
-                  <Calendar size={18} />
-                  <span>{lang === "en" ? "Register / Book Session Now" : "Jiandikishe Sasa"}</span>
-                </button>
+                  <Image
+                    src="/images/logo.png"
+                    alt="Sparks 360 Hub Logo"
+                    width={28}
+                    height={28}
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "0.98rem",
+                      fontWeight: 900,
+                      letterSpacing: "-0.01em",
+                      color: "#0F172A",
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    SPARKS <span style={{ color: "#FF6600" }}>360°</span> HUB
+                  </div>
+                  <p
+                    style={{
+                      fontSize: "0.62rem",
+                      color: "#64748B",
+                      fontWeight: 800,
+                      letterSpacing: "0.04em",
+                      textTransform: "uppercase",
+                      margin: 0,
+                    }}
+                  >
+                    STEAMORA CO. LTD
+                  </p>
+                </div>
+              </div>
 
-                <p style={{ fontSize: "0.72rem", color: "#64748B", textAlign: "center", margin: "4px 0 0" }}>
-                  Opp. DIT, Morogoro Rd, Dar es Salaam • STEAMORA CO. LTD
-                </p>
+              {/* Close (X) Button */}
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                style={{
+                  width: "36px",
+                  height: "36px",
+                  borderRadius: "10px",
+                  background: "#F1F5F9",
+                  color: "#0F172A",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  border: "1px solid #E2E8F0",
+                  transition: "all 0.2s ease",
+                }}
+                aria-label="Close Navigation"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Language Quick Switcher inside Side Navigation */}
+            <div
+              style={{
+                padding: "12px 18px",
+                background: "#F8FAFC",
+                borderBottom: "1px solid #F1F5F9",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#64748B" }}>
+                {lang === "en" ? "Language / Lugha:" : "Lugha / Language:"}
+              </span>
+              <button
+                onClick={() => setLang(lang === "en" ? "sw" : "en")}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "4px 10px",
+                  borderRadius: "20px",
+                  background: "#FFFFFF",
+                  border: "1px solid #CBD5E1",
+                  fontSize: "0.75rem",
+                  fontWeight: 800,
+                  color: "#0F172A",
+                  cursor: "pointer",
+                  boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
+                }}
+              >
+                {lang === "en" ? (
+                  <>
+                    <TanzaniaFlagVector size={16} />
+                    <span>Kiswahili (SW)</span>
+                  </>
+                ) : (
+                  <>
+                    <UKFlagVector size={16} />
+                    <span>English (EN)</span>
+                  </>
+                )}
+              </button>
+            </div>
+
+            {/* Side Navigation Links */}
+            <div style={{ padding: "14px 14px", display: "flex", flexDirection: "column", gap: "6px", flex: 1 }}>
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    padding: "11px 12px",
+                    borderRadius: "12px",
+                    background: "#FFFFFF",
+                    textDecoration: "none",
+                    border: "1px solid #F1F5F9",
+                    transition: "all 0.2s ease",
+                  }}
+                  className="side-nav-item"
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <div
+                      style={{
+                        width: "34px",
+                        height: "34px",
+                        borderRadius: "10px",
+                        background: "#F8FAFC",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        boxShadow: "0 1px 4px rgba(0, 0, 0, 0.04)",
+                        flexShrink: 0,
+                      }}
+                    >
+                      {link.icon}
+                    </div>
+                    <div>
+                      <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "#0F172A", lineHeight: 1.2 }}>
+                        {lang === "en" ? link.labelEn : link.labelSw}
+                      </div>
+                      <div style={{ fontSize: "0.7rem", color: "#64748B", marginTop: "2px" }}>
+                        {lang === "en" ? link.descEn : link.descSw}
+                      </div>
+                    </div>
+                  </div>
+                  <ChevronRight size={16} color="#94A3B8" />
+                </a>
+              ))}
+            </div>
+
+            {/* Bottom Actions inside Side Drawer */}
+            <div
+              style={{
+                padding: "16px",
+                borderTop: "1px solid #E2E8F0",
+                background: "#FAFAFA",
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              {/* Call and WhatsApp Row */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
+                <a
+                  href="tel:+255749998820"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "6px",
+                    padding: "10px 8px",
+                    borderRadius: "10px",
+                    background: "#FFFFFF",
+                    color: "#0F172A",
+                    fontSize: "0.8rem",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    border: "1px solid #E2E8F0",
+                    boxShadow: "0 1px 3px rgba(0,0,0,0.04)",
+                  }}
+                >
+                  <Phone size={14} color="#FF6600" />
+                  <span>{lang === "en" ? "Call Hotline" : "Piga Simu"}</span>
+                </a>
+
+                <a
+                  href="https://wa.me/255749998820?text=Hello%20Sparks%20360%20Hub,%20I%20would%20like%20to%20register%20my%20child%20for%20practical%20STEAM%20learning!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "6px",
+                    padding: "10px 8px",
+                    borderRadius: "10px",
+                    background: "#25D366",
+                    color: "#FFFFFF",
+                    fontSize: "0.8rem",
+                    fontWeight: 800,
+                    textDecoration: "none",
+                    boxShadow: "0 2px 8px rgba(37, 211, 102, 0.35)",
+                  }}
+                >
+                  <OfficialWhatsAppIcon size={16} color="#FFFFFF" />
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+
+              {/* Big Booking Button */}
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenBooking();
+                }}
+                style={{
+                  width: "100%",
+                  padding: "12px",
+                  borderRadius: "12px",
+                  background: "linear-gradient(135deg, #FF6600 0%, #EA580C 100%)",
+                  color: "#FFFFFF",
+                  fontWeight: 800,
+                  fontSize: "0.92rem",
+                  boxShadow: "0 4px 14px rgba(255, 102, 0, 0.35)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "8px",
+                  border: "none",
+                  cursor: "pointer",
+                }}
+              >
+                <Calendar size={16} />
+                <span>{lang === "en" ? "Book / Register Session" : "Jiandikishe Sasa"}</span>
+              </button>
+
+              <div
+                style={{
+                  fontSize: "0.68rem",
+                  color: "#64748B",
+                  textAlign: "center",
+                  lineHeight: 1.3,
+                  marginTop: "2px",
+                }}
+              >
+                📍 Opp. DIT, Morogoro Rd • Dar es Salaam<br />
+                <strong style={{ color: "#0F172A" }}>STEAMORA COMPANY LIMITED</strong>
               </div>
             </div>
-          </div>
-        )}
-      </header>
+          </aside>
+        </div>
+      )}
 
       {/* Navigation styling */}
       <style jsx global>{`

@@ -323,20 +323,36 @@ input, select, textarea {
   font-size: 16px !important;
 }
 
-/* Premium Drawer Animation */
-@keyframes slideDownDrawer {
+/* Premium Side Navigation Drawer Animations */
+@keyframes slideInFromRight {
   from {
-    opacity: 0;
-    transform: translateY(-12px);
+    transform: translateX(100%);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.animate-drawer {
-  animation: slideDownDrawer 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-side-nav-backdrop {
+  animation: fadeInOverlay 0.25s ease-out forwards;
+}
+
+.mobile-side-drawer-panel {
+  animation: slideInFromRight 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.side-nav-item:hover, .side-nav-item:active {
+  background: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
 }
 
 /* Floating WhatsApp pulse effect */

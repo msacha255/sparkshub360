@@ -13,6 +13,7 @@ import {
   ArtPaletteVector,
   PhoneCallKidVector,
   WhatsAppKidVector,
+  OfficialWhatsAppIcon,
 } from "./KidVectors";
 
 interface FooterProps {
@@ -235,7 +236,7 @@ export default function Footer({ onOpenBooking, lang }: FooterProps) {
         </div>
       </div>
 
-      {/* Floating Instant WhatsApp Button */}
+      {/* Floating Instant WhatsApp Button with Official High-Visibility WhatsApp Icon */}
       <a
         href="https://wa.me/255749998820?text=Hello%20Sparks%20360%20Hub,%20I%20would%20like%20to%20inquire%20about%20practical%20STEAM%20learning%20for%20my%20child!"
         target="_blank"
@@ -243,42 +244,46 @@ export default function Footer({ onOpenBooking, lang }: FooterProps) {
         className="floating-whatsapp-btn animate-pulse-green"
         aria-label="Chat on WhatsApp (+255 749 998 820)"
       >
-        <WhatsAppKidVector size={24} />
+        <OfficialWhatsAppIcon size={30} color="#FFFFFF" />
         <span className="floating-whatsapp-text">WhatsApp Us</span>
       </a>
 
       <style jsx>{`
         .floating-whatsapp-btn {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
+          bottom: 24px;
+          right: 24px;
           z-index: 90;
           background: #25D366;
           color: #FFFFFF;
-          border-radius: 30px;
-          padding: 11px 18px;
-          display: flex;
-          alignItems: center;
-          gap: 8px;
-          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+          border-radius: 9999px;
+          padding: 12px 22px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
           font-weight: 800;
-          font-size: 0.88rem;
+          font-size: 0.92rem;
           text-decoration: none;
-          transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+          transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
         .floating-whatsapp-btn:hover {
-          transform: scale(1.06);
+          transform: translateY(-2px) scale(1.05);
+          box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
         }
         @media (max-width: 640px) {
           .floating-whatsapp-btn {
-            bottom: 16px;
-            right: 16px;
+            bottom: 20px;
+            right: 20px;
             padding: 0;
-            width: 50px;
-            height: 50px;
+            width: 58px;
+            height: 58px;
             border-radius: 50%;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 8px 26px rgba(37, 211, 102, 0.55);
           }
           .floating-whatsapp-text {
             display: none !important;

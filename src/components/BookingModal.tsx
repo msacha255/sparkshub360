@@ -15,6 +15,7 @@ import {
 import {
   RobotVector,
   WhatsAppKidVector,
+  OfficialWhatsAppIcon,
   PhoneCallKidVector,
   CelebrationVector,
 } from "./KidVectors";
@@ -509,7 +510,7 @@ export default function BookingModal({
                   boxShadow: "0 6px 20px rgba(37, 211, 102, 0.35)",
                 }}
               >
-                <WhatsAppKidVector size={24} />
+                <OfficialWhatsAppIcon size={24} color="#FFFFFF" />
                 <span>{lang === "en" ? "Send Details via WhatsApp (+255 749 998 820)" : "Tuma Taarifa WhatsApp (+255 749 998 820)"}</span>
               </a>
 

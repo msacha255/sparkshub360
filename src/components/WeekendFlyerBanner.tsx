@@ -22,6 +22,7 @@ import {
   CelebrationVector,
   CommunityKidsVector,
   WhatsAppKidVector,
+  OfficialWhatsAppIcon,
   PhoneCallKidVector,
 } from "./KidVectors";
 
@@ -486,7 +487,7 @@ export default function WeekendFlyerBanner({
                     gap: "10px",
                   }}
                 >
-                  <WhatsAppKidVector size={24} />
+                  <OfficialWhatsAppIcon size={24} color="#FFFFFF" />
                   <span>{lang === "en" ? "Chat on WhatsApp (+255 749 998 820)" : "Wasiliana WhatsApp (+255 749 998 820)"}</span>
                 </a>
 
