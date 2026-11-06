@@ -3,10 +3,12 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import WeekendFlyerBanner from "@/components/WeekendFlyerBanner";
-import AboutSection from "@/components/AboutSection";
+import SchoolPartnersSection from "@/components/SchoolPartnersSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
-import AgeLevelsSection from "@/components/AgeLevelsSection";
+import BootcampsSection from "@/components/BootcampsSection";
+import ActivityGallerySection from "@/components/ActivityGallerySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ChildRegistrationSection from "@/components/ChildRegistrationSection";
 import MobileLabSection from "@/components/MobileLabSection";
 import LocationAndContact from "@/components/LocationAndContact";
 import Footer from "@/components/Footer";
@@ -15,75 +17,91 @@ import PhotoGalleryModal from "@/components/PhotoGalleryModal";
 
 export default function Home() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-  const [isFlyerModalOpen, setIsFlyerModalOpen] = useState(false);
+  const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
+  const [galleryInitialIdx, setGalleryInitialIdx] = useState(0);
   const [selectedProgramme, setSelectedProgramme] = useState<string | undefined>(undefined);
-  const [lang, setLang] = useState<"en" | "sw">("en");
+  const [lang, setLang] = useState<"en" | "sw">("sw"); // Default to Swahili as requested
 
   const handleOpenBooking = (programme?: string) => {
     setSelectedProgramme(programme);
     setIsBookingOpen(true);
   };
 
+  const handleOpenGallery = (initialIndex: number = 0) => {
+    setGalleryInitialIdx(initialIndex);
+    setIsGalleryModalOpen(true);
+  };
+
   return (
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      {/* 1. Sticky Navigation */}
+      {/* 1. Sticky Navigation Bar */}
       <Navbar
         onOpenBooking={() => handleOpenBooking()}
         lang={lang}
         setLang={setLang}
       />
 
-      {/* 2. Hero with Three.js 3D Interactive Canvas */}
+      {/* 2. Hero Section with Joyful Lego Education Typography */}
       <Hero
         onOpenBooking={() => handleOpenBooking()}
-        onOpenFlyerModal={() => setIsFlyerModalOpen(true)}
+        onOpenFlyerModal={() => handleOpenGallery(0)}
         lang={lang}
       />
 
-      {/* 3. Saturday STEAM Workshop Flyer Spotlight */}
-      <WeekendFlyerBanner
-        onOpenBooking={() => handleOpenBooking("Weekend STEAM Workshop (Robotics & Circuits)")}
-        onOpenFlyerModal={() => setIsFlyerModalOpen(true)}
+      {/* 3. Ushirikiano na Shule (The 9 Partner Schools & Communities) */}
+      <SchoolPartnersSection
+        onOpenBooking={() => handleOpenBooking("Ushirikiano wa Shule (School Partnership)")}
         lang={lang}
       />
 
-      {/* 4. About Us & STEAMORA Vision */}
-      <AboutSection
-        onOpenBooking={() => handleOpenBooking()}
-        lang={lang}
-      />
-
-      {/* 5. The 7 Core STEAM Programmes */}
+      {/* 4. Programu Zetu (Our Core STEAM Programmes with Real Photos) */}
       <ProgrammesSection
         onSelectProgramme={(progName) => handleOpenBooking(progName)}
         lang={lang}
       />
 
-      {/* 6. Age Groups & Levels (Ages 3 - 17) */}
-      <AgeLevelsSection
+      {/* 5. Bootcamps & Saturday STEAM Club */}
+      <BootcampsSection
+        onOpenBooking={(bTitle) => handleOpenBooking(bTitle)}
+        lang={lang}
+      />
+
+      {/* 6. Picha za Shughuli (Activity Photo Showcase with Lightbox) */}
+      <ActivityGallerySection
+        onOpenFullGallery={handleOpenGallery}
+        lang={lang}
+      />
+
+      {/* 7. Maoni ya Wazazi (Parent Reviews & Testimonials) */}
+      <TestimonialsSection
         onOpenBooking={() => handleOpenBooking()}
         lang={lang}
       />
 
-      {/* 7. Mobile STEAM Lab (We Come To You) */}
+      {/* 8. Usajili wa Watoto (Online Enrollment Form & Lipa Namba) */}
+      <ChildRegistrationSection
+        lang={lang}
+      />
+
+      {/* 9. Mobile STEAM Lab (We Come To You) */}
       <MobileLabSection
         onOpenBooking={() => handleOpenBooking("Mobile STEAM Lab Request")}
         lang={lang}
       />
 
-      {/* 8. Locations, Contacts & Lipa Namba */}
+      {/* 10. Location, Contacts & Directions */}
       <LocationAndContact
         onOpenBooking={() => handleOpenBooking()}
         lang={lang}
       />
 
-      {/* 9. Comprehensive Footer */}
+      {/* 11. Comprehensive Lego-Style Footer */}
       <Footer
         onOpenBooking={() => handleOpenBooking()}
         lang={lang}
       />
 
-      {/* 10. Student Registration & Payment Modal */}
+      {/* 12. Student Registration Modal */}
       <BookingModal
         isOpen={isBookingOpen}
         onClose={() => setIsBookingOpen(false)}
@@ -91,10 +109,11 @@ export default function Home() {
         lang={lang}
       />
 
-      {/* 11. Official Flyers & Photo Showcase Modal */}
+      {/* 13. Interactive Activity Photo Gallery Lightbox */}
       <PhotoGalleryModal
-        isOpen={isFlyerModalOpen}
-        onClose={() => setIsFlyerModalOpen(false)}
+        isOpen={isGalleryModalOpen}
+        onClose={() => setIsGalleryModalOpen(false)}
+        initialIndex={galleryInitialIdx}
         lang={lang}
       />
     </main>

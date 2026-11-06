@@ -266,60 +266,41 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
             >
               <button
                 onClick={onOpenBooking}
-                className="hero-btn-primary"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "8px",
-                  padding: "13px 26px",
-                  borderRadius: "30px",
-                  background: "linear-gradient(135deg, #FF6600 0%, #FF8533 100%)",
-                  color: "#FFFFFF",
-                  fontSize: "1rem",
-                  fontWeight: 800,
-                  boxShadow: "0 10px 24px rgba(255, 102, 0, 0.35)",
-                  transition: "all 0.2s ease",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-2px)")}
-                onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
+                className="lego-btn-orange"
+                style={{ fontSize: "1rem", padding: "13px 26px" }}
               >
-                <span>{lang === "en" ? "Book A Session" : "Jiunge Nasi Sasa"}</span>
+                <span>{lang === "en" ? "Register Your Child" : "Sajili Mtoto Wako"}</span>
                 <ArrowRight size={17} />
               </button>
 
               <button
                 onClick={onOpenFlyerModal}
-                className="hero-btn-secondary"
+                className="lego-btn-outline"
+                style={{ fontSize: "0.95rem", padding: "12px 22px" }}
+              >
+                <span>{lang === "en" ? "View Activity Photos" : "Tazama Picha za Shughuli"}</span>
+              </button>
+
+              <a
+                href="https://wa.me/255749998820?text=Habari%20SparksHub%2C%20ninapenda%20kufahamu%20zaidi%20kuhusu%20mafunzo%20ya%20STEAM%20kwa%20watoto"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  justifyContent: "center",
-                  gap: "8px",
-                  padding: "13px 22px",
-                  borderRadius: "30px",
-                  background: "#FFFFFF",
-                  color: "#0F172A",
-                  fontSize: "0.92rem",
+                  gap: "6px",
+                  padding: "12px 18px",
+                  borderRadius: "9999px",
+                  background: "#ECFDF5",
+                  color: "#065F46",
+                  fontSize: "0.9rem",
                   fontWeight: 700,
-                  border: "1px solid #CBD5E1",
-                  boxShadow: "0 4px 12px rgba(15, 23, 42, 0.05)",
-                  transition: "all 0.2s ease",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#F8FAFC";
-                  e.currentTarget.style.borderColor = "#94A3B8";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "#FFFFFF";
-                  e.currentTarget.style.borderColor = "#CBD5E1";
+                  border: "1.5px solid #A7F3D0",
+                  textDecoration: "none",
                 }}
               >
-                <DocumentFlyerVector size={18} />
-                <span>{lang === "en" ? "View Official Flyers" : "Tazama Tangazo Rasmi"}</span>
-              </button>
+                <span>WhatsApp Admin</span>
+              </a>
             </div>
 
             {/* Trust Badges */}
@@ -331,6 +312,7 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                 gap: "12px 18px",
                 fontSize: "0.82rem",
                 color: "#64748B",
+                marginBottom: "20px",
               }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
@@ -345,6 +327,39 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                 <Award size={15} color="#FF6600" />
                 <span>{lang === "en" ? "STEAMORA Certified" : "Imethibitishwa na STEAMORA"}</span>
               </div>
+            </div>
+
+            {/* Partner Schools Ticker Pill */}
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                background: "#FFFFFF",
+                border: "1.5px solid #E2E8F0",
+                padding: "8px 16px",
+                borderRadius: "9999px",
+                fontSize: "0.78rem",
+                color: "#475569",
+                boxShadow: "0 2px 8px rgba(15, 23, 42, 0.04)",
+                maxWidth: "100%",
+                flexWrap: "wrap",
+              }}
+            >
+              <span style={{ fontWeight: 800, color: "#006CB7" }}>
+                {lang === "en" ? "Trusted in:" : "Shule Washirika:"}
+              </span>
+              <span>IST</span>
+              <span>•</span>
+              <span>The Apton</span>
+              <span>•</span>
+              <span>DIA</span>
+              <span>•</span>
+              <span>Indian School</span>
+              <span>•</span>
+              <span>Kidz Kollege</span>
+              <span>•</span>
+              <span>Tumarich & Zaidi</span>
             </div>
           </div>
 

@@ -128,40 +128,30 @@ export default function Footer({ onOpenBooking, lang }: FooterProps) {
             </ul>
           </div>
 
-          {/* Col 3: Mobile STEAM Lab (We Come To You) */}
+          {/* Col 3: Partner Schools & Communities */}
           <div>
             <h4 style={{ fontSize: "1rem", fontWeight: 800, color: "#FFFFFF", marginBottom: "16px" }}>
-              {lang === "en" ? "Mobile STEAM Lab" : "Maabara Inayotembea"}
+              {lang === "en" ? "School Partners" : "Shule Washirika"}
             </h4>
             <div style={{ background: "rgba(255, 255, 255, 0.05)", borderRadius: "14px", padding: "16px", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
-              <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#FF8533", marginBottom: "6px" }}>
-                {lang === "en" ? "We Come To You!" : "Tunafika Popote!"}
+              <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#FFC20E", marginBottom: "8px" }}>
+                {lang === "en" ? "Trusted By:" : "Zinazoshirikiana Nasi:"}
               </div>
-              <div style={{ fontSize: "0.82rem", color: "#CBD5E1", lineHeight: 1.5 }}>
-                {lang === "en" ? (
-                  <>
-                    • Homes & Private Residences
-                    <br />
-                    • Schools & Academic Clubs
-                    <br />
-                    • Churches, Mosques & Charities
-                    <br />
-                    • Community Innovation Events
-                  </>
-                ) : (
-                  <>
-                    • Majumbani & Makazi Binafsi
-                    <br />
-                    • Shuleni & Klabu za Masomo
-                    <br />
-                    • Makanisa, Misikiti & Jamii
-                    <br />
-                    • Matukio ya Ubunifu wa Watoto
-                  </>
-                )}
+              <div style={{ fontSize: "0.82rem", color: "#CBD5E1", lineHeight: 1.6 }}>
+                • Int. School of Tanganyika (IST)<br />
+                • The Apton School<br />
+                • Dar es Salaam Int. Academy (DIA)<br />
+                • Indian School Dar es Salaam<br />
+                • Kidz Kollege<br />
+                • Tumarich Community<br />
+                • Guiding Minds Academy<br />
+                • ASK Community<br />
+                • Bright Side Learning Centre
               </div>
               <div style={{ marginTop: "12px", paddingTop: "10px", borderTop: "1px solid rgba(255, 255, 255, 0.1)", fontSize: "0.8rem", color: "#10B981", fontWeight: 800 }}>
-                {lang === "en" ? "Certified STEAM Mentors" : "Wakufunzi Walioidhinishwa wa STEAM"}
+                <a href="#partners" style={{ color: "#10B981", textDecoration: "underline" }}>
+                  {lang === "en" ? "Partner Your School →" : "Unganisha Shule Yako →"}
+                </a>
               </div>
             </div>
           </div>

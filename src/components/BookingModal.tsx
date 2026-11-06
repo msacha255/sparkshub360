@@ -40,6 +40,7 @@ export default function BookingModal({
   const [programme, setProgramme] = useState(
     initialProgramme || "Weekend STEAM Workshop (Robotics & Circuits)"
   );
+  const [school, setSchool] = useState("International School of Tanganyika (IST)");
   const [location, setLocation] = useState("Opp. DIT (Morogoro Rd & Bibi Titi)");
   const [childrenCount, setChildrenCount] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -67,6 +68,7 @@ export default function BookingModal({
       `Parent: ${parentName}\n` +
       `Phone: ${parentPhone}\n` +
       `Child: ${childName} (${ageGroup})\n` +
+      `School: ${school}\n` +
       `Programme: ${programme}\n` +
       `Preferred Location: ${location}\n` +
       `Number of Children: ${childrenCount}\n\n` +
@@ -303,6 +305,37 @@ export default function BookingModal({
                     </option>
                   </select>
                 </div>
+              </div>
+
+              {/* Child's School */}
+              <div>
+                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 700, color: "#1E293B", marginBottom: "6px" }}>
+                  {lang === "en" ? "Child's School *" : "Shule ya Mtoto *"}
+                </label>
+                <select
+                  value={school}
+                  onChange={(e) => setSchool(e.target.value)}
+                  style={{
+                    width: "100%",
+                    padding: "12px 14px",
+                    borderRadius: "12px",
+                    border: "1px solid #CBD5E1",
+                    fontSize: "0.9rem",
+                    outline: "none",
+                    background: "#FFFFFF",
+                  }}
+                >
+                  <option value="International School of Tanganyika (IST)">International School of Tanganyika (IST)</option>
+                  <option value="The Apton School">The Apton School</option>
+                  <option value="Dar es Salaam International Academy (DIA)">Dar es Salaam International Academy (DIA)</option>
+                  <option value="Indian School Dar es Salaam">Indian School Dar es Salaam</option>
+                  <option value="Kidz Kollege">Kidz Kollege</option>
+                  <option value="Tumarich Community">Tumarich Community</option>
+                  <option value="Guiding Minds Academy">Guiding Minds Academy</option>
+                  <option value="ASK Community">ASK Community</option>
+                  <option value="Bright Side Learning Centre">Bright Side Learning Centre</option>
+                  <option value="Other / Shule Nyingine">Other / Shule Nyingine</option>
+                </select>
               </div>
 
               {/* Programme Select - Strictly the 7 Core Programmes */}
