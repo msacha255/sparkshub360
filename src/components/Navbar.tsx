@@ -82,20 +82,20 @@ export default function Navbar({ onOpenBooking, lang, setLang }: NavbarProps) {
       descSw: "Picha halisi za watoto wakijifunza",
     },
     {
-      href: "#partners",
-      labelEn: "School Partners",
-      labelSw: "Shule Washirika",
-      icon: <BookOpen size={18} color="#7C3AED" />,
-      descEn: "IST, Apton, DIA, Kidz Kollege & more",
-      descSw: "IST, Apton, DIA, Kidz Kollege & zaidi",
-    },
-    {
       href: "#testimonials",
       labelEn: "Parent Reviews",
       labelSw: "Maoni ya Wazazi",
       icon: <Users size={18} color="#E11D48" />,
       descEn: "Authentic stories from parents",
       descSw: "Ushuhuda wa wazazi na walimu",
+    },
+    {
+      href: "#partners",
+      labelEn: "School Partners",
+      labelSw: "Shule Washirika",
+      icon: <BookOpen size={18} color="#7C3AED" />,
+      descEn: "IST, Apton, DIA, Kidz Kollege & more",
+      descSw: "IST, Apton, DIA, Kidz Kollege & zaidi",
     },
     {
       href: "#register",

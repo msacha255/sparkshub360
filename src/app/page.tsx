@@ -47,33 +47,33 @@ export default function Home() {
         lang={lang}
       />
 
-      {/* 3. Ushirikiano na Shule (The 9 Partner Schools & Communities) */}
-      <SchoolPartnersSection
-        onOpenBooking={() => handleOpenBooking("Ushirikiano wa Shule (School Partnership)")}
-        lang={lang}
-      />
-
-      {/* 4. Programu Zetu (Our Core STEAM Programmes with Real Photos) */}
+      {/* 3. Programu Zetu (Our Core STEAM Programmes with Real Photos) */}
       <ProgrammesSection
         onSelectProgramme={(progName) => handleOpenBooking(progName)}
         lang={lang}
       />
 
-      {/* 5. Bootcamps & Saturday STEAM Club */}
+      {/* 4. Bootcamps & Saturday STEAM Club */}
       <BootcampsSection
         onOpenBooking={(bTitle) => handleOpenBooking(bTitle)}
         lang={lang}
       />
 
-      {/* 6. Picha za Shughuli (Activity Photo Showcase with Lightbox) */}
+      {/* 5. Picha za Shughuli (Activity Photo Showcase with Lightbox) */}
       <ActivityGallerySection
         onOpenFullGallery={handleOpenGallery}
         lang={lang}
       />
 
-      {/* 7. Maoni ya Wazazi (Parent Reviews & Testimonials) */}
+      {/* 6. Maoni ya Wazazi (Parent Reviews & Testimonials) */}
       <TestimonialsSection
         onOpenBooking={() => handleOpenBooking()}
+        lang={lang}
+      />
+
+      {/* 7. Ushirikiano na Shule (The 9 Partner Schools & Communities) */}
+      <SchoolPartnersSection
+        onOpenBooking={() => handleOpenBooking("Ushirikiano wa Shule (School Partnership)")}
         lang={lang}
       />
 

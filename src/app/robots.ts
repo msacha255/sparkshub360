@@ -25,3 +25,4 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: "https://sparks360hub.co.tz/sitemap.xml",
   };
 }
+
