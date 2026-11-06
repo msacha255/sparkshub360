@@ -5,35 +5,35 @@
     "width": 1080,
     "height": 810,
     "category": "robotics",
-    "facesBlurred": 3,
-    "originalFile": "IMG-20260921-WA0000.jpg.jpeg"
+    "originalFile": "IMG-20260921-WA0000.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 2,
     "src": "/images/gallery/sparkshub_photo_002.jpg",
     "width": 750,
     "height": 1000,
-    "category": "electronics",
-    "facesBlurred": 5,
-    "originalFile": "IMG-20261012-WA0073.jpg.jpeg"
+    "category": "circuits",
+    "originalFile": "IMG-20261012-WA0073.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 3,
     "src": "/images/gallery/sparkshub_photo_003.jpg",
     "width": 960,
     "height": 1280,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20260922_112739204.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20260922_112739204.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 4,
     "src": "/images/gallery/sparkshub_photo_004.jpg",
     "width": 960,
     "height": 1280,
-    "category": "science",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20260922_113212730.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20260922_113212730.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 5,
@@ -41,125 +41,125 @@
     "width": 960,
     "height": 1280,
     "category": "making",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20260922_114005977.jpg.jpeg"
+    "originalFile": "PXL_20260922_114005977.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 6,
     "src": "/images/gallery/sparkshub_photo_006.jpg",
     "width": 960,
     "height": 1280,
-    "category": "bootcamp",
-    "facesBlurred": 0,
-    "originalFile": "PXL_20260922_114011745.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20260922_114011745.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 7,
     "src": "/images/gallery/sparkshub_photo_007.jpg",
     "width": 960,
     "height": 1280,
-    "category": "robotics",
-    "facesBlurred": 0,
-    "originalFile": "PXL_20260922_114019163.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20260922_114019163.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 8,
     "src": "/images/gallery/sparkshub_photo_008.jpg",
     "width": 960,
     "height": 1280,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "PXL_20260922_114941373.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20260922_114941373.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 9,
     "src": "/images/gallery/sparkshub_photo_009.jpg",
     "width": 960,
     "height": 1280,
-    "category": "coding",
-    "facesBlurred": 3,
-    "originalFile": "PXL_20260922_120035709.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20260922_120035709.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 10,
     "src": "/images/gallery/sparkshub_photo_010.jpg",
     "width": 960,
     "height": 1280,
-    "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "PXL_20260922_121314774.jpg.jpeg"
+    "category": "circuits",
+    "originalFile": "PXL_20260922_121314774.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 11,
     "src": "/images/gallery/sparkshub_photo_011.jpg",
     "width": 1280,
     "height": 960,
-    "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "PXL_20261013_082138157.jpg.jpeg"
+    "category": "robotics",
+    "originalFile": "PXL_20261013_082138157.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 12,
     "src": "/images/gallery/sparkshub_photo_012.jpg",
     "width": 1280,
     "height": 960,
-    "category": "bootcamp",
-    "facesBlurred": 5,
-    "originalFile": "PXL_20261013_082141313.MP.jpg.jpeg"
+    "category": "robotics",
+    "originalFile": "PXL_20261013_082141313.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 13,
     "src": "/images/gallery/sparkshub_photo_013.jpg",
     "width": 1280,
     "height": 960,
-    "category": "robotics",
-    "facesBlurred": 6,
-    "originalFile": "PXL_20261013_082208440.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20261013_082208440.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 14,
     "src": "/images/gallery/sparkshub_photo_014.jpg",
     "width": 1280,
     "height": 960,
-    "category": "electronics",
-    "facesBlurred": 8,
-    "originalFile": "PXL_20261013_082210347.MP.jpg.jpeg"
+    "category": "circuits",
+    "originalFile": "PXL_20261013_082210347.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 15,
     "src": "/images/gallery/sparkshub_photo_015.jpg",
     "width": 1280,
     "height": 960,
-    "category": "coding",
-    "facesBlurred": 4,
-    "originalFile": "PXL_20261013_082257039.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20261013_082257039.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 16,
     "src": "/images/gallery/sparkshub_photo_016.jpg",
     "width": 1280,
     "height": 960,
-    "category": "science",
-    "facesBlurred": 3,
-    "originalFile": "PXL_20261013_082304467.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20261013_082304467.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 17,
     "src": "/images/gallery/sparkshub_photo_017.jpg",
     "width": 1280,
     "height": 960,
-    "category": "making",
-    "facesBlurred": 2,
-    "originalFile": "PXL_20261013_082336888.MP.jpg.jpeg"
+    "category": "circuits",
+    "originalFile": "PXL_20261013_082336888.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 18,
     "src": "/images/gallery/sparkshub_photo_018.jpg",
     "width": 1280,
     "height": 960,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20261013_082507721.jpg.jpeg"
+    "category": "robotics",
+    "originalFile": "PXL_20261013_082507721.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 19,
@@ -167,35 +167,35 @@
     "width": 1280,
     "height": 960,
     "category": "robotics",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20261013_082510933.MP.jpg.jpeg"
+    "originalFile": "PXL_20261013_082510933.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 20,
     "src": "/images/gallery/sparkshub_photo_020.jpg",
     "width": 1280,
     "height": 960,
-    "category": "electronics",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20261013_082514641.MP.jpg.jpeg"
+    "category": "robotics",
+    "originalFile": "PXL_20261013_082514641.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 21,
     "src": "/images/gallery/sparkshub_photo_021.jpg",
     "width": 1280,
     "height": 960,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20261013_082532818.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20261013_082532818.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 22,
     "src": "/images/gallery/sparkshub_photo_022.jpg",
     "width": 1280,
     "height": 960,
-    "category": "science",
-    "facesBlurred": 4,
-    "originalFile": "PXL_20261013_082557679.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20261013_082557679.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 23,
@@ -203,35 +203,35 @@
     "width": 1280,
     "height": 960,
     "category": "making",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20261013_082639542.jpg.jpeg"
+    "originalFile": "PXL_20261013_082639542.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 24,
     "src": "/images/gallery/sparkshub_photo_024.jpg",
     "width": 1280,
     "height": 960,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "PXL_20261013_082650915.MP.jpg.jpeg"
+    "category": "robotics",
+    "originalFile": "PXL_20261013_082650915.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 25,
     "src": "/images/gallery/sparkshub_photo_025.jpg",
     "width": 1280,
     "height": 960,
-    "category": "robotics",
-    "facesBlurred": 4,
-    "originalFile": "PXL_20261013_082818345.MP.jpg.jpeg"
+    "category": "making",
+    "originalFile": "PXL_20261013_082818345.MP.jpg.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 26,
     "src": "/images/gallery/sparkshub_photo_026.jpg",
     "width": 810,
     "height": 1080,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.23.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.23.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 27,
@@ -239,53 +239,53 @@
     "width": 1080,
     "height": 810,
     "category": "coding",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.24 (1).jpeg"
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.24 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 28,
     "src": "/images/gallery/sparkshub_photo_028.jpg",
     "width": 1080,
     "height": 810,
-    "category": "science",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.24 (2).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.24 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 29,
     "src": "/images/gallery/sparkshub_photo_029.jpg",
     "width": 810,
     "height": 1080,
-    "category": "making",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.24.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.24.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 30,
     "src": "/images/gallery/sparkshub_photo_030.jpg",
     "width": 810,
     "height": 1080,
-    "category": "bootcamp",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 31,
     "src": "/images/gallery/sparkshub_photo_031.jpg",
     "width": 810,
     "height": 1080,
-    "category": "robotics",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 32,
     "src": "/images/gallery/sparkshub_photo_032.jpg",
     "width": 810,
     "height": 1080,
-    "category": "electronics",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25 (3).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 33,
@@ -293,17 +293,17 @@
     "width": 810,
     "height": 1080,
     "category": "coding",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25.jpeg"
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.25.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 34,
     "src": "/images/gallery/sparkshub_photo_034.jpg",
     "width": 1080,
     "height": 810,
-    "category": "science",
-    "facesBlurred": 9,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.26 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.26 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 35,
@@ -311,35 +311,35 @@
     "width": 1080,
     "height": 810,
     "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.26.jpeg"
+    "originalFile": "WhatsApp Image 2026-10-27 at 11.44.26.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 36,
     "src": "/images/gallery/sparkshub_photo_036.jpg",
     "width": 960,
     "height": 1280,
-    "category": "bootcamp",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.15 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.15 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 37,
     "src": "/images/gallery/sparkshub_photo_037.jpg",
     "width": 756,
     "height": 1008,
-    "category": "robotics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.15.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.15.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 38,
     "src": "/images/gallery/sparkshub_photo_038.jpg",
     "width": 1008,
     "height": 756,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.16 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.16 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 39,
@@ -347,17 +347,17 @@
     "width": 756,
     "height": 1008,
     "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.16.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.16.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 40,
     "src": "/images/gallery/sparkshub_photo_040.jpg",
     "width": 1008,
     "height": 756,
-    "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.17.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.17.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 41,
@@ -365,116 +365,116 @@
     "width": 756,
     "height": 1008,
     "category": "making",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.20 (1).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.20 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 42,
     "src": "/images/gallery/sparkshub_photo_042.jpg",
     "width": 1280,
     "height": 960,
-    "category": "bootcamp",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.20.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.20.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 43,
     "src": "/images/gallery/sparkshub_photo_043.jpg",
     "width": 960,
     "height": 1280,
-    "category": "robotics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.21.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.21.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 44,
     "src": "/images/gallery/sparkshub_photo_044.jpg",
     "width": 756,
     "height": 1008,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.22 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.22 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 45,
     "src": "/images/gallery/sparkshub_photo_045.jpg",
     "width": 1008,
     "height": 756,
-    "category": "coding",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.22 (2).jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.22 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 46,
     "src": "/images/gallery/sparkshub_photo_046.jpg",
     "width": 756,
     "height": 1008,
-    "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.22.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.22.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 47,
     "src": "/images/gallery/sparkshub_photo_047.jpg",
     "width": 1008,
     "height": 756,
-    "category": "making",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.23 (1).jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.23 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 48,
     "src": "/images/gallery/sparkshub_photo_048.jpg",
     "width": 756,
     "height": 1008,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.23 (2).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.23 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 49,
     "src": "/images/gallery/sparkshub_photo_049.jpg",
     "width": 1008,
     "height": 756,
-    "category": "robotics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.23.jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.23.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 50,
     "src": "/images/gallery/sparkshub_photo_050.jpg",
     "width": 960,
     "height": 1280,
-    "category": "electronics",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.24 (1).jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.24 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 51,
     "src": "/images/gallery/sparkshub_photo_051.jpg",
     "width": 756,
     "height": 1008,
-    "category": "coding",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.24 (2).jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.24 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 52,
     "src": "/images/gallery/sparkshub_photo_052.jpg",
     "width": 756,
     "height": 1008,
-    "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.24.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.24.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 53,
     "src": "/images/gallery/sparkshub_photo_053.jpg",
     "width": 756,
     "height": 1008,
-    "category": "making",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.25 (1).jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.25 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 54,
@@ -482,35 +482,35 @@
     "width": 960,
     "height": 1280,
     "category": "bootcamp",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.25 (2).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.25 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 55,
     "src": "/images/gallery/sparkshub_photo_055.jpg",
     "width": 960,
     "height": 1280,
-    "category": "robotics",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.25.jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.25.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 56,
     "src": "/images/gallery/sparkshub_photo_056.jpg",
     "width": 756,
     "height": 1008,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.26 (1).jpeg"
+    "category": "science",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.26 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 57,
     "src": "/images/gallery/sparkshub_photo_057.jpg",
     "width": 756,
     "height": 1008,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.26 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.26 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 58,
@@ -518,8 +518,8 @@
     "width": 756,
     "height": 1008,
     "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.26.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.26.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 59,
@@ -527,53 +527,53 @@
     "width": 756,
     "height": 1008,
     "category": "making",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.27 (1).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.27 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 60,
     "src": "/images/gallery/sparkshub_photo_060.jpg",
     "width": 960,
     "height": 1280,
-    "category": "bootcamp",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.27 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.27 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 61,
     "src": "/images/gallery/sparkshub_photo_061.jpg",
     "width": 756,
     "height": 1008,
-    "category": "robotics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.27.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.27.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 62,
     "src": "/images/gallery/sparkshub_photo_062.jpg",
     "width": 756,
     "height": 1008,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.28 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.28 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 63,
     "src": "/images/gallery/sparkshub_photo_063.jpg",
     "width": 756,
     "height": 1008,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.28 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.28 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 64,
     "src": "/images/gallery/sparkshub_photo_064.jpg",
     "width": 960,
     "height": 1280,
-    "category": "science",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.28.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.28.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 65,
@@ -581,53 +581,53 @@
     "width": 1008,
     "height": 756,
     "category": "making",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.37.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.37.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 66,
     "src": "/images/gallery/sparkshub_photo_066.jpg",
     "width": 1008,
     "height": 756,
-    "category": "bootcamp",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.41.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.41.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 67,
     "src": "/images/gallery/sparkshub_photo_067.jpg",
     "width": 1008,
     "height": 756,
-    "category": "robotics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.43.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.43.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 68,
     "src": "/images/gallery/sparkshub_photo_068.jpg",
     "width": 1008,
     "height": 756,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.45.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.45.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 69,
     "src": "/images/gallery/sparkshub_photo_069.jpg",
     "width": 1280,
     "height": 960,
-    "category": "coding",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.46.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.46.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 70,
     "src": "/images/gallery/sparkshub_photo_070.jpg",
     "width": 1008,
     "height": 756,
-    "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.47.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.45.47.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 71,
@@ -635,53 +635,53 @@
     "width": 1080,
     "height": 1080,
     "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.08.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.08.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 72,
     "src": "/images/gallery/sparkshub_photo_072.jpg",
     "width": 1080,
     "height": 810,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.09 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.09 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 73,
     "src": "/images/gallery/sparkshub_photo_073.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "robotics",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.09.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.09.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 74,
     "src": "/images/gallery/sparkshub_photo_074.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "electronics",
-    "facesBlurred": 9,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.10 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.10 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 75,
     "src": "/images/gallery/sparkshub_photo_075.jpg",
     "width": 1080,
     "height": 810,
-    "category": "coding",
-    "facesBlurred": 9,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.10.jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.10.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 76,
     "src": "/images/gallery/sparkshub_photo_076.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "science",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.21 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.21 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 77,
@@ -689,53 +689,53 @@
     "width": 1080,
     "height": 1080,
     "category": "making",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.21 (2).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.21 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 78,
     "src": "/images/gallery/sparkshub_photo_078.jpg",
     "width": 1080,
     "height": 810,
-    "category": "bootcamp",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.21.jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.21.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 79,
     "src": "/images/gallery/sparkshub_photo_079.jpg",
     "width": 1080,
     "height": 810,
-    "category": "robotics",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.22 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.22 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 80,
     "src": "/images/gallery/sparkshub_photo_080.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "electronics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.22.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.22.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 81,
     "src": "/images/gallery/sparkshub_photo_081.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "coding",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.23 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.23 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 82,
     "src": "/images/gallery/sparkshub_photo_082.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "science",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.23 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.23 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 83,
@@ -743,53 +743,53 @@
     "width": 1080,
     "height": 1080,
     "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.23.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.23.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 84,
     "src": "/images/gallery/sparkshub_photo_084.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "bootcamp",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.24 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.24 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 85,
     "src": "/images/gallery/sparkshub_photo_085.jpg",
     "width": 1080,
     "height": 810,
-    "category": "robotics",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.24.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.24.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 86,
     "src": "/images/gallery/sparkshub_photo_086.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "electronics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.28.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.56.28.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 87,
     "src": "/images/gallery/sparkshub_photo_087.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "coding",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.28.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.28.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 88,
     "src": "/images/gallery/sparkshub_photo_088.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "science",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.31.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.31.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 89,
@@ -797,143 +797,143 @@
     "width": 1080,
     "height": 1080,
     "category": "making",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.32.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.32.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 90,
     "src": "/images/gallery/sparkshub_photo_090.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "bootcamp",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.33.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.33.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 91,
     "src": "/images/gallery/sparkshub_photo_091.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "robotics",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.40.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.40.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 92,
     "src": "/images/gallery/sparkshub_photo_092.jpg",
     "width": 810,
     "height": 1080,
-    "category": "electronics",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.41.jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.41.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 93,
     "src": "/images/gallery/sparkshub_photo_093.jpg",
     "width": 1080,
     "height": 1080,
-    "category": "coding",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.42 (1).jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.42 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 94,
     "src": "/images/gallery/sparkshub_photo_094.jpg",
     "width": 810,
     "height": 1080,
-    "category": "science",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.42 (2).jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.42 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 95,
     "src": "/images/gallery/sparkshub_photo_095.jpg",
     "width": 810,
     "height": 1080,
-    "category": "making",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.42.jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.42.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 96,
     "src": "/images/gallery/sparkshub_photo_096.jpg",
     "width": 756,
     "height": 1008,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.43 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.43 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 97,
     "src": "/images/gallery/sparkshub_photo_097.jpg",
     "width": 756,
     "height": 1008,
-    "category": "robotics",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.43.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.57.43.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 98,
     "src": "/images/gallery/sparkshub_photo_098.jpg",
     "width": 756,
     "height": 1008,
-    "category": "electronics",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.14 (1).jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.14 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 99,
     "src": "/images/gallery/sparkshub_photo_099.jpg",
     "width": 960,
     "height": 1280,
-    "category": "coding",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.14.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.14.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 100,
     "src": "/images/gallery/sparkshub_photo_100.jpg",
     "width": 756,
     "height": 1008,
-    "category": "science",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.15 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.15 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 101,
     "src": "/images/gallery/sparkshub_photo_101.jpg",
     "width": 756,
     "height": 1008,
-    "category": "making",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.15 (2).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.15 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 102,
     "src": "/images/gallery/sparkshub_photo_102.jpg",
     "width": 756,
     "height": 1008,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.15.jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.15.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 103,
     "src": "/images/gallery/sparkshub_photo_103.jpg",
     "width": 1040,
     "height": 780,
-    "category": "robotics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 104,
     "src": "/images/gallery/sparkshub_photo_104.jpg",
     "width": 1040,
     "height": 780,
-    "category": "electronics",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16 (2).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 105,
@@ -941,35 +941,35 @@
     "width": 1040,
     "height": 780,
     "category": "coding",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16 (3).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 106,
     "src": "/images/gallery/sparkshub_photo_106.jpg",
     "width": 780,
     "height": 1040,
-    "category": "science",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.16.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 107,
     "src": "/images/gallery/sparkshub_photo_107.jpg",
     "width": 780,
     "height": 1040,
-    "category": "making",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.17 (1).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.17 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 108,
     "src": "/images/gallery/sparkshub_photo_108.jpg",
     "width": 1080,
     "height": 810,
-    "category": "bootcamp",
-    "facesBlurred": 9,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.17 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.17 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 109,
@@ -977,53 +977,53 @@
     "width": 780,
     "height": 1040,
     "category": "robotics",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.17.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.17.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 110,
     "src": "/images/gallery/sparkshub_photo_110.jpg",
     "width": 780,
     "height": 1040,
-    "category": "electronics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18 (1).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 111,
     "src": "/images/gallery/sparkshub_photo_111.jpg",
     "width": 780,
     "height": 1040,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18 (2).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 112,
     "src": "/images/gallery/sparkshub_photo_112.jpg",
     "width": 780,
     "height": 1040,
-    "category": "science",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18 (3).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 113,
     "src": "/images/gallery/sparkshub_photo_113.jpg",
     "width": 780,
     "height": 1040,
-    "category": "making",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18.jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.18.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 114,
     "src": "/images/gallery/sparkshub_photo_114.jpg",
     "width": 1080,
     "height": 810,
-    "category": "bootcamp",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.19 (1).jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.19 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 115,
@@ -1031,89 +1031,89 @@
     "width": 780,
     "height": 1040,
     "category": "robotics",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.19 (2).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.19 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 116,
     "src": "/images/gallery/sparkshub_photo_116.jpg",
     "width": 780,
     "height": 1040,
-    "category": "electronics",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.19.jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.19.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 117,
     "src": "/images/gallery/sparkshub_photo_117.jpg",
     "width": 780,
     "height": 1040,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20 (1).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 118,
     "src": "/images/gallery/sparkshub_photo_118.jpg",
     "width": 780,
     "height": 1040,
-    "category": "science",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20 (2).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 119,
     "src": "/images/gallery/sparkshub_photo_119.jpg",
     "width": 810,
     "height": 1080,
-    "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20 (3).jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 120,
     "src": "/images/gallery/sparkshub_photo_120.jpg",
     "width": 780,
     "height": 1040,
-    "category": "bootcamp",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20.jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.20.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 121,
     "src": "/images/gallery/sparkshub_photo_121.jpg",
     "width": 1080,
     "height": 810,
-    "category": "robotics",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.21 (1).jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.21 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 122,
     "src": "/images/gallery/sparkshub_photo_122.jpg",
     "width": 1080,
     "height": 810,
-    "category": "electronics",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.21 (2).jpeg"
+    "category": "circuits",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.21 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 123,
     "src": "/images/gallery/sparkshub_photo_123.jpg",
     "width": 810,
     "height": 1080,
-    "category": "coding",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.21.jpeg"
+    "category": "bootcamp",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.21.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 124,
     "src": "/images/gallery/sparkshub_photo_124.jpg",
     "width": 810,
     "height": 1080,
-    "category": "science",
-    "facesBlurred": 0,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 125,
@@ -1121,53 +1121,53 @@
     "width": 810,
     "height": 1080,
     "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22 (2).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 126,
     "src": "/images/gallery/sparkshub_photo_126.jpg",
     "width": 810,
     "height": 1080,
-    "category": "bootcamp",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22 (3).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 127,
     "src": "/images/gallery/sparkshub_photo_127.jpg",
     "width": 810,
     "height": 1080,
-    "category": "robotics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.22.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 128,
     "src": "/images/gallery/sparkshub_photo_128.jpg",
     "width": 1080,
     "height": 810,
-    "category": "electronics",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 129,
     "src": "/images/gallery/sparkshub_photo_129.jpg",
     "width": 810,
     "height": 1080,
-    "category": "coding",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 130,
     "src": "/images/gallery/sparkshub_photo_130.jpg",
     "width": 1080,
     "height": 810,
-    "category": "science",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23 (3).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 131,
@@ -1175,35 +1175,35 @@
     "width": 1080,
     "height": 810,
     "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.23.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 132,
     "src": "/images/gallery/sparkshub_photo_132.jpg",
     "width": 1080,
     "height": 810,
-    "category": "bootcamp",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.24 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.24 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 133,
     "src": "/images/gallery/sparkshub_photo_133.jpg",
     "width": 1080,
     "height": 810,
-    "category": "robotics",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.24 (2).jpeg"
+    "category": "science",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.24 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 134,
     "src": "/images/gallery/sparkshub_photo_134.jpg",
     "width": 1080,
     "height": 810,
-    "category": "electronics",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.24.jpeg"
+    "category": "science",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.24.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 135,
@@ -1211,53 +1211,53 @@
     "width": 750,
     "height": 1000,
     "category": "coding",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (1).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 136,
     "src": "/images/gallery/sparkshub_photo_136.jpg",
     "width": 1000,
     "height": 750,
-    "category": "science",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (2).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 137,
     "src": "/images/gallery/sparkshub_photo_137.jpg",
     "width": 1000,
     "height": 750,
-    "category": "making",
-    "facesBlurred": 6,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (3).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 138,
     "src": "/images/gallery/sparkshub_photo_138.jpg",
     "width": 1000,
     "height": 750,
-    "category": "bootcamp",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (4).jpeg"
+    "category": "robotics",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25 (4).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 139,
     "src": "/images/gallery/sparkshub_photo_139.jpg",
     "width": 1080,
     "height": 810,
-    "category": "robotics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25.jpeg"
+    "category": "science",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.25.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 140,
     "src": "/images/gallery/sparkshub_photo_140.jpg",
     "width": 750,
     "height": 1000,
-    "category": "electronics",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.26 (1).jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.26 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 141,
@@ -1265,17 +1265,17 @@
     "width": 750,
     "height": 1000,
     "category": "coding",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.26 (2).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.26 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 142,
     "src": "/images/gallery/sparkshub_photo_142.jpg",
     "width": 750,
     "height": 1000,
-    "category": "science",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.26.jpeg"
+    "category": "coding",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.26.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 143,
@@ -1283,17 +1283,17 @@
     "width": 750,
     "height": 1000,
     "category": "making",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.27 (1).jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.27 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 144,
     "src": "/images/gallery/sparkshub_photo_144.jpg",
     "width": 750,
     "height": 1000,
-    "category": "bootcamp",
-    "facesBlurred": 5,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.27 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.27 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 145,
@@ -1301,35 +1301,35 @@
     "width": 750,
     "height": 1000,
     "category": "robotics",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.27.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.27.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 146,
     "src": "/images/gallery/sparkshub_photo_146.jpg",
     "width": 750,
     "height": 1000,
-    "category": "electronics",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 147,
     "src": "/images/gallery/sparkshub_photo_147.jpg",
     "width": 750,
     "height": 1000,
-    "category": "coding",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 148,
     "src": "/images/gallery/sparkshub_photo_148.jpg",
     "width": 750,
     "height": 1000,
-    "category": "science",
-    "facesBlurred": 2,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28 (3).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 149,
@@ -1337,52 +1337,52 @@
     "width": 750,
     "height": 1000,
     "category": "making",
-    "facesBlurred": 7,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28.jpeg"
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.28.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 150,
     "src": "/images/gallery/sparkshub_photo_150.jpg",
     "width": 750,
     "height": 1000,
-    "category": "bootcamp",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29 (1).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29 (1).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 151,
     "src": "/images/gallery/sparkshub_photo_151.jpg",
     "width": 750,
     "height": 1000,
-    "category": "robotics",
-    "facesBlurred": 4,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29 (2).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29 (2).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 152,
     "src": "/images/gallery/sparkshub_photo_152.jpg",
     "width": 750,
     "height": 1000,
-    "category": "electronics",
-    "facesBlurred": 3,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29 (3).jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29 (3).jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 153,
     "src": "/images/gallery/sparkshub_photo_153.jpg",
     "width": 750,
     "height": 1000,
-    "category": "coding",
-    "facesBlurred": 1,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.29.jpeg",
+    "facesBlurred": 0
   },
   {
     "id": 154,
     "src": "/images/gallery/sparkshub_photo_154.jpg",
     "width": 750,
     "height": 1000,
-    "category": "science",
-    "facesBlurred": 8,
-    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.30.jpeg"
+    "category": "making",
+    "originalFile": "WhatsApp Image 2026-11-05 at 11.58.30.jpeg",
+    "facesBlurred": 0
   }
 ]
