@@ -34,7 +34,7 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       agesSw: "Miaka 5 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/robotics-kids.jpg",
+      image: "/images/categories/robotics.jpg",
       skills: ["Chassis Assembly", "Ultrasonic Sensors", "Motor Control", "Arduino Coding"],
       skillsSw: ["Kuunda Bodi ya Roboti", "Vitambuzi vya Vizuizi", "Udhibiti wa Mota", "Programu za Arduino"],
       accentColor: "#FF6600",
@@ -52,7 +52,7 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       agesSw: "Miaka 5 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/circuits-kids.jpg",
+      image: "/images/categories/electronics.jpg",
       skills: ["Breadboards", "LEDs & Switches", "Power Distribution", "Microchips"],
       skillsSw: ["Bodi za Breadboard", "Taa za LED & Swichi", "Mzunguko wa Umeme", "Vipuri vya Umeme"],
       accentColor: "#0070F3",
@@ -70,7 +70,7 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       agesSw: "Miaka 5 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/ai-coding.jpg",
+      image: "/images/categories/coding.jpg",
       skills: ["Block Coding (Scratch)", "Game Logic", "Python Basics", "Web Concepts"],
       skillsSw: ["Block Coding (Scratch)", "Mantiki ya Michezo", "Misingi ya Python", "Misingi ya Wavuti"],
       accentColor: "#10B981",
@@ -88,7 +88,7 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       agesSw: "Miaka 7 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/3d-printing-kids.jpg",
+      image: "/images/categories/3d-printing.jpg",
       skills: ["CAD 3D Modeling", "Filament Printing", "Spatial Geometry", "Rapid Prototyping"],
       skillsSw: ["Uchoraji wa 3D (CAD)", "Uchapishaji wa Printa", "Jiometria ya Maumbo", "Kutengeneza Mfano Halisi"],
       accentColor: "#8B5CF6",
@@ -106,7 +106,7 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       agesSw: "Miaka 8 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/ai-coding.jpg",
+      image: "/images/categories/ai-tech.jpg",
       skills: ["Prompt Engineering", "Computer Vision", "AI Ethics", "Smart Assistants"],
       skillsSw: ["Kuelekeza AI (Prompting)", "Utambuzi wa Picha", "Maadili ya AI", "Mifumo ya Kidijitali"],
       accentColor: "#EC4899",
@@ -124,7 +124,7 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       agesSw: "Miaka 3 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/science-lab.jpg",
+      image: "/images/categories/science.jpg",
       skills: ["Fun Chemistry", "Optics & Physics", "Microscopy", "Scientific Method"],
       skillsSw: ["Kemia ya Kufurahisha", "Fizikia & Mwangaza", "Darubini ya Maabara", "Mbinu za Kisayansi"],
       accentColor: "#F59E0B",
@@ -134,15 +134,15 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       id: "arts",
       category: "science",
       icon: <ArtPaletteVector size={34} animate={true} />,
-      titleEn: "Creative Arts",
-      titleSw: "Sanaa na Ubunifu",
+      titleEn: "Creative Arts & Crafts",
+      titleSw: "Sanaa na Ubunifu wa Mikono",
       descEn: "Express ideas through drawing, painting, crafts, and creative design activities.",
       descSw: "Kueleza mawazo kwa kuchora, kupaka rangi, ufundi wa mikono na ubunifu wa kisasa.",
       agesEn: "Ages 3 - 17",
       agesSw: "Miaka 3 - 17",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
-      image: "/images/creative-arts-kids.jpg",
+      image: "/images/categories/creative-arts.jpg",
       skills: ["Painting & Sketching", "Makerspace Crafts", "Color Theory", "Product Design"],
       skillsSw: ["Kuchora & Kupaka Rangi", "Ufundi wa Ubunifu", "Mchanganyiko wa Rangi", "Kusanifu Vitu"],
       accentColor: "#06B6D4",
@@ -248,8 +248,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                 overflow: "hidden",
               }}
             >
-              {/* Photo Preview Header */}
-              <div style={{ position: "relative", width: "100%", height: "190px", overflow: "hidden" }}>
+              {/* Photo Preview Header - Clean, unblurred, fitted 16:10 aspect ratio */}
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  aspectRatio: "16/10",
+                  overflow: "hidden",
+                  background: "#F8FAFC",
+                  borderBottom: "1.5px solid #F1F5F9",
+                }}
+              >
                 <Image
                   src={p.image}
                   alt={p.titleEn}
@@ -279,11 +288,11 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                     position: "absolute",
                     bottom: "12px",
                     right: "12px",
-                    background: "rgba(15, 23, 42, 0.82)",
+                    background: "rgba(15, 23, 42, 0.8)",
                     backdropFilter: "blur(6px)",
-                    padding: "3px 9px",
-                    borderRadius: "8px",
-                    fontSize: "0.72rem",
+                    padding: "4px 10px",
+                    borderRadius: "9999px",
+                    fontSize: "0.74rem",
                     fontWeight: 700,
                     color: "#FFFFFF",
                   }}
@@ -292,87 +301,125 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                 </div>
               </div>
 
-              {/* Body */}
-              <div style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+              {/* Card Body */}
+              <div
+                style={{
+                  padding: "24px 20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  flex: 1,
+                  justifyContent: "space-between",
+                }}
+              >
+                <div>
+                  {/* Icon & Title Row */}
                   <div
-                    className="kid-icon-box"
                     style={{
-                      width: "50px",
-                      height: "50px",
-                      borderRadius: "14px",
-                      background: "#FFFFFF",
                       display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
-                      boxShadow: "0 4px 14px rgba(0, 0, 0, 0.08)",
-                      border: "1px solid #F1F5F9",
-                      flexShrink: 0,
+                      gap: "12px",
+                      marginBottom: "12px",
                     }}
                   >
-                    {p.icon}
-                  </div>
-                  <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#0F172A", margin: 0 }}>
-                    {lang === "en" ? p.titleEn : p.titleSw}
-                  </h3>
-                </div>
-
-                <p style={{ fontSize: "0.9rem", color: "#475569", lineHeight: 1.5, marginBottom: "18px" }}>
-                  {lang === "en" ? p.descEn : p.descSw}
-                </p>
-
-                {/* Micro skill tags */}
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "20px" }}>
-                  {(lang === "en" ? p.skills : p.skillsSw).map((skill, i) => (
-                    <span
-                      key={i}
+                    <div
                       style={{
-                        background: "rgba(255, 255, 255, 0.85)",
-                        border: "1px solid #E2E8F0",
-                        padding: "3px 8px",
-                        borderRadius: "8px",
-                        fontSize: "0.72rem",
-                        fontWeight: 600,
-                        color: "#334155",
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "14px",
+                        background: p.bgGradient,
+                        border: `1.5px solid ${p.accentColor}33`,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
                       }}
                     >
-                      ✓ {skill}
-                    </span>
-                  ))}
-                </div>
+                      {p.icon}
+                    </div>
+                    <h3
+                      style={{
+                        fontSize: "1.15rem",
+                        fontWeight: 800,
+                        color: "#0F172A",
+                        lineHeight: 1.3,
+                        fontFamily: "var(--font-heading)",
+                      }}
+                    >
+                      {lang === "en" ? p.titleEn : p.titleSw}
+                    </h3>
+                  </div>
 
-                {/* Card Action */}
-                <div style={{ marginTop: "auto", paddingTop: "14px", borderTop: "1px solid rgba(226, 232, 240, 0.7)" }}>
-                  <button
-                    onClick={() => onSelectProgramme(p.titleEn)}
+                  {/* Description */}
+                  <p
                     style={{
-                      width: "100%",
-                      padding: "10px",
-                      borderRadius: "12px",
-                      background: "#FFFFFF",
-                      border: `1.5px solid ${p.accentColor}`,
-                      color: p.accentColor,
                       fontSize: "0.88rem",
-                      fontWeight: 700,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "6px",
-                      transition: "all 0.2s ease",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.background = p.accentColor;
-                      e.currentTarget.style.color = "#FFFFFF";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.background = "#FFFFFF";
-                      e.currentTarget.style.color = p.accentColor;
+                      color: "#64748B",
+                      lineHeight: 1.55,
+                      marginBottom: "18px",
                     }}
                   >
-                    <span>{lang === "en" ? "Enroll in Programme" : "Jiandikishe Hapa"}</span>
-                    <ArrowRight size={15} />
-                  </button>
+                    {lang === "en" ? p.descEn : p.descSw}
+                  </p>
+
+                  {/* Key Skills Tags */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: "6px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {(lang === "en" ? p.skills : p.skillsSw).map((skill, i) => (
+                      <span
+                        key={i}
+                        style={{
+                          fontSize: "0.74rem",
+                          fontWeight: 700,
+                          padding: "3px 8px",
+                          borderRadius: "6px",
+                          background: "#F8FAFC",
+                          border: "1px solid #E2E8F0",
+                          color: "#475569",
+                        }}
+                      >
+                        ✓ {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+
+                {/* Enroll CTA Button */}
+                <button
+                  onClick={() => onSelectProgramme(p.titleEn)}
+                  style={{
+                    width: "100%",
+                    padding: "11px 18px",
+                    borderRadius: "12px",
+                    fontWeight: 700,
+                    fontSize: "0.88rem",
+                    border: `1.5px solid ${p.accentColor}`,
+                    background: "transparent",
+                    color: p.accentColor,
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                    transition: "all 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = p.accentColor;
+                    e.currentTarget.style.color = "#FFFFFF";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "transparent";
+                    e.currentTarget.style.color = p.accentColor;
+                  }}
+                >
+                  <span>{lang === "en" ? "Enroll in Programme" : "Jiunge na Programu Hii"}</span>
+                  <ArrowRight size={15} />
+                </button>
               </div>
             </div>
           ))}

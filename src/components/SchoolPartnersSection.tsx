@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { School, Award, CheckCircle2, ArrowRight, Sparkles, Building2, Users } from "lucide-react";
+import Image from "next/image";
+import { Award, CheckCircle2, ArrowRight, Sparkles, Building2, Users } from "lucide-react";
 
 interface SchoolPartnersProps {
   onOpenBooking: () => void;
@@ -19,6 +20,7 @@ interface SchoolItem {
   highlightEn: string;
   highlightSw: string;
   tag: string;
+  logo: string | null;
 }
 
 export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPartnersProps) {
@@ -34,6 +36,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Robotics & Maker workshops for young innovators",
       highlightSw: "Mafunzo ya Roboti na uundaji kwa watoto wabunifu",
       tag: "IST Dar",
+      logo: "/images/schools/ist.png",
     },
     {
       id: 2,
@@ -46,6 +49,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Hands-on electric circuits & coding fundamentals",
       highlightSw: "Mizunguko ya umeme ya vitendo na misingi ya coding",
       tag: "Apton",
+      logo: "/images/schools/apton.png",
     },
     {
       id: 3,
@@ -58,6 +62,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Sensors, smart logic & STEM problem solving",
       highlightSw: "Vitambuzi, mantiki ya kiteknolojia na utatuzi wa changamoto",
       tag: "DIA",
+      logo: "/images/schools/dia.svg",
     },
     {
       id: 4,
@@ -70,6 +75,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Robotics chassis building & science exploration",
       highlightSw: "Uundaji wa bodi za roboti na ugunduzi wa kisayansi",
       tag: "Indian School",
+      logo: "/images/schools/indian_school.png",
     },
     {
       id: 5,
@@ -82,6 +88,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Playful robotics, LEGO mechanics & tactile circuits",
       highlightSw: "Roboti za mchezo, mekanika ya LEGO na saketi salama",
       tag: "Kidz Kollege",
+      logo: "/images/schools/kidzkollege.png",
     },
     {
       id: 6,
@@ -94,6 +101,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Inclusive weekend STEAM workshops & digital literacy",
       highlightSw: "Warsha za STEAM za wikendi na ujuzi wa kiteknolojia",
       tag: "Tumarich",
+      logo: "/images/schools/tumarich.png",
     },
     {
       id: 7,
@@ -106,6 +114,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Critical thinking, 3D printing & invention projects",
       highlightSw: "Fikra tunduizi, uchapishaji wa 3D na miradi ya uvumbuzi",
       tag: "Guiding Minds",
+      logo: null, // Left empty per user requirement: "kama hamna unaacha kuweka logo hiyo specific"
     },
     {
       id: 8,
@@ -118,6 +127,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Creative tech camps & hands-on group experiments",
       highlightSw: "Kambi za teknolojia na majaribio ya pamoja ya sayansi",
       tag: "ASK Network",
+      logo: "/images/schools/ask.png",
     },
     {
       id: 9,
@@ -130,8 +140,11 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       highlightEn: "Sensory circuits, tailored coding & confidence building",
       highlightSw: "Mizunguko ya hisia, mafunzo ya kompyuta na kujiamini",
       tag: "Bright Side",
+      logo: "/images/schools/brightside.png",
     },
   ];
+
+  const schoolsWithLogos = schools.filter((s) => s.logo !== null);
 
   return (
     <section
@@ -147,22 +160,35 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
     >
       <div className="container">
         {/* Section Header */}
-        <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 40px auto" }}>
+        <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px auto" }}>
+          {/* Pill Badge */}
           <div
-            className="lego-pill lego-pill-blue"
-            style={{ marginBottom: "12px", display: "inline-flex" }}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              background: "#FFFBE6",
+              border: "1.5px solid #FDE68A",
+              color: "#B45309",
+              padding: "5px 14px",
+              borderRadius: "9999px",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              marginBottom: "14px",
+            }}
           >
-            <School size={16} />
+            <Award size={15} color="#D97706" />
             <span>
-              {lang === "en" ? "Trusted School Network" : "Mtandao wa Shule Zinazotuamini"}
+              {lang === "en" ? "Trusted School Network" : "Mtandao wa Shule na Jamii Zinazotuamini"}
             </span>
           </div>
 
           <h2
             style={{
-              fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
-              fontWeight: 800,
+              fontSize: "clamp(1.9rem, 3.8vw, 2.9rem)",
+              fontWeight: 900,
               color: "#0F172A",
+              letterSpacing: "-0.02em",
               lineHeight: 1.2,
               marginBottom: "14px",
             }}
@@ -170,12 +196,12 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
             {lang === "en" ? (
               <>
                 Proudly Partnering with Leading{" "}
-                <span style={{ color: "#006CB7" }}>Schools & Communities</span>
+                <span style={{ color: "#006CB7" }}>Schools & Communities</span>.
               </>
             ) : (
               <>
-                Tunajivunia Kushirikiana na{" "}
-                <span style={{ color: "#006CB7" }}>Shule na Taasisi Bora</span>
+                Tunashirikiana kwa Fahari na{" "}
+                <span style={{ color: "#006CB7" }}>Shule na Taasisi Maarufu</span>.
               </>
             )}
           </h2>
@@ -191,6 +217,73 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
               ? "Through SPARKS 360° HUB and our Mobile STEAM Lab, students from top schools in Dar es Salaam experience joyful hands-on robotics, electronics, and coding directly in their classrooms and holiday bootcamps."
               : "Kupitia SPARKS 360° HUB na Maabara yetu ya Mobile STEAM Lab, wanafunzi kutoka shule zinazoheshimika Dar es Salaam wanajifunza roboti, umeme na coding kwa vitendo madarasani na kwenye kambi zetu za likizo."}
           </p>
+        </div>
+
+        {/* Clean Logo Trust Bar - Displaying Verified Partner Logos */}
+        <div
+          style={{
+            background: "#F8FAFC",
+            borderRadius: "20px",
+            border: "1px solid #E2E8F0",
+            padding: "20px 24px",
+            marginBottom: "36px",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "0.78rem",
+              fontWeight: 800,
+              textTransform: "uppercase",
+              letterSpacing: "0.08em",
+              color: "#64748B",
+              textAlign: "center",
+              marginBottom: "16px",
+            }}
+          >
+            {lang === "en" ? "Verified Partner Institutions" : "Taasisi na Shule Washirika Zilizothibitishwa"}
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "clamp(16px, 3vw, 28px)",
+            }}
+          >
+            {schoolsWithLogos.map((s) => (
+              <div
+                key={s.id}
+                style={{
+                  background: "#FFFFFF",
+                  padding: "8px 16px",
+                  borderRadius: "12px",
+                  border: "1px solid #E2E8F0",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "50px",
+                  boxShadow: "0 2px 4px rgba(0,0,0,0.02)",
+                }}
+                title={s.name}
+              >
+                <Image
+                  src={s.logo!}
+                  alt={`${s.name} Logo`}
+                  width={140}
+                  height={38}
+                  style={{
+                    objectFit: "contain",
+                    maxHeight: "36px",
+                    maxWidth: "130px",
+                    width: "auto",
+                    height: "auto",
+                  }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* 9 Partner Schools Grid */}
@@ -222,7 +315,7 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    marginBottom: "14px",
+                    marginBottom: "16px",
                   }}
                 >
                   <span
@@ -255,6 +348,39 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
                     #{school.id}
                   </span>
                 </div>
+
+                {/* School Logo Frame - Shown only if school has original logo */}
+                {school.logo ? (
+                  <div
+                    style={{
+                      height: "54px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+                      marginBottom: "14px",
+                      padding: "6px 12px",
+                      background: "#FFFFFF",
+                      borderRadius: "12px",
+                      border: "1.5px solid #F1F5F9",
+                      width: "fit-content",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.03)",
+                    }}
+                  >
+                    <Image
+                      src={school.logo}
+                      alt={`${school.name} Logo`}
+                      width={160}
+                      height={40}
+                      style={{
+                        objectFit: "contain",
+                        maxHeight: "38px",
+                        maxWidth: "150px",
+                        width: "auto",
+                        height: "auto",
+                      }}
+                    />
+                  </div>
+                ) : null}
 
                 {/* School Name */}
                 <h3
@@ -399,4 +525,3 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
     </section>
   );
 }
-
