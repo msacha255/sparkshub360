@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import {
   RobotVector,
   CircuitVector,
@@ -25,10 +25,10 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
     {
       id: "robotics",
       category: "engineering",
-      icon: <RobotVector size={34} animate={true} />,
+      icon: <RobotVector size={36} animate={true} />,
       titleEn: "Robotics & Mechanics",
       titleSw: "Roboti na Uhandisi",
-      descEn: "Build smart robots, assemble chassis, wire DC motors, and test ultrasonic sensors.",
+      descEn: "Build smart robots, assemble chassis, wire DC motors, and test ultrasonic obstacle sensors.",
       descSw: "Kutengeneza roboti zenye akili, kuunganisha mota na vitambuzi vya vizuizi.",
       levelsEn: "Level 1 - 3 (12 sessions)",
       levelsSw: "Ngazi 1 - 3 (Vipindi 12)",
@@ -36,12 +36,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["Chassis Assembly", "Ultrasonic Sensors", "Motor Control", "Arduino Coding"],
       skillsSw: ["Kuunda Bodi ya Roboti", "Vitambuzi vya Vizuizi", "Udhibiti wa Mota", "Programu za Arduino"],
       accentColor: "#FF6600",
-      bgGradient: "linear-gradient(135deg, rgba(255, 102, 0, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #FFF7ED 0%, #FFFFFF 100%)",
+      borderColor: "#FED7AA",
+      iconBg: "linear-gradient(135deg, #FFEDD5 0%, #FED7AA 100%)",
+      tagBg: "#FFF7ED",
+      tagBorder: "#FDBA74",
+      tagColor: "#C2410C",
     },
     {
       id: "electronics",
       category: "engineering",
-      icon: <CircuitVector size={34} animate={true} />,
+      icon: <CircuitVector size={36} animate={true} />,
       titleEn: "Electronics & Circuits",
       titleSw: "Mizunguko ya Umeme (Circuits)",
       descEn: "Safe breadboard wiring, push switches, LEDs, buzzers, and microchips.",
@@ -52,12 +57,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["Breadboards", "LEDs & Switches", "Power Distribution", "Microchips"],
       skillsSw: ["Bodi za Breadboard", "Taa za LED & Swichi", "Mzunguko wa Umeme", "Vipuri vya Umeme"],
       accentColor: "#0070F3",
-      bgGradient: "linear-gradient(135deg, rgba(0, 112, 243, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #EFF6FF 0%, #FFFFFF 100%)",
+      borderColor: "#BFDBFE",
+      iconBg: "linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%)",
+      tagBg: "#EFF6FF",
+      tagBorder: "#93C5FD",
+      tagColor: "#1D4ED8",
     },
     {
       id: "coding",
       category: "tech",
-      icon: <CodingVector size={34} animate={true} />,
+      icon: <CodingVector size={36} animate={true} />,
       titleEn: "Coding & Programming",
       titleSw: "Programu za Kompyuta (Coding)",
       descEn: "Create interactive games, animations, and apps through Scratch and Python logic.",
@@ -68,12 +78,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["Block Coding (Scratch)", "Game Logic", "Python Basics", "Web Concepts"],
       skillsSw: ["Block Coding (Scratch)", "Mantiki ya Michezo", "Misingi ya Python", "Misingi ya Wavuti"],
       accentColor: "#10B981",
-      bgGradient: "linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #ECFDF5 0%, #FFFFFF 100%)",
+      borderColor: "#A7F3D0",
+      iconBg: "linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%)",
+      tagBg: "#ECFDF5",
+      tagBorder: "#6EE7B7",
+      tagColor: "#047857",
     },
     {
       id: "3d-printing",
       category: "engineering",
-      icon: <ThreeDPrinterVector size={34} animate={true} />,
+      icon: <ThreeDPrinterVector size={36} animate={true} />,
       titleEn: "3D Design & Printing",
       titleSw: "Muundo na Uchapishaji wa 3D",
       descEn: "Turn digital 3D models into real physical creations using filament 3D printers.",
@@ -84,12 +99,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["CAD 3D Modeling", "Filament Printing", "Spatial Geometry", "Rapid Prototyping"],
       skillsSw: ["Uchoraji wa 3D (CAD)", "Uchapishaji wa Printa", "Jiometria ya Maumbo", "Kutengeneza Mfano Halisi"],
       accentColor: "#8B5CF6",
-      bgGradient: "linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #F5F3FF 0%, #FFFFFF 100%)",
+      borderColor: "#DDD6FE",
+      iconBg: "linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 100%)",
+      tagBg: "#F5F3FF",
+      tagBorder: "#C4B5FD",
+      tagColor: "#6D28D9",
     },
     {
       id: "ai",
       category: "tech",
-      icon: <AIBrainVector size={34} animate={true} />,
+      icon: <AIBrainVector size={36} animate={true} />,
       titleEn: "STEAM with AI for Kids",
       titleSw: "STEAM na Akili Mnemba (AI)",
       descEn: "Hands-on artificial intelligence, computer vision, and smart automated systems.",
@@ -100,12 +120,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["Prompt Engineering", "Computer Vision", "AI Ethics", "Smart Assistants"],
       skillsSw: ["Kuelekeza AI (Prompting)", "Utambuzi wa Picha", "Maadili ya AI", "Mifumo ya Kidijitali"],
       accentColor: "#EC4899",
-      bgGradient: "linear-gradient(135deg, rgba(236, 72, 153, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #FDF2F8 0%, #FFFFFF 100%)",
+      borderColor: "#FBCFE8",
+      iconBg: "linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%)",
+      tagBg: "#FDF2F8",
+      tagBorder: "#F472B6",
+      tagColor: "#BE185D",
     },
     {
       id: "science",
       category: "science",
-      icon: <ScienceFlaskVector size={34} animate={true} />,
+      icon: <ScienceFlaskVector size={36} animate={true} />,
       titleEn: "Scientific Experiments",
       titleSw: "Majaribio ya Kisayansi",
       descEn: "Exciting physical science experiments, circuit physics, and lab discovery.",
@@ -116,12 +141,17 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["Fun Chemistry", "Optics & Physics", "Microscopy", "Scientific Method"],
       skillsSw: ["Kemia ya Kufurahisha", "Fizikia & Mwangaza", "Darubini ya Maabara", "Mbinu za Kisayansi"],
       accentColor: "#F59E0B",
-      bgGradient: "linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #FEFCE8 0%, #FFFFFF 100%)",
+      borderColor: "#FDE68A",
+      iconBg: "linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)",
+      tagBg: "#FEFCE8",
+      tagBorder: "#FCD34D",
+      tagColor: "#B45309",
     },
     {
       id: "arts",
       category: "science",
-      icon: <ArtPaletteVector size={34} animate={true} />,
+      icon: <ArtPaletteVector size={36} animate={true} />,
       titleEn: "Creative Arts & Crafts",
       titleSw: "Sanaa na Ubunifu wa Mikono",
       descEn: "Express ideas through makerspace crafts, tactile design, and creative projects.",
@@ -132,7 +162,12 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
       skills: ["Painting & Sketching", "Makerspace Crafts", "Color Theory", "Product Design"],
       skillsSw: ["Kuchora & Kupaka Rangi", "Ufundi wa Ubunifu", "Mchanganyiko wa Rangi", "Kusanifu Vitu"],
       accentColor: "#06B6D4",
-      bgGradient: "linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(255, 255, 255, 1) 100%)",
+      cardBg: "linear-gradient(180deg, #F0FDFA 0%, #FFFFFF 100%)",
+      borderColor: "#99F6E4",
+      iconBg: "linear-gradient(135deg, #CFFAFE 0%, #A5F3FC 100%)",
+      tagBg: "#F0FDFA",
+      tagBorder: "#5EEAD4",
+      tagColor: "#0E7490",
     },
   ];
 
@@ -212,12 +247,12 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
           </div>
         </div>
 
-        {/* Programme Cards Grid - Strictly the 7 Core Programmes */}
+        {/* Programme Cards Grid - Each div has its distinct thematic background color */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))",
-            gap: "clamp(18px, 3.5vw, 28px)",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 290px), 1fr))",
+            gap: "clamp(20px, 3.5vw, 30px)",
           }}
         >
           {filteredProgrammes.map((p) => (
@@ -226,17 +261,18 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
               className="lego-card"
               style={{
                 borderRadius: "24px",
-                border: "1.5px solid #E2E8F0",
-                borderTop: `5px solid ${p.accentColor}`,
-                background: "#FFFFFF",
-                boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
+                border: `2px solid ${p.borderColor}`,
+                borderTop: `6px solid ${p.accentColor}`,
+                background: p.cardBg,
+                boxShadow: `0 8px 24px ${p.accentColor}15, 0 2px 6px rgba(15, 23, 42, 0.04)`,
                 display: "flex",
                 flexDirection: "column",
                 overflow: "hidden",
-                transition: "all 0.3s ease",
+                transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+                position: "relative",
               }}
             >
-              {/* Photo Preview Header - Clean, unblurred, fitted 16:10 aspect ratio with NO BADGES */}
+              {/* Photo Preview Header - 16:10 aspect ratio with translucent glowing vector badge */}
               <div
                 style={{
                   position: "relative",
@@ -244,22 +280,53 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                   aspectRatio: "16/10",
                   overflow: "hidden",
                   background: "#F8FAFC",
-                  borderBottom: "1.5px solid #F1F5F9",
+                  borderBottom: `1.5px solid ${p.borderColor}`,
                 }}
               >
                 <Image
                   src={p.image}
                   alt={p.titleEn}
                   fill
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover", transition: "transform 0.4s ease" }}
                   sizes="(max-width: 768px) 100vw, 380px"
                 />
+
+                {/* Translucent Glass Floating Vector Badge */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "12px",
+                    right: "12px",
+                    background: "rgba(255, 255, 255, 0.92)",
+                    backdropFilter: "blur(8px)",
+                    WebkitBackdropFilter: "blur(8px)",
+                    border: `1.5px solid ${p.borderColor}`,
+                    borderRadius: "9999px",
+                    padding: "4px 12px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    boxShadow: "0 4px 14px rgba(15, 23, 42, 0.12)",
+                  }}
+                >
+                  <Sparkles size={12} color={p.accentColor} />
+                  <span
+                    style={{
+                      fontSize: "0.74rem",
+                      fontWeight: 800,
+                      color: p.accentColor,
+                      letterSpacing: "0.01em",
+                    }}
+                  >
+                    {lang === "en" ? p.levelsEn : p.levelsSw}
+                  </span>
+                </div>
               </div>
 
-              {/* Card Body */}
+              {/* Card Body with thematic background */}
               <div
                 style={{
-                  padding: "22px 20px",
+                  padding: "22px 20px 24px",
                   display: "flex",
                   flexDirection: "column",
                   flex: 1,
@@ -267,42 +334,23 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                 }}
               >
                 <div>
-                  {/* Level Pill */}
-                  <div
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "6px",
-                      fontSize: "0.75rem",
-                      fontWeight: 800,
-                      color: p.accentColor,
-                      background: p.bgGradient,
-                      border: `1px solid ${p.accentColor}30`,
-                      padding: "3px 10px",
-                      borderRadius: "9999px",
-                      marginBottom: "12px",
-                      width: "fit-content",
-                    }}
-                  >
-                    {lang === "en" ? p.levelsEn : p.levelsSw}
-                  </div>
-
                   {/* Icon & Title Row */}
                   <div
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      gap: "12px",
-                      marginBottom: "12px",
+                      gap: "14px",
+                      marginBottom: "14px",
                     }}
                   >
                     <div
                       style={{
-                        width: "48px",
-                        height: "48px",
-                        borderRadius: "14px",
-                        background: p.bgGradient,
-                        border: `1.5px solid ${p.accentColor}33`,
+                        width: "52px",
+                        height: "52px",
+                        borderRadius: "16px",
+                        background: p.iconBg,
+                        border: `2px solid ${p.accentColor}40`,
+                        boxShadow: `0 4px 14px ${p.accentColor}25`,
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -311,24 +359,27 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                     >
                       {p.icon}
                     </div>
-                    <h3
-                      style={{
-                        fontSize: "1.15rem",
-                        fontWeight: 800,
-                        color: "#0F172A",
-                        lineHeight: 1.3,
-                        fontFamily: "var(--font-heading)",
-                      }}
-                    >
-                      {lang === "en" ? p.titleEn : p.titleSw}
-                    </h3>
+
+                    <div>
+                      <h3
+                        style={{
+                          fontSize: "1.2rem",
+                          fontWeight: 800,
+                          color: "#0F172A",
+                          lineHeight: 1.25,
+                          fontFamily: "var(--font-heading)",
+                        }}
+                      >
+                        {lang === "en" ? p.titleEn : p.titleSw}
+                      </h3>
+                    </div>
                   </div>
 
                   {/* Description */}
                   <p
                     style={{
-                      fontSize: "0.88rem",
-                      color: "#64748B",
+                      fontSize: "0.9rem",
+                      color: "#475569",
                       lineHeight: 1.55,
                       marginBottom: "16px",
                     }}
@@ -336,26 +387,29 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                     {lang === "en" ? p.descEn : p.descSw}
                   </p>
 
-                  {/* Key Skills Tags */}
+                  {/* Key Skills Thematic Badges */}
                   <div
                     style={{
                       display: "flex",
                       flexWrap: "wrap",
                       gap: "6px",
-                      marginBottom: "20px",
+                      marginBottom: "22px",
                     }}
                   >
                     {(lang === "en" ? p.skills : p.skillsSw).map((skill, i) => (
                       <span
                         key={i}
                         style={{
-                          fontSize: "0.74rem",
+                          fontSize: "0.75rem",
                           fontWeight: 700,
-                          padding: "3px 8px",
-                          borderRadius: "6px",
-                          background: "#F8FAFC",
-                          border: "1px solid #E2E8F0",
-                          color: "#475569",
+                          padding: "4px 9px",
+                          borderRadius: "8px",
+                          background: p.tagBg,
+                          border: `1px solid ${p.tagBorder}`,
+                          color: p.tagColor,
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "4px",
                         }}
                       >
                         ✓ {skill}
@@ -364,36 +418,37 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                   </div>
                 </div>
 
-                {/* Enroll CTA Button */}
+                {/* Enroll CTA Button - Thematic Solid Accent Button */}
                 <button
                   onClick={() => onSelectProgramme(p.titleEn)}
                   style={{
                     width: "100%",
-                    padding: "11px 18px",
-                    borderRadius: "12px",
-                    fontWeight: 700,
-                    fontSize: "0.88rem",
-                    border: `1.5px solid ${p.accentColor}`,
-                    background: "transparent",
-                    color: p.accentColor,
+                    padding: "12px 18px",
+                    borderRadius: "14px",
+                    fontWeight: 800,
+                    fontSize: "0.92rem",
+                    border: "none",
+                    background: p.accentColor,
+                    color: "#FFFFFF",
                     cursor: "pointer",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     gap: "8px",
+                    boxShadow: `0 4px 14px ${p.accentColor}35`,
                     transition: "all 0.2s ease",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = p.accentColor;
-                    e.currentTarget.style.color = "#FFFFFF";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow = `0 6px 18px ${p.accentColor}50`;
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "transparent";
-                    e.currentTarget.style.color = p.accentColor;
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = `0 4px 14px ${p.accentColor}35`;
                   }}
                 >
                   <span>{lang === "en" ? "Enroll in Programme" : "Jiunge na Programu Hii"}</span>
-                  <ArrowRight size={15} />
+                  <ArrowRight size={16} />
                 </button>
               </div>
             </div>
