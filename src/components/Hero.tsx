@@ -5,9 +5,6 @@ import Image from "next/image";
 import {
   ArrowRight,
   Sparkles,
-  CheckCircle2,
-  ShieldCheck,
-  Award,
   MessageCircle,
   ChevronLeft,
   ChevronRight,
@@ -119,10 +116,10 @@ const HERO_SLIDES: HeroSlide[] = [
     categorySw: "Klabu ya Jumamosi & Likizo",
     titleEn: "Weekly Sessions Opposite DIT Morogoro Rd",
     titleSw: "Madarasa ya Jumamosi Mkabala na DIT",
-    descEn: "Every Saturday 9:30 AM – 1:00 PM for ages 3–17, plus intensive school holiday camps.",
-    descSw: "Kila Jumamosi saa 3:30 asubuhi hadi 7:00 mchana kwa watoto miaka 3–17 na kambi za likizo.",
-    badgeEn: "Ages 3 - 17",
-    badgeSw: "Watoto Miaka 3 - 17",
+    descEn: "Every Saturday 9:30 AM – 1:00 PM, plus intensive school holiday camps.",
+    descSw: "Kila Jumamosi saa 3:30 asubuhi hadi 7:00 mchana na kambi maalum za likizo.",
+    badgeEn: "Weekend Club",
+    badgeSw: "Klabu ya Wikendi",
     badgeColor: "#D97706",
   },
 ];
@@ -258,32 +255,6 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                 <MessageCircle size={16} color="#059669" />
                 <span>WhatsApp Admin</span>
               </a>
-            </div>
-
-            {/* Quick Trust Checklist */}
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-                gap: "16px",
-                fontSize: "0.85rem",
-                color: "#64748B",
-                fontWeight: 600,
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <CheckCircle2 size={16} color="#00A859" />
-                <span>{lang === "en" ? "Ages 3 - 17 Years" : "Watoto Miaka 3 - 17"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <ShieldCheck size={16} color="#006CB7" />
-                <span>{lang === "en" ? "Certified Instructors" : "Wakufunzi Walioidhinishwa"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <Award size={16} color="#FF6600" />
-                <span>{lang === "en" ? "100% Practical STEM" : "100% Elimu ya Vitendo"}</span>
-              </div>
             </div>
           </div>
 

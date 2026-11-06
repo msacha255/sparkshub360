@@ -19,7 +19,7 @@ export default function Home() {
   const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
   const [galleryInitialIdx, setGalleryInitialIdx] = useState(0);
   const [selectedProgramme, setSelectedProgramme] = useState<string | undefined>(undefined);
-  const [lang, setLang] = useState<"en" | "sw">("sw"); // Default to Swahili as requested
+  const [lang, setLang] = useState<"en" | "sw">("en"); // Default to English, switchable to Swahili
 
   const handleOpenBooking = (programme?: string) => {
     setSelectedProgramme(programme);

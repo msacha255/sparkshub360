@@ -333,7 +333,7 @@ export default function WeekendFlyerBanner({
                     {lang === "en" ? "All Welcome" : "Wote Wanakaribishwa"}
                   </div>
                   <div style={{ fontSize: "0.72rem", color: "#64748B" }}>
-                    {lang === "en" ? "Ages 3 - 17 Years" : "Miaka 3 - 17"}
+                    {lang === "en" ? "Beginner to Advanced" : "Kuanzia Ngazi ya Awali"}
                   </div>
                 </div>
                 <div style={{ textAlign: "center", borderLeft: "1px solid #E2E8F0", borderRight: "1px solid #E2E8F0" }}>
