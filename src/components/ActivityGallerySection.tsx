@@ -131,14 +131,6 @@ export default function ActivityGallerySection({
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "760px", margin: "0 auto 36px auto" }}>
-          <div
-            className="lego-pill lego-pill-green"
-            style={{ marginBottom: "12px", display: "inline-flex" }}
-          >
-            <Camera size={16} />
-            <span>{lang === "en" ? "Real Workshop Moments" : "Picha Halisi za Shughuli"}</span>
-          </div>
-
           <h2
             style={{
               fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
@@ -164,36 +156,12 @@ export default function ActivityGallerySection({
               fontSize: "clamp(0.95rem, 1.8vw, 1.08rem)",
               color: "#475569",
               lineHeight: 1.6,
-              marginBottom: "14px",
             }}
           >
             {lang === "en"
               ? "Real moments from our workshops, bootcamps, and mobile lab visits across Dar es Salaam."
               : "Matukio halisi ya watoto wakijifunza roboti, umeme na coding Dar es Salaam."}
           </p>
-
-          {/* Authentic Badge */}
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              background: "#F0FDF4",
-              border: "1px solid #BBF7D0",
-              padding: "4px 14px",
-              borderRadius: "9999px",
-              fontSize: "0.8rem",
-              color: "#166534",
-              fontWeight: 700,
-            }}
-          >
-            <ShieldCheck size={14} color="#00A859" />
-            <span>
-              {lang === "en"
-                ? "100% Authentic photos from real Sparks 360 Hub sessions."
-                : "Picha halisi 100% kutoka kwenye warsha za Sparks 360 Hub."}
-            </span>
-          </div>
         </div>
 
         {/* Filter Pills */}

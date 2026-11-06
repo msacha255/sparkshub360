@@ -171,31 +171,6 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
         >
           {/* Left Column: Heading, Value Prop & Simple CTAs */}
           <div>
-            {/* Top Badge */}
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                padding: "6px 14px",
-                borderRadius: "9999px",
-                background: "#FFFBE6",
-                border: "1.5px solid #FDE68A",
-                color: "#B45309",
-                fontSize: "0.86rem",
-                fontWeight: 700,
-                fontFamily: "var(--font-heading)",
-                marginBottom: "18px",
-              }}
-            >
-              <Sparkles size={16} color="#D97706" />
-              <span>
-                {lang === "en"
-                  ? "SPARKS 360° HUB • STEAMORA CO. LTD"
-                  : "SPARKS 360° HUB • STEAMORA CO. LTD"}
-              </span>
-            </div>
-
             {/* Main Headline in Fredoka */}
             <h1
               style={{

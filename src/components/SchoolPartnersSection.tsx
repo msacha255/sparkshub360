@@ -141,28 +141,6 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 40px auto" }}>
-          {/* Pill Badge */}
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              background: "#FFFBE6",
-              border: "1.5px solid #FDE68A",
-              color: "#B45309",
-              padding: "6px 16px",
-              borderRadius: "9999px",
-              fontSize: "0.85rem",
-              fontWeight: 800,
-              marginBottom: "16px",
-            }}
-          >
-            <Award size={16} color="#D97706" />
-            <span>
-              {lang === "en" ? "Trusted Partners & School Network" : "Mtandao wa Shule na Taasisi Washirika"}
-            </span>
-          </div>
-
           <h2
             style={{
               fontSize: "clamp(1.9rem, 3.8vw, 3rem)",
@@ -346,27 +324,6 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
           }}
         >
           <div style={{ maxWidth: "620px" }}>
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                background: "rgba(255, 255, 255, 0.15)",
-                padding: "4px 12px",
-                borderRadius: "9999px",
-                fontSize: "0.85rem",
-                fontWeight: 700,
-                marginBottom: "12px",
-              }}
-            >
-              <Sparkles size={15} color="#FFC20E" />
-              <span>
-                {lang === "en"
-                  ? "For School Administrators, Labs & Tech Hubs"
-                  : "Kwa Viongozi wa Shule, Maabara na Vituo vya Teknolojia"}
-              </span>
-            </div>
-
             <h3
               style={{
                 fontSize: "clamp(1.25rem, 2.5vw, 1.8rem)",

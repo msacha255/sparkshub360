@@ -93,20 +93,6 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "760px", margin: "0 auto 36px auto" }}>
-          <div
-            className="lego-pill lego-pill-orange"
-            style={{
-              background: "#FFF3EB",
-              color: "#FF6600",
-              border: "1.5px solid #FFD5B8",
-              marginBottom: "12px",
-              display: "inline-flex",
-            }}
-          >
-            <UserCheck size={16} />
-            <span>{lang === "en" ? "Fast & Simple Enrollment" : "Usajili wa Haraka na Rahisi"}</span>
-          </div>
-
           <h2
             style={{
               fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",

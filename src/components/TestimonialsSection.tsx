@@ -144,14 +144,6 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "760px", margin: "0 auto 40px auto" }}>
-          <div
-            className="lego-pill lego-pill-red"
-            style={{ marginBottom: "12px", display: "inline-flex" }}
-          >
-            <MessageSquareHeart size={16} />
-            <span>{lang === "en" ? "Parent & Educator Reviews" : "Maoni ya Wazazi na Walimu"}</span>
-          </div>
-
           <h2
             style={{
               fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",

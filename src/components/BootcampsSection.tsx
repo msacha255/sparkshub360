@@ -151,14 +151,6 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "760px", margin: "0 auto 36px auto" }}>
-          <div
-            className="lego-pill lego-pill-yellow"
-            style={{ marginBottom: "12px", display: "inline-flex" }}
-          >
-            <Flame size={16} />
-            <span>{lang === "en" ? "Practical Intensive Learning" : "Kambi na Mafunzo ya Vitendo"}</span>
-          </div>
-
           <h2
             style={{
               fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
