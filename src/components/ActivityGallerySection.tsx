@@ -166,29 +166,30 @@ export default function ActivityGallerySection({
             }}
           >
             {lang === "en"
-              ? "Authentic moments from our workshops, bootcamps, and mobile lab visits across schools in Dar es Salaam. Click on any photo to open the interactive gallery."
-              : "Matukio halisi kutoka kwenye warsha zetu, kambi za likizo, na ziara za Mobile STEAM Lab shuleni Dar es Salaam. Bofya picha yoyote kufungua gallery kamili."}
+              ? "Real moments from our workshops, bootcamps, and mobile lab visits across Dar es Salaam."
+              : "Matukio halisi ya watoto wakijifunza roboti, umeme na coding Dar es Salaam."}
           </p>
 
-          {/* Privacy Note Badge */}
+          {/* Authentic Badge */}
           <div
             style={{
               display: "inline-flex",
               alignItems: "center",
               gap: "6px",
-              background: "#F8FAFC",
-              border: "1px solid #E2E8F0",
+              background: "#F0FDF4",
+              border: "1px solid #BBF7D0",
               padding: "4px 14px",
               borderRadius: "9999px",
               fontSize: "0.8rem",
-              color: "#64748B",
+              color: "#166534",
+              fontWeight: 700,
             }}
           >
             <ShieldCheck size={14} color="#00A859" />
             <span>
               {lang === "en"
-                ? "Child privacy protected with professional privacy blur."
-                : "Faragha ya watoto inalindwa kwa weledi (face privacy blur)."}
+                ? "100% Authentic photos from real Sparks 360 Hub sessions."
+                : "Picha halisi 100% kutoka kwenye warsha za Sparks 360 Hub."}
             </span>
           </div>
         </div>

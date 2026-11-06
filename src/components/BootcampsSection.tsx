@@ -28,73 +28,73 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
       id: "weekend",
       tabLabelEn: "Saturday STEAM Club",
       tabLabelSw: "Klabu ya Jumamosi",
-      tagEn: "Ongoing Every Saturday",
-      tagSw: "Kila Jumamosi ya Wiki",
+      tagEn: "Every Saturday • 9:00 AM – 1:00 PM",
+      tagSw: "Kila Jumamosi • Saa 3:00 – 7:00 Mchana",
       tagColor: "#FF6600",
       tagBg: "#FFF3EB",
       titleEn: "Saturday Practical STEAM Club",
-      titleSw: "Klabu ya STEAM ya Jumamosi (Roboti & Saketi)",
+      titleSw: "Klabu ya STEAM ya Jumamosi",
       descEn:
-        "Exciting 4-hour hands-on sessions every Saturday where kids assemble smart robots, solder-free electronic circuits, and program interactive games.",
+        "4-hour hands-on sessions where kids build smart robots, wire circuits, and code interactive games.",
       descSw:
-        "Mafunzo ya vitendo ya saa 4 kila Jumamosi ambapo watoto wanaunda roboti, mizunguko salama ya umeme bila kulehemu, na kutengeneza michezo ya kompyuta.",
+        "Mafunzo ya vitendo ya saa 4 kila Jumamosi: roboti, mizunguko ya umeme na michezo ya kompyuta.",
       timeEn: "Every Saturday • 9:00 AM – 1:00 PM",
-      timeSw: "Kila Jumamosi • Saa 3:00 Asubuhi – 7:00 Mchana",
-      locationEn: "SPARKS Hub, Opposite DIT Morogoro Road",
-      locationSw: "Kituo cha SPARKS, Mkabili wa DIT Barabara ya Morogoro",
-      ageEn: "Ages 4 - 17 (Grouped by age)",
-      ageSw: "Miaka 4 - 17 (Wakigawanywa kwa rika)",
-      image: "/images/gallery/sparkshub_photo_017.jpg",
+      timeSw: "Kila Jumamosi • Saa 3:00 – 7:00 Mchana",
+      locationEn: "SPARKS Hub, Opposite DIT Morogoro Rd",
+      locationSw: "Kituoni Sparks Hub, Mkabili wa DIT Morogoro Rd",
+      ageEn: "Ages 4 - 17",
+      ageSw: "Miaka 4 - 17",
+      image: "/images/bootcamp-banner.jpg",
       pointsEn: [
-        "Every child works with their own dedicated robotics kit",
-        "Build obstacle-avoiding cars, smart traffic lights & buzzers",
+        "Individual dedicated robotics kit for every child",
+        "Obstacle-avoiding cars, buzzer systems & traffic lights",
         "Scratch block programming and Python logic",
-        "Weekly project showcase and certificate badges",
+        "Weekly project showcase and achievement badges",
       ],
       pointsSw: [
-        "Kila mtoto anafanya kazi na seti yake binafsi ya roboti",
+        "Kila mtoto anafanya kazi na seti yake ya roboti",
         "Kuunda magari yanayokwepa vizuizi na taa za barabarani",
         "Coding ya Scratch na mantiki ya Python",
-        "Maonyesho ya miradi kila wiki na beji za ushindi",
+        "Maonyesho ya miradi na beji za ushindi",
       ],
       priceEn: "Flexible per-session or monthly package",
-      priceSw: "Malipo kwa kipindi au mwezi mzima",
+      priceSw: "Malipo ya kipindi au mwezi mzima",
     },
     {
       id: "holiday",
       tabLabelEn: "Holiday STEAM Bootcamps",
-      tabLabelSw: "Kambi za Likizo za STEAM",
+      tabLabelSw: "Kambi za Likizo",
       tagEn: "School Breaks & Vacations",
       tagSw: "Wakati wa Likizo za Shule",
-      tagColor: "#006CB7",
+      tagColor: "#0070F3",
       tagBg: "#EBF4FC",
       titleEn: "Intensive 2-Week Holiday Innovation Bootcamp",
-      titleSw: "Kambi Maalumu ya Likizo ya Wiki 2 ya Ubunifu",
+      titleSw: "Kambi Maalumu ya Likizo (Wiki 2)",
       descEn:
-        "An immersive holiday acceleration camp covering the entire spectrum: 3D printing design, advanced robotics with sensors, microcontrollers, and creative AI.",
+        "An immersive holiday camp covering 3D printing design, advanced robotics, sensors, and creative AI.",
       descSw:
-        "Kambi ya kusisimua ya likizo inayofunika uchapishaji wa 3D, roboti zenye vitambuzi, bodi za microcontrollers na zana bunifu za AI.",
-      timeEn: "Monday to Friday • 9:00 AM – 1:30 PM",
-      timeSw: "Jumatatu hadi Ijumaa • Saa 3:00 Asubuhi – 7:30 Mchana",
-      locationEn: "SPARKS Hub DIT & Selected Partner Venues",
-      locationSw: "Kituoni DIT & Kumbi za Shule Washirika",
+        "Kambi ya likizo: uchapishaji wa 3D, roboti zenye vitambuzi, bodi za microcontrollers na AI.",
+      timeEn: "Mon – Fri • 9:00 AM – 1:30 PM",
+      timeSw: "Jumatatu – Ijumaa • Saa 3:00 – 7:30 Mchana",
+      locationEn: "SPARKS Hub DIT & Partner Venues",
+      locationSw: "Kituoni DIT & Shule Washirika",
       ageEn: "Ages 5 - 17",
       ageSw: "Miaka 5 - 17",
-      image: "/images/gallery/sparkshub_photo_016.jpg",
+      image: "/images/categories/3d-printing.jpg",
       pointsEn: [
-        "10 intensive days of hands-on STEM challenges",
+        "10 intensive days of hands-on STEM engineering",
         "Design and 3D print real prototypes to take home",
-        "Team hackathon and graduation demonstration for parents",
+        "Hackathon and final demonstration for parents",
         "Official STEAMORA Certificate of Innovation",
       ],
       pointsSw: [
         "Siku 10 za changamoto halisi za kiuhasibu na sayansi",
-        "Kubuni na kuchapisha vifaa halisi vya 3D kurudi navyo nyumbani",
+        "Kubuni na kuchapisha vifaa vya 3D kurudi navyo",
         "Shindano la ubunifu na maonyesho mbele ya wazazi",
         "Cheti Rasmi cha Ubunifu kutoka STEAMORA",
       ],
       priceEn: "Special holiday package with all kits included",
-      priceSw: "Kifurushi maalum cha likizo kikiwa na vifaa vyote",
+      priceSw: "Kifurushi maalum kikiwa na vifaa vyote",
     },
     {
       id: "home",
@@ -102,35 +102,35 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
       tabLabelSw: "Kambi ya Nyumbani (Mobile Lab)",
       tagEn: "Private & Estate Groups",
       tagSw: "Vikundi vya Mtaa na Nyumbani",
-      tagColor: "#00A859",
+      tagColor: "#10B981",
       tagBg: "#E9F8F1",
       titleEn: "Custom STEAM Camp At Your Home or Estate",
-      titleSw: "Kambi Binafsi ya STEAM Nyumbani au Mtaani Kwako",
+      titleSw: "Kambi Binafsi ya STEAM Nyumbani Kwako",
       descEn:
-        "Gather 3 to 8 neighborhood friends or family members, and our mobile STEAM van arrives with all laptops, kits, and educators at your chosen doorstep.",
+        "Gather 3 to 8 friends or family members, and our mobile STEAM van arrives with all equipment at your doorstep.",
       descSw:
-        "Kusanya watoto 3 hadi 8 wa familia au majirani, na maabara yetu ya Mobile STEAM inafika moja kwa moja nyumbani kwako na vifaa vyote na wakufunzi.",
-      timeEn: "Flexible timings tailored to your calendar",
-      timeSw: "Muda unaopangwa kulingana na ratiba yako",
+        "Kusanya watoto 3 hadi 8, na gari letu la Mobile STEAM linafika nyumbani kwako na vifaa vyote na wakufunzi.",
+      timeEn: "Flexible schedule tailored to you",
+      timeSw: "Ratiba inayopangwa kulingana na wewe",
       locationEn: "Your Residence / Private Compound",
       locationSw: "Nyumbani Kwako / Kwenye Eneo Lako",
       ageEn: "Ages 4 - 17",
       ageSw: "Miaka 4 - 17",
-      image: "/images/gallery/sparkshub_photo_025.jpg",
+      image: "/images/categories/coding.jpg",
       pointsEn: [
-        "Maximum convenience: No traffic or drop-off hassles",
-        "Personalised curriculum matching kids' speed and interests",
-        "Safe, familiar home environment with full lab gear",
-        "Perfect for siblings, friends, and homeschoolers",
+        "Zero commute: No traffic or drop-off hassles",
+        "Personalised pace matching your kids' interests",
+        "Safe home environment with full lab gear",
+        "Ideal for siblings, friends, and estate groups",
       ],
       pointsSw: [
-        "Urahisi kamili: Hakuna msongamano wa foleni za asubuhi",
-        "Mtaala unaorekebishwa kulingana na uwezo wa mtoto",
+        "Hakuna usumbufu wa foleni wala kusafiri",
+        "Mafunzo yanayolingana na kasi ya mtoto",
         "Mazingira salama na rafiki ya nyumbani",
-        "Inafaa sana kwa watoto wa familia moja au marafiki wa mtaa",
+        "Inafaa sana watoto wa familia au majirani",
       ],
       priceEn: "Group rate per child",
-      priceSw: "Gharama nafuu ya kikundi kwa kila mtoto",
+      priceSw: "Gharama nafuu ya kikundi",
     },
   ];
 
@@ -142,7 +142,7 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
       style={{
         paddingTop: "clamp(48px, 8vw, 84px)",
         paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "#F8FAFC",
+        background: "#FFFFFF",
         position: "relative",
       }}
     >
@@ -185,8 +185,8 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
             }}
           >
             {lang === "en"
-              ? "Transform your child's weekends and holidays into active innovation, curiosity, and hands-on invention instead of passive screen time."
-              : "Badilisha wikendi na likizo za watoto wako ziwe muda wa uvumbuzi, roboti na majaribio ya vitendo badala ya kutumia muda mwingi mbele ya simu na televisheni."}
+              ? "Transform screen time into real innovation with hands-on robotics, circuits, and 3D design."
+              : "Badilisha muda wa simu na TV kuwa uvumbuzi wa vitendo wa roboti, umeme na 3D printing."}
           </p>
         </div>
 
@@ -207,16 +207,16 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
                 key={b.id}
                 onClick={() => setActiveTab(b.id as any)}
                 style={{
-                  padding: "10px 20px",
+                  padding: "10px 22px",
                   borderRadius: "9999px",
                   fontFamily: "var(--font-heading)",
                   fontWeight: 700,
                   fontSize: "0.95rem",
-                  border: isSelected ? "2px solid #FF6600" : "2px solid #E2E8F0",
-                  background: isSelected ? "#FF6600" : "#FFFFFF",
+                  border: isSelected ? `2px solid ${b.tagColor}` : "2px solid #E2E8F0",
+                  background: isSelected ? b.tagColor : "#FFFFFF",
                   color: isSelected ? "#FFFFFF" : "#475569",
                   boxShadow: isSelected
-                    ? "0 4px 0 #D45400, 0 8px 16px rgba(255, 102, 0, 0.2)"
+                    ? `0 4px 12px ${b.tagColor}40`
                     : "0 2px 6px rgba(15, 23, 42, 0.04)",
                   cursor: "pointer",
                   transition: "all 0.2s ease",
@@ -237,6 +237,11 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
             gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 420px), 1fr))",
             gap: "36px",
             alignItems: "center",
+            borderRadius: "26px",
+            border: `1.5px solid ${currentBootcamp.tagColor}30`,
+            borderTop: `6px solid ${currentBootcamp.tagColor}`,
+            boxShadow: `0 14px 40px ${currentBootcamp.tagColor}12`,
+            background: "#FFFFFF",
           }}
         >
           {/* Left: Info & Checklist */}

@@ -225,14 +225,14 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
               style={{
                 fontSize: "clamp(1rem, 1.8vw, 1.12rem)",
                 color: "#475569",
-                lineHeight: 1.65,
+                lineHeight: 1.6,
                 marginBottom: "28px",
                 maxWidth: "540px",
               }}
             >
               {lang === "en"
-                ? "Delivering practical robotics, electric circuits, coding, AI, and 3D printing to homes, schools, and communities across Dar es Salaam. Every child builds, tests, and innovates."
-                : "Kituo cha elimu ya vitendo (Roboti, Mizunguko ya Umeme, AI, Uchapishaji wa 3D na Sayansi) kinachofika nyumbani, shuleni, na kituoni kwetu mkabala na DIT Morogoro Road."}
+                ? "Practical robotics, circuits, coding, AI, and 3D printing for young innovators across Dar es Salaam."
+                : "Roboti, Saketi za Umeme, Coding, AI na Uchapishaji wa 3D kwa vitendo kwa watoto kote Dar es Salaam."}
             </p>
 
             {/* Simple Lego-Style CTA Row */}

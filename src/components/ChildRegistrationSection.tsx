@@ -86,7 +86,7 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
       style={{
         paddingTop: "clamp(48px, 8vw, 84px)",
         paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "linear-gradient(180deg, #FFFFFF 0%, #FFFBEB 50%, #F8FAFC 100%)",
+        background: "#FFFFFF",
         position: "relative",
       }}
     >
@@ -135,8 +135,8 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
             }}
           >
             {lang === "en"
-              ? "Give your child the confidence to build, code, and invent. Fill out this brief form to reserve a slot; our academic team will confirm your registration instantly via WhatsApp."
-              : "Mpe mwanao nafasi ya kuwa mbunifu wa teknolojia badala ya kuwa mtumiaji tu. Jaza fomu hii fupi kumpatia nafasi; timu yetu itawasiliana nawe moja kwa moja kupitia WhatsApp."}
+              ? "Fill out this quick form to reserve your child's spot. We confirm instantly via WhatsApp."
+              : "Jaza fomu hii fupi kumpatia mwanao nafasi. Tunathibitisha papo hapo kupitia WhatsApp."}
           </p>
         </div>
 
@@ -155,8 +155,10 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
             style={{
               padding: "clamp(24px, 4vw, 36px)",
               background: "#FFFFFF",
-              border: "2px solid #E2E8F0",
-              boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
+              border: "1.5px solid #FFD5B8",
+              borderTop: "6px solid #FF6600",
+              borderRadius: "26px",
+              boxShadow: "0 14px 40px rgba(255, 102, 0, 0.08)",
             }}
           >
             {submitted ? (

@@ -214,19 +214,20 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
             }}
           >
             {lang === "en"
-              ? "Through SPARKS 360° HUB and our Mobile STEAM Lab, students from top schools in Dar es Salaam experience joyful hands-on robotics, electronics, and coding directly in their classrooms and holiday bootcamps."
-              : "Kupitia SPARKS 360° HUB na Maabara yetu ya Mobile STEAM Lab, wanafunzi kutoka shule zinazoheshimika Dar es Salaam wanajifunza roboti, umeme na coding kwa vitendo madarasani na kwenye kambi zetu za likizo."}
+              ? "Empowering young innovators at top schools and learning communities across Dar es Salaam."
+              : "Kufundisha roboti, coding na sayansi ya vitendo katika shule na vituo maarufu Dar es Salaam."}
           </p>
         </div>
 
         {/* Clean Logo Trust Bar - Displaying Verified Partner Logos */}
         <div
           style={{
-            background: "#F8FAFC",
-            borderRadius: "20px",
-            border: "1px solid #E2E8F0",
+            background: "#FFFFFF",
+            borderRadius: "22px",
+            border: "1.5px solid #E2E8F0",
             padding: "20px 24px",
             marginBottom: "36px",
+            boxShadow: "0 4px 16px rgba(15, 23, 42, 0.04)",
           }}
         >
           <div

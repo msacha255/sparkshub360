@@ -33,7 +33,7 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
   };
 
   return (
-    <section id="contact" style={{ padding: "80px 0", background: "#F8FAFC", position: "relative" }}>
+    <section id="contact" style={{ padding: "80px 0", background: "#FFFFFF", position: "relative" }}>
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "720px", margin: "0 auto 48px" }}>
@@ -59,8 +59,8 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
 
           <p style={{ color: "#64748B", fontSize: "1.05rem", lineHeight: 1.6 }}>
             {lang === "en"
-              ? "We are based opposite DIT along Morogoro Road, and our Mobile STEAM Lab travels anywhere across Dar es Salaam and Tanzania to homes, schools, and communities."
-              : "Tunapatikana mkabala na DIT Barabara ya Morogoro, na Maabara yetu Inayotembea inafika popote Dar es Salaam na Tanzania nzima majumbani, mashuleni na vituo vya jamii."}
+              ? "Visit our main hub opposite DIT on Morogoro Road, or request our Mobile STEAM Lab to your location."
+              : "Tupo mkabala na DIT Barabara ya Morogoro, au agiza Mobile STEAM Lab ifike moja kwa moja kwako."}
           </p>
         </div>
 
@@ -78,10 +78,11 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
             className="kid-card"
             style={{
               background: "#FFFFFF",
-              borderRadius: "24px",
+              borderRadius: "26px",
               padding: "clamp(20px, 4vw, 32px)",
-              border: "1px solid #E2E8F0",
-              boxShadow: "0 10px 25px rgba(15, 23, 42, 0.04)",
+              border: "1.5px solid #E2E8F0",
+              borderTop: "6px solid #0070F3",
+              boxShadow: "0 10px 30px rgba(0, 112, 243, 0.08)",
               display: "flex",
               flexDirection: "column",
               gap: "16px",
@@ -158,10 +159,11 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
             className="kid-card"
             style={{
               background: "#FFFFFF",
-              borderRadius: "24px",
-              padding: "32px",
-              border: "1px solid #E2E8F0",
-              boxShadow: "0 10px 25px rgba(15, 23, 42, 0.04)",
+              borderRadius: "26px",
+              padding: "clamp(20px, 4vw, 32px)",
+              border: "1.5px solid #E2E8F0",
+              borderTop: "6px solid #10B981",
+              boxShadow: "0 10px 30px rgba(16, 185, 129, 0.08)",
               display: "flex",
               flexDirection: "column",
               gap: "16px",
@@ -205,8 +207,8 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
               <strong>{lang === "en" ? "We Travel To Your Doorstep" : "Tunakufikia Popote Ulipo"}</strong>
               <br />
               {lang === "en"
-                ? "Bringing complete robotics fleets, 3D printers, coding laptops, and science lab apparatus directly to homes, schools, churches, mosques, and charities."
-                : "Tunaleta vifaa vyote vya roboti, printa za 3D, kompyuta na vifaa vya maabara nyumbani, shuleni, misikitini, makanisani na kwenye jamii."}
+                ? "Bringing robotics kits, 3D printers, coding laptops, and science gear directly to homes, schools, and communities."
+                : "Tunaleta seti za roboti, printa za 3D, kompyuta na vifaa vya sayansi nyumbani, shuleni na kwenye jamii."}
             </p>
 
             <div style={{ marginTop: "auto", paddingTop: "16px", borderTop: "1px solid #F1F5F9" }}>
@@ -236,8 +238,10 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
             className="kid-card"
             style={{
               background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
-              borderRadius: "24px",
-              padding: "32px",
+              borderRadius: "26px",
+              padding: "clamp(20px, 4vw, 32px)",
+              border: "1.5px solid #334155",
+              borderTop: "6px solid #FF6600",
               color: "#FFFFFF",
               boxShadow: "0 15px 35px rgba(15, 23, 42, 0.15)",
               display: "flex",

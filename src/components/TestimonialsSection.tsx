@@ -36,9 +36,9 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       studentInfoSw: "Mtoto wa Kiume (Miaka 9) • Roboti & Umeme",
       rating: 5,
       commentEn:
-        "Before SPARKS 360°, my son spent hours watching YouTube gaming videos. Since joining the Saturday STEAM Club, he now spends weekends assembling obstacle-avoiding cars and explaining circuit loops to us at dinner! The coaches are phenomenal and so patient.",
+        "Since joining the Saturday STEAM Club, my son spends weekends assembling robot cars and explaining circuits to us! The coaches are phenomenal and so patient.",
       commentSw:
-        "Kabla ya kujiunga na SPARKS 360°, mwanangu alikuwa anatumia muda mwingi kuangalia video za michezo YouTube. Tangu ajiunge na Klabu ya Jumamosi, sasa anatumia wikendi kuunganisha magari ya roboti na kutuelezea jinsi saketi za umeme zinavyofanya kazi! Walimu ni wazuri sana na wavumilivu.",
+        "Tangu ajiunge na Klabu ya Jumamosi, sasa anatumia wikendi kuunganisha magari ya roboti na kuelezea circuits! Walimu ni wazuri sana na wavumilivu.",
       avatarBg: "#EBF4FC",
       avatarColor: "#006CB7",
       initials: "FA",
@@ -53,9 +53,9 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       studentInfoSw: "Binti (Miaka 8) • Coding ya AI & 3D Printing",
       rating: 5,
       commentEn:
-        "What amazed me is how quickly my daughter grasped Scratch coding and practical logic. She actually designed a 3D keychain prototype that was printed in class and brought it home with immense pride. SPARKS 360° is giving our kids real 21st-century skills.",
+        "My daughter designed a 3D keychain prototype, printed it in class, and brought it home with immense pride. Real 21st-century skills!",
       commentSw:
-        "Kilichonishangaza ni jinsi binti yangu alivyoelewa programu za Scratch na mantiki ya kiteknolojia kwa kasi. Alibuni kifaa cha 3D kwenye kompyuta, kikachapishwa darasani na akakirudisha nyumbani kwa fahari kubwa. SPARKS 360° inawapa watoto wetu ujuzi halisi wa karne ya 21.",
+        "Binti yangu alibuni kifaa cha 3D kwenye kompyuta, kikachapishwa darasani na akakirudisha nyumbani kwa fahari kubwa. Ujuzi halisi wa kisasa!",
       avatarBg: "#FFF3EB",
       avatarColor: "#FF6600",
       initials: "DM",
@@ -70,9 +70,9 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       studentInfoSw: "Mapacha (Miaka 10 & 12) • Kambi ya Likizo",
       rating: 5,
       commentEn:
-        "As an academic, I evaluate pedagogy strictly. SPARKS 360° follows the gold standard of experiential STEAM: every child has their own physical kit, trial-and-error is celebrated, and problem solving comes naturally. Truly the best investment for curious young minds.",
+        "Every child has their own physical kit, and problem solving comes naturally. Truly the best investment for curious young minds.",
       commentSw:
-        "Kama msomi, ninaangalia sana namna mafunzo yanavyotolewa. SPARKS 360° inafuata viwango bora vya elimu ya vitendo (STEAM): kila mtoto ana seti yake binafsi, makosa yanachukuliwa kama nafasi ya kujifunza, na watoto wanafikiri kwa uhuru. Hakika ni uwekezaji bora kwa watoto.",
+        "Kila mtoto anajifunza kwa seti yake binafsi, na watoto wanafikiri kwa uhuru. Hakika ni uwekezaji bora kwa akili za watoto.",
       avatarBg: "#E9F8F1",
       avatarColor: "#00A859",
       initials: "AP",
@@ -87,9 +87,9 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       studentInfoSw: "Mtoto wa Kiume (Miaka 5) • Ugunduzi wa Awali & Roboti",
       rating: 5,
       commentEn:
-        "I was worried 5 years old was too young for robotics, but the trainers made it so visual, colorful, and fun with LEGO mechanics and safe snap circuits. His motor skills and ability to concentrate have improved remarkably. He looks forward to every session!",
+        "The trainers made it visual and fun with LEGO mechanics and safe snap circuits. His focus and motor skills improved remarkably!",
       commentSw:
-        "Nilikuwa na wasiwasi kuwa mtoto wa miaka 5 ni mdogo sana kwa roboti, lakini wakufunzi walifanya iwe rahisi sana, yenye rangi na mchezo kupitia vipuri vya LEGO na saketi salama. Uwezo wake wa kutuliza akili na kushika vitu umeongezeka sana. Anasubiri kila kipindi kwa hamu!",
+        "Wakufunzi walifanya iwe rahisi sana kwa LEGO na circuits salama. Uwezo wake wa kutuliza akili na kushika vitu umeongezeka sana!",
       avatarBg: "#F5F3FF",
       avatarColor: "#7C3AED",
       initials: "ZM",
@@ -97,16 +97,16 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
     {
       id: 5,
       parentName: "Rashid H. Kassim",
-      roleEn: "Community Parent & Tech Enthusiast",
+      roleEn: "Tech Enthusiast Parent",
       roleSw: "Mzazi na Mpenzi wa Teknolojia",
       school: "Tumarich Community / Bright Side",
       studentInfoEn: "Daughter (Age 13) • Arduino & Smart Automation",
       studentInfoSw: "Binti (Miaka 13) • Arduino & Mifumo ya Akili",
       rating: 5,
       commentEn:
-        "My daughter used to say science was too abstract and boring in textbooks. After just four sessions at SPARKS Hub opposite DIT, she built an automated smart plant watering sensor with Arduino! Seeing that spark in her eyes is priceless.",
+        "After four sessions at SPARKS Hub opposite DIT, she built an automated plant watering sensor with Arduino! Seeing her excitement is priceless.",
       commentSw:
-        "Binti yangu alikuwa anasema sayansi ni ngumu na haina mvuto kwenye vitabu. Baada ya vipindi vinne tu pale kituoni SPARKS DIT, aliunda sensor inayomwagilia mmea kiotomatiki kwa Arduino! Kuona mwanga huo wa shauku machoni mwake haina thamani.",
+        "Baada ya vipindi vinne tu pale DIT, aliunda sensor inayomwagilia mmea kiotomatiki kwa Arduino! Kuona mwanga wa shauku machoni mwake haina thamani.",
       avatarBg: "#FFFBE6",
       avatarColor: "#B45309",
       initials: "RK",
@@ -115,15 +115,15 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       id: 6,
       parentName: "Sarah M. Kimario",
       roleEn: "Homeschool Coordinator",
-      roleSw: "Msimamizi wa Kundi la Elimu ya Nyumbani",
+      roleSw: "Msimamizi wa Elimu ya Nyumbani",
       school: "ASK Community",
       studentInfoEn: "Group of 6 Kids • Mobile STEAM Lab",
       studentInfoSw: "Kikundi cha Watoto 6 • Mobile STEAM Lab",
       rating: 5,
       commentEn:
-        "The Mobile Lab van coming straight to our compound was an absolute game changer! The instructors arrived fully equipped with kits, tables, safety gear, and complete enthusiasm. The kids talk about it all week long.",
+        "The Mobile Lab van coming straight to our compound was an absolute game changer! Fully equipped kits, laptops, and great instructors.",
       commentSw:
-        "Huduma ya Mobile Lab kufika moja kwa moja nyumbani kwetu ilikuwa jambo la kipekee kabisa! Wakufunzi walifika wakiwa na vifaa vyote kamili vya roboti, kompyuta na nidhamu ya hali ya juu. Watoto wanaendelea kuongelea mafunzo haya wiki nzima.",
+        "Mobile Lab kufika moja kwa moja nyumbani kwetu ilikuwa jambo zuri sana! Vifaa kamili vya roboti, kompyuta na wakufunzi wazuri.",
       avatarBg: "#FFF1F2",
       avatarColor: "#E11D48",
       initials: "SK",
@@ -136,7 +136,7 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
       style={{
         paddingTop: "clamp(48px, 8vw, 84px)",
         paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "#F8FAFC",
+        background: "#FFFFFF",
         position: "relative",
         borderTop: "1.5px solid #F1F5F9",
       }}
@@ -181,8 +181,8 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
             }}
           >
             {lang === "en"
-              ? "Read honest reviews from families whose children have experienced the joy of building robots, soldering circuits, and writing their first code with SPARKS 360° HUB."
-              : "Soma ushuhuda wa wazazi ambao watoto wao wamepata mabadiliko makubwa kiakili, uwezo wa kutatua matatizo, na shauku ya sayansi na roboti kupitia SPARKS 360°."}
+              ? "Real stories from families whose children build robots, code apps, and innovate with us."
+              : "Ushuhuda halisi wa wazazi ambao watoto wao wanajifunza roboti na sayansi kwa vitendo."}
           </p>
         </div>
 
@@ -200,11 +200,17 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
               key={t.id}
               className="lego-card"
               style={{
-                padding: "28px",
+                padding: "26px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
                 position: "relative",
+                borderRadius: "24px",
+                border: "1.5px solid #E2E8F0",
+                borderTop: `5px solid ${t.avatarColor}`,
+                background: "#FFFFFF",
+                boxShadow: "0 8px 24px rgba(15, 23, 42, 0.05)",
+                transition: "all 0.3s ease",
               }}
             >
               <div>
