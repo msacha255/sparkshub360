@@ -140,10 +140,12 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
     <section
       id="bootcamps"
       style={{
-        paddingTop: "clamp(48px, 8vw, 84px)",
-        paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "#FFFFFF",
+        paddingTop: "clamp(56px, 8vw, 92px)",
+        paddingBottom: "clamp(56px, 8vw, 92px)",
+        background: "linear-gradient(180deg, #FFFDFB 0%, #FFF8F3 50%, #FFFDFB 100%)",
         position: "relative",
+        borderTop: "2px solid #FED7AA40",
+        borderBottom: "2px solid #FED7AA40",
       }}
     >
       <div className="container">
@@ -343,8 +345,8 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
                   fontWeight: 600,
                 }}
               >
-                <Users size={18} color="#00A859" />
-                <span>{lang === "en" ? currentBootcamp.ageEn : currentBootcamp.ageSw}</span>
+                <Sparkles size={18} color="#00A859" />
+                <span>{lang === "en" ? "100% Practical STEAM" : "Vitendo 100% (STEAM)"}</span>
               </div>
 
               <div

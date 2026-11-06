@@ -2,165 +2,145 @@
 
 import React from "react";
 import Image from "next/image";
-import { Award, CheckCircle2, ArrowRight, Sparkles, Building2, Users } from "lucide-react";
+import { Award, CheckCircle2, ArrowRight, Sparkles, Building2 } from "lucide-react";
 
 interface SchoolPartnersProps {
   onOpenBooking: () => void;
   lang: "en" | "sw";
 }
 
-interface SchoolItem {
+interface PartnerInstitution {
   id: number;
   name: string;
+  tagEn: string;
+  tagSw: string;
   categoryEn: string;
   categorySw: string;
-  badgeColor: string;
-  badgeBg: string;
-  curriculum: string;
-  highlightEn: string;
-  highlightSw: string;
-  tag: string;
-  logo: string | null;
+  logo: string;
+  featured?: boolean;
 }
 
 export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPartnersProps) {
-  const schools: SchoolItem[] = [
+  const partners: PartnerInstitution[] = [
     {
       id: 1,
-      name: "International School of Tanganyika (IST)",
-      categoryEn: "International Partner",
-      categorySw: "Mshirika wa Kimataifa",
-      badgeColor: "#006CB7",
-      badgeBg: "#EBF4FC",
-      curriculum: "IB World School",
-      highlightEn: "Robotics & Maker workshops for young innovators",
-      highlightSw: "Mafunzo ya Roboti na uundaji kwa watoto wabunifu",
-      tag: "IST Dar",
-      logo: "/images/schools/ist.png",
+      name: "DIT Design Studio",
+      tagEn: "Innovation & Prototyping Hub",
+      tagSw: "Kituo cha Uvumbuzi na Prototyping",
+      categoryEn: "Tech & Maker Partner",
+      categorySw: "Mshirika wa Uvumbuzi",
+      logo: "/images/schools/dit_design_studio_clean.png",
+      featured: true,
     },
     {
       id: 2,
-      name: "The Apton School",
-      categoryEn: "Primary & Early Years",
-      categorySw: "Msingi & Maandalizi",
-      badgeColor: "#FF6600",
-      badgeBg: "#FFF3EB",
-      curriculum: "British Curriculum",
-      highlightEn: "Hands-on electric circuits & coding fundamentals",
-      highlightSw: "Mizunguko ya umeme ya vitendo na misingi ya coding",
-      tag: "Apton",
-      logo: "/images/schools/apton.png",
+      name: "Swahili Dmakers",
+      tagEn: "3D Printing & Digital Fabrication",
+      tagSw: "Printa za 3D & Utengenezaji wa Kidijitali",
+      categoryEn: "Fabrication Partner",
+      categorySw: "Mshirika wa Utengenezaji",
+      logo: "/images/schools/swahili_dmakers_clean.png",
+      featured: true,
     },
     {
       id: 3,
-      name: "Dar es Salaam International Academy (DIA)",
-      categoryEn: "International Academy",
-      categorySw: "Akademia ya Kimataifa",
-      badgeColor: "#00A859",
-      badgeBg: "#E9F8F1",
-      curriculum: "IB Curriculum",
-      highlightEn: "Sensors, smart logic & STEM problem solving",
-      highlightSw: "Vitambuzi, mantiki ya kiteknolojia na utatuzi wa changamoto",
-      tag: "DIA",
-      logo: "/images/schools/dia.svg",
+      name: "Honic Learn TZ",
+      tagEn: "Practical STEM Kits & Tools",
+      tagSw: "Seti na Vifaa vya Sayansi & Umeme",
+      categoryEn: "STEM Kits Partner",
+      categorySw: "Mshirika wa Vifaa vya STEM",
+      logo: "/images/schools/honic_learn_clean.png",
+      featured: true,
     },
     {
       id: 4,
-      name: "Indian School Dar es Salaam",
-      categoryEn: "Academic Institution",
-      categorySw: "Taasisi ya Kielimu",
-      badgeColor: "#B45309",
-      badgeBg: "#FFFBE6",
-      curriculum: "CBSE Curriculum",
-      highlightEn: "Robotics chassis building & science exploration",
-      highlightSw: "Uundaji wa bodi za roboti na ugunduzi wa kisayansi",
-      tag: "Indian School",
-      logo: "/images/schools/indian_school.png",
+      name: "International School of Tanganyika (IST)",
+      tagEn: "IB World School",
+      tagSw: "Shule ya Kimataifa ya IB",
+      categoryEn: "School Partner",
+      categorySw: "Shule Mshirika",
+      logo: "/images/schools/ist.png",
     },
     {
       id: 5,
-      name: "Kidz Kollege",
-      categoryEn: "Early Childhood & Junior STEAM",
-      categorySw: "Maandalizi & STEAM ya Awali",
-      badgeColor: "#7C3AED",
-      badgeBg: "#F5F3FF",
-      curriculum: "Early Years Foundation",
-      highlightEn: "Playful robotics, LEGO mechanics & tactile circuits",
-      highlightSw: "Roboti za mchezo, mekanika ya LEGO na saketi salama",
-      tag: "Kidz Kollege",
-      logo: "/images/schools/kidzkollege.png",
+      name: "The Apton School",
+      tagEn: "British Curriculum",
+      tagSw: "Mtaala wa Uingereza",
+      categoryEn: "School Partner",
+      categorySw: "Shule Mshirika",
+      logo: "/images/schools/apton.png",
     },
     {
       id: 6,
-      name: "Tumarich Community",
-      categoryEn: "Community Learning Hub",
-      categorySw: "Kituo cha Jamii cha Kujifunzia",
-      badgeColor: "#EA580C",
-      badgeBg: "#FFF7ED",
-      curriculum: "Community STEAM",
-      highlightEn: "Inclusive weekend STEAM workshops & digital literacy",
-      highlightSw: "Warsha za STEAM za wikendi na ujuzi wa kiteknolojia",
-      tag: "Tumarich",
-      logo: "/images/schools/tumarich.png",
+      name: "Dar es Salaam International Academy (DIA)",
+      tagEn: "IB Continuum School",
+      tagSw: "Akademia ya Kimataifa ya IB",
+      categoryEn: "School Partner",
+      categorySw: "Shule Mshirika",
+      logo: "/images/schools/dia.svg",
     },
     {
       id: 7,
-      name: "Guiding Minds Academy",
-      categoryEn: "Progressive School",
-      categorySw: "Shule ya Kisasa ya Ubunifu",
-      badgeColor: "#0284C7",
-      badgeBg: "#F0F9FF",
-      curriculum: "Holistic Education",
-      highlightEn: "Critical thinking, 3D printing & invention projects",
-      highlightSw: "Fikra tunduizi, uchapishaji wa 3D na miradi ya uvumbuzi",
-      tag: "Guiding Minds",
-      logo: null, // Left empty per user requirement: "kama hamna unaacha kuweka logo hiyo specific"
+      name: "Indian School Dar es Salaam",
+      tagEn: "CBSE Curriculum",
+      tagSw: "Mtaala wa CBSE",
+      categoryEn: "School Partner",
+      categorySw: "Shule Mshirika",
+      logo: "/images/schools/indian_school.png",
     },
     {
       id: 8,
-      name: "ASK Community",
-      categoryEn: "Youth & Kids Network",
-      categorySw: "Mtandao wa Vijana na Watoto",
-      badgeColor: "#059669",
-      badgeBg: "#ECFDF5",
-      curriculum: "Experiential Learning",
-      highlightEn: "Creative tech camps & hands-on group experiments",
-      highlightSw: "Kambi za teknolojia na majaribio ya pamoja ya sayansi",
-      tag: "ASK Network",
-      logo: "/images/schools/ask.png",
+      name: "Kidz Kollege",
+      tagEn: "Early Childhood Foundation",
+      tagSw: "Maandalizi ya Awali",
+      categoryEn: "School Partner",
+      categorySw: "Shule Mshirika",
+      logo: "/images/schools/kidzkollege.png",
     },
     {
       id: 9,
+      name: "Tumarich Community",
+      tagEn: "Community Learning Hub",
+      tagSw: "Kituo cha Jamii cha Kujifunzia",
+      categoryEn: "Community Partner",
+      categorySw: "Jamii Mshirika",
+      logo: "/images/schools/tumarich.png",
+    },
+    {
+      id: 10,
+      name: "ASK Community",
+      tagEn: "Youth & Kids Network",
+      tagSw: "Mtandao wa Watoto na Vijana",
+      categoryEn: "Community Partner",
+      categorySw: "Jamii Mshirika",
+      logo: "/images/schools/ask.png",
+    },
+    {
+      id: 11,
       name: "Bright Side Learning Centre",
-      categoryEn: "Specialised Learning Hub",
-      categorySw: "Kituo Maalumu cha Maarifa",
-      badgeColor: "#D97706",
-      badgeBg: "#FEF3C7",
-      curriculum: "Individualised STEAM",
-      highlightEn: "Sensory circuits, tailored coding & confidence building",
-      highlightSw: "Mizunguko ya hisia, mafunzo ya kompyuta na kujiamini",
-      tag: "Bright Side",
+      tagEn: "Specialised Learning Hub",
+      tagSw: "Kituo Maalumu cha Maarifa",
+      categoryEn: "Learning Hub",
+      categorySw: "Kituo cha Kujifunzia",
       logo: "/images/schools/brightside.png",
     },
   ];
-
-  const schoolsWithLogos = schools.filter((s) => s.logo !== null);
 
   return (
     <section
       id="partners"
       style={{
-        paddingTop: "clamp(48px, 8vw, 84px)",
-        paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "#FFFFFF",
+        paddingTop: "clamp(56px, 8vw, 92px)",
+        paddingBottom: "clamp(56px, 8vw, 92px)",
+        background: "linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 50%, #F8FAFC 100%)",
         position: "relative",
-        borderTop: "1.5px solid #F1F5F9",
-        borderBottom: "1.5px solid #F1F5F9",
+        borderTop: "2px solid #E2E8F0",
+        borderBottom: "2px solid #E2E8F0",
       }}
     >
       <div className="container">
         {/* Section Header */}
-        <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px auto" }}>
+        <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 40px auto" }}>
           {/* Pill Badge */}
           <div
             style={{
@@ -170,33 +150,33 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
               background: "#FFFBE6",
               border: "1.5px solid #FDE68A",
               color: "#B45309",
-              padding: "5px 14px",
+              padding: "6px 16px",
               borderRadius: "9999px",
               fontSize: "0.85rem",
-              fontWeight: 700,
-              marginBottom: "14px",
+              fontWeight: 800,
+              marginBottom: "16px",
             }}
           >
-            <Award size={15} color="#D97706" />
+            <Award size={16} color="#D97706" />
             <span>
-              {lang === "en" ? "Trusted School Network" : "Mtandao wa Shule na Jamii Zinazotuamini"}
+              {lang === "en" ? "Trusted Partners & School Network" : "Mtandao wa Shule na Taasisi Washirika"}
             </span>
           </div>
 
           <h2
             style={{
-              fontSize: "clamp(1.9rem, 3.8vw, 2.9rem)",
+              fontSize: "clamp(1.9rem, 3.8vw, 3rem)",
               fontWeight: 900,
               color: "#0F172A",
               letterSpacing: "-0.02em",
               lineHeight: 1.2,
-              marginBottom: "14px",
+              marginBottom: "16px",
             }}
           >
             {lang === "en" ? (
               <>
                 Proudly Partnering with Leading{" "}
-                <span style={{ color: "#006CB7" }}>Schools & Communities</span>.
+                <span style={{ color: "#006CB7" }}>Schools & Technology Institutions</span>.
               </>
             ) : (
               <>
@@ -208,234 +188,149 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
 
           <p
             style={{
-              fontSize: "clamp(0.95rem, 1.8vw, 1.08rem)",
+              fontSize: "clamp(0.95rem, 1.8vw, 1.1rem)",
               color: "#475569",
               lineHeight: 1.6,
             }}
           >
             {lang === "en"
-              ? "Empowering young innovators at top schools and learning communities across Dar es Salaam."
-              : "Kufundisha roboti, coding na sayansi ya vitendo katika shule na vituo maarufu Dar es Salaam."}
+              ? "Empowering young minds through verified collaborations with top international schools, maker studios, and innovation centers in Dar es Salaam."
+              : "Kufundisha roboti, coding, printa za 3D na sayansi ya vitendo kwa ushirikiano na shule za kimataifa, studio za uvumbuzi na vituo maarufu Dar es Salaam."}
           </p>
         </div>
 
-        {/* Clean Logo Trust Bar - Displaying Verified Partner Logos */}
+        {/* Clean, World-Class Verified Partner Grid (Elevated Logo Cards) */}
         <div
           style={{
-            background: "#FFFFFF",
-            borderRadius: "22px",
-            border: "1.5px solid #E2E8F0",
-            padding: "20px 24px",
-            marginBottom: "36px",
-            boxShadow: "0 4px 16px rgba(15, 23, 42, 0.04)",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 250px), 1fr))",
+            gap: "18px",
+            marginBottom: "44px",
           }}
         >
-          <div
-            style={{
-              fontSize: "0.78rem",
-              fontWeight: 800,
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              color: "#64748B",
-              textAlign: "center",
-              marginBottom: "16px",
-            }}
-          >
-            {lang === "en" ? "Verified Partner Institutions" : "Taasisi na Shule Washirika Zilizothibitishwa"}
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "clamp(16px, 3vw, 28px)",
-            }}
-          >
-            {schoolsWithLogos.map((s) => (
+          {partners.map((p) => (
+            <div
+              key={p.id}
+              className="lego-card"
+              style={{
+                background: "#FFFFFF",
+                borderRadius: "20px",
+                border: "1.5px solid #E2E8F0",
+                padding: "20px 18px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
+                justifyContent: "space-between",
+                boxShadow: "0 4px 16px rgba(15, 23, 42, 0.04)",
+                transition: "all 0.25s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-3px)";
+                e.currentTarget.style.borderColor = "#006CB7";
+                e.currentTarget.style.boxShadow = "0 10px 24px rgba(0, 108, 183, 0.12)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.borderColor = "#E2E8F0";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(15, 23, 42, 0.04)";
+              }}
+            >
+              {/* Category / Curriculum Pill */}
               <div
-                key={s.id}
                 style={{
-                  background: "#FFFFFF",
-                  padding: "8px 16px",
-                  borderRadius: "12px",
-                  border: "1px solid #E2E8F0",
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: "14px",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "0.72rem",
+                    fontWeight: 700,
+                    color: p.featured ? "#006CB7" : "#64748B",
+                    background: p.featured ? "#EFF6FF" : "#F8FAFC",
+                    border: `1px solid ${p.featured ? "#BFDBFE" : "#E2E8F0"}`,
+                    padding: "3px 8px",
+                    borderRadius: "9999px",
+                  }}
+                >
+                  {lang === "en" ? p.tagEn : p.tagSw}
+                </span>
+
+                <span
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "3px",
+                    color: "#059669",
+                    fontSize: "0.72rem",
+                    fontWeight: 700,
+                  }}
+                  title={lang === "en" ? "Verified Partner" : "Mshirika Aliyethibitishwa"}
+                >
+                  <CheckCircle2 size={13} color="#059669" />
+                </span>
+              </div>
+
+              {/* Logo Frame */}
+              <div
+                style={{
+                  height: "72px",
+                  width: "100%",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  height: "50px",
-                  boxShadow: "0 2px 4px rgba(0,0,0,0.02)",
+                  padding: "6px 12px",
+                  marginBottom: "14px",
                 }}
-                title={s.name}
               >
                 <Image
-                  src={s.logo!}
-                  alt={`${s.name} Logo`}
-                  width={140}
-                  height={38}
+                  src={p.logo}
+                  alt={`${p.name} Logo`}
+                  width={160}
+                  height={60}
                   style={{
                     objectFit: "contain",
-                    maxHeight: "36px",
-                    maxWidth: "130px",
+                    maxHeight: "56px",
+                    maxWidth: "160px",
                     width: "auto",
                     height: "auto",
                   }}
                 />
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* 9 Partner Schools Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))",
-            gap: "20px",
-            marginBottom: "40px",
-          }}
-        >
-          {schools.map((school) => (
-            <div
-              key={school.id}
-              className="lego-card"
-              style={{
-                padding: "24px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                position: "relative",
-                borderTop: `4px solid ${school.badgeColor}`,
-              }}
-            >
-              <div>
-                {/* Header row with curriculum pill & school index */}
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginBottom: "16px",
-                  }}
-                >
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "6px",
-                      background: school.badgeBg,
-                      color: school.badgeColor,
-                      padding: "4px 10px",
-                      borderRadius: "9999px",
-                      fontSize: "0.8rem",
-                      fontWeight: 700,
-                    }}
-                  >
-                    <Building2 size={13} />
-                    {school.curriculum}
-                  </span>
-
-                  <span
-                    style={{
-                      fontSize: "0.8rem",
-                      fontWeight: 800,
-                      color: "#94A3B8",
-                      background: "#F8FAFC",
-                      padding: "2px 8px",
-                      borderRadius: "6px",
-                    }}
-                  >
-                    #{school.id}
-                  </span>
-                </div>
-
-                {/* School Logo Frame - Shown only if school has original logo */}
-                {school.logo ? (
-                  <div
-                    style={{
-                      height: "54px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "flex-start",
-                      marginBottom: "14px",
-                      padding: "6px 12px",
-                      background: "#FFFFFF",
-                      borderRadius: "12px",
-                      border: "1.5px solid #F1F5F9",
-                      width: "fit-content",
-                      boxShadow: "0 2px 6px rgba(0,0,0,0.03)",
-                    }}
-                  >
-                    <Image
-                      src={school.logo}
-                      alt={`${school.name} Logo`}
-                      width={160}
-                      height={40}
-                      style={{
-                        objectFit: "contain",
-                        maxHeight: "38px",
-                        maxWidth: "150px",
-                        width: "auto",
-                        height: "auto",
-                      }}
-                    />
-                  </div>
-                ) : null}
-
-                {/* School Name */}
+              {/* Partner Name & Subtitle */}
+              <div style={{ width: "100%", borderTop: "1px dashed #F1F5F9", paddingTop: "12px" }}>
                 <h3
                   style={{
-                    fontSize: "1.15rem",
-                    fontWeight: 700,
+                    fontSize: "0.98rem",
+                    fontWeight: 800,
                     color: "#0F172A",
-                    marginBottom: "8px",
-                    lineHeight: 1.35,
+                    lineHeight: 1.3,
+                    marginBottom: "4px",
+                    fontFamily: "var(--font-heading)",
                   }}
                 >
-                  {school.name}
+                  {p.name}
                 </h3>
-
-                {/* Focus / Highlight */}
-                <p
+                <span
                   style={{
-                    fontSize: "0.92rem",
+                    fontSize: "0.78rem",
+                    fontWeight: 600,
                     color: "#64748B",
-                    lineHeight: 1.5,
-                    marginBottom: "16px",
                   }}
                 >
-                  {lang === "en" ? school.highlightEn : school.highlightSw}
-                </p>
-              </div>
-
-              {/* Status footer */}
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  paddingTop: "12px",
-                  borderTop: "1px dashed #E2E8F0",
-                  fontSize: "0.82rem",
-                  color: "#059669",
-                  fontWeight: 700,
-                }}
-              >
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "5px" }}>
-                  <CheckCircle2 size={14} color="#059669" />
-                  {lang === "en" ? "Active STEAM Partner" : "Mshirika Hai wa STEAM"}
-                </span>
-
-                <span style={{ color: "#64748B", fontWeight: 600 }}>
-                  {lang === "en" ? school.categoryEn : school.categorySw}
+                  {lang === "en" ? p.categoryEn : p.categorySw}
                 </span>
               </div>
             </div>
           ))}
         </div>
 
-        {/* School Partnership CTA Banner */}
+        {/* School & Institution Partnership CTA Banner */}
         <div
           style={{
             background: "linear-gradient(135deg, #006CB7 0%, #004C82 100%)",
@@ -465,7 +360,11 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
               }}
             >
               <Sparkles size={15} color="#FFC20E" />
-              <span>{lang === "en" ? "For School Administrators & Teachers" : "Kwa Walimu Wakuu na Wasimamizi wa Shule"}</span>
+              <span>
+                {lang === "en"
+                  ? "For School Administrators, Labs & Tech Hubs"
+                  : "Kwa Viongozi wa Shule, Maabara na Vituo vya Teknolojia"}
+              </span>
             </div>
 
             <h3
@@ -478,8 +377,8 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
               }}
             >
               {lang === "en"
-                ? "Want SPARKS 360° HUB at Your School or Community?"
-                : "Ungependa SPARKS 360° HUB Ifike Shuleni au Kwenye Jamii Yako?"}
+                ? "Want SPARKS 360° HUB at Your School or Institution?"
+                : "Ungependa SPARKS 360° HUB Ifike Shuleni au Kwenye Kituo Chako?"}
             </h3>
 
             <p
@@ -490,8 +389,8 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
               }}
             >
               {lang === "en"
-                ? "We bring all robotics kits, electronic boards, 3D printers, and certified STEAM instructors directly to your school for after-school clubs, curricular STEAM days, and holiday camps."
-                : "Tunaleta vifaa vyote vya roboti, bodi za umeme, printa za 3D na wakufunzi walioidhinishwa shuleni kwako kwa ajili ya klabu za jioni, siku maalum za sayansi, na kambi za likizo."}
+                ? "We bring all robotics kits, electronic boards, 3D printers, and certified STEAM instructors directly to your institution for curricular STEAM days, student clubs, and intensive bootcamps."
+                : "Tunaleta vifaa vyote vya roboti, saketi za umeme, printa za 3D na wakufunzi walioidhinishwa moja kwa moja shuleni au kituoni kwako kwa ajili ya klabu za jioni, siku za uvumbuzi na kambi za likizo."}
             </p>
           </div>
 
@@ -501,12 +400,12 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
               className="lego-btn-yellow"
               style={{ fontSize: "0.95rem" }}
             >
-              <span>{lang === "en" ? "Book School STEAM Lab" : "Omba Mobile Lab Shuleni"}</span>
+              <span>{lang === "en" ? "Book STEAM Partnership" : "Omba Ushirikiano wa STEAM"}</span>
               <ArrowRight size={18} />
             </button>
 
             <a
-              href="https://wa.me/255749998820?text=Habari%20SparksHub%2C%20ninapenda%20kufahamu%20zaidi%20kuhusu%20ushirikiano%20wa%20shule%20(School%20Partnership)"
+              href="https://wa.me/255749998820?text=Habari%20SparksHub%2C%20ninapenda%20kufahamu%20zaidi%20kuhusu%20ushirikiano%20wa%20shule%20na%20taasisi%20(Partnership)"
               target="_blank"
               rel="noopener noreferrer"
               className="lego-btn-outline"
