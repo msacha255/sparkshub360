@@ -9,7 +9,6 @@ import BootcampsSection from "@/components/BootcampsSection";
 import ActivityGallerySection from "@/components/ActivityGallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ChildRegistrationSection from "@/components/ChildRegistrationSection";
-import MobileLabSection from "@/components/MobileLabSection";
 import LocationAndContact from "@/components/LocationAndContact";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -78,24 +77,18 @@ export default function Home() {
         lang={lang}
       />
 
-      {/* 8. Usajili wa Watoto (Online Enrollment Form & Lipa Namba) */}
+      {/* 8. Usajili wa Watoto (Online Enrollment Form) */}
       <ChildRegistrationSection
         lang={lang}
       />
 
-      {/* 9. Mobile STEAM Lab (We Come To You) */}
-      <MobileLabSection
-        onOpenBooking={() => handleOpenBooking("Mobile STEAM Lab Request")}
-        lang={lang}
-      />
-
-      {/* 10. Location, Contacts & Directions */}
+      {/* 9. Location, Contacts & Directions */}
       <LocationAndContact
         onOpenBooking={() => handleOpenBooking()}
         lang={lang}
       />
 
-      {/* 11. Comprehensive Lego-Style Footer */}
+      {/* 10. Comprehensive Lego-Style Footer */}
       <Footer
         onOpenBooking={() => handleOpenBooking()}
         lang={lang}

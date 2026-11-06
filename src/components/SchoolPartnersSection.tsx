@@ -399,3 +399,4 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
     </section>
   );
 }
+

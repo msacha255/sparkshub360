@@ -595,7 +595,7 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
               </div>
             </div>
 
-            {/* Official Lipa Namba & Payment Verification */}
+            {/* Official Mobile Payment & Contact Details */}
             <div
               className="lego-card"
               style={{
@@ -616,7 +616,7 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <CreditCard size={20} color="#FFC20E" />
                   <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "#FFC20E" }}>
-                    {lang === "en" ? "Official Lipa Namba" : "Lipa Namba Rasmi ya Kituo"}
+                    {lang === "en" ? "Official Payment & Contact" : "Namba ya Malipo & Mawasiliano"}
                   </span>
                 </div>
                 <span
@@ -629,7 +629,7 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
                     fontWeight: 700,
                   }}
                 >
-                  Verified Merchant
+                  Mitandao Yote
                 </span>
               </div>
 
@@ -643,28 +643,28 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
                 }}
               >
                 <div style={{ fontSize: "0.8rem", color: "#94A3B8", marginBottom: "4px" }}>
-                  Tigo Pesa Lipa Namba / Merchant Number
+                  Tigo Pesa • M-Pesa • Airtel Money • HaloPesa
                 </div>
                 <div
                   style={{
-                    fontSize: "1.9rem",
+                    fontSize: "1.7rem",
                     fontWeight: 900,
-                    letterSpacing: "0.08em",
+                    letterSpacing: "0.04em",
                     color: "#FFC20E",
-                    fontFamily: "monospace",
+                    fontFamily: "var(--font-heading)",
                   }}
                 >
-                  5220261
+                  +255 749 998 820
                 </div>
                 <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "#E2E8F0", marginTop: "4px" }}>
                   STEAMORA COMPANY LIMITED
                 </div>
               </div>
 
-              <div style={{ fontSize: "0.82rem", color: "#94A3B8", lineHeight: 1.5 }}>
+              <div style={{ fontSize: "0.82rem", color: "#CBD5E1", lineHeight: 1.5 }}>
                 {lang === "en"
-                  ? "Pay securely via all networks (Tigo Pesa, M-Pesa, Airtel Money, HaloPesa) into the merchant Lipa Namba above. Send receipt to +255 749 998 820."
-                  : "Lipa kwa usalama kupitia mitandao yote ya simu kwa kutumia Lipa Namba ya mfanyabiashara hapo juu. Tuma uthibitisho kwa +255 749 998 820."}
+                  ? "Send payments or inquiries directly to our official line +255 749 998 820 via any mobile money network. Confirmations are sent immediately on WhatsApp."
+                  : "Tuma malipo au maulizo moja kwa moja kwenye namba yetu rasmi ya +255 749 998 820 kupitia mtandao wowote wa simu. Risiti na uthibitisho vinatumwa papo hapo WhatsApp."}
               </div>
             </div>
           </div>
@@ -673,3 +673,4 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
     </section>
   );
 }
+

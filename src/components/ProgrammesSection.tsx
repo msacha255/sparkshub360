@@ -237,38 +237,39 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
           {filteredProgrammes.map((p) => (
             <div
               key={p.id}
-              className="kid-card"
+              className="lego-card"
               style={{
-                borderRadius: "24px",
-                border: "1px solid #E2E8F0",
-                background: p.bgGradient,
-                boxShadow: "0 10px 25px rgba(15, 23, 42, 0.05)",
+                borderRadius: "22px",
+                border: "1.5px solid #E2E8F0",
+                background: "#FFFFFF",
+                boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
                 display: "flex",
                 flexDirection: "column",
                 overflow: "hidden",
               }}
             >
               {/* Photo Preview Header */}
-              <div style={{ position: "relative", width: "100%", height: "180px", overflow: "hidden" }}>
+              <div style={{ position: "relative", width: "100%", height: "190px", overflow: "hidden" }}>
                 <Image
                   src={p.image}
                   alt={p.titleEn}
                   fill
                   style={{ objectFit: "cover" }}
-                  sizes="(max-width: 768px) 100vw, 350px"
+                  sizes="(max-width: 768px) 100vw, 380px"
                 />
                 <div
                   style={{
                     position: "absolute",
                     top: "12px",
                     left: "12px",
-                    background: "rgba(255, 255, 255, 0.9)",
+                    background: "rgba(255, 255, 255, 0.95)",
                     backdropFilter: "blur(6px)",
                     padding: "4px 10px",
-                    borderRadius: "12px",
-                    fontSize: "0.75rem",
+                    borderRadius: "9999px",
+                    fontSize: "0.78rem",
                     fontWeight: 800,
                     color: p.accentColor,
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                   }}
                 >
                   {lang === "en" ? p.agesEn : p.agesSw}
@@ -278,12 +279,12 @@ export default function ProgrammesSection({ onSelectProgramme, lang }: Programme
                     position: "absolute",
                     bottom: "12px",
                     right: "12px",
-                    background: "rgba(15, 23, 42, 0.8)",
+                    background: "rgba(15, 23, 42, 0.82)",
                     backdropFilter: "blur(6px)",
-                    padding: "3px 8px",
+                    padding: "3px 9px",
                     borderRadius: "8px",
-                    fontSize: "0.7rem",
-                    fontWeight: 600,
+                    fontSize: "0.72rem",
+                    fontWeight: 700,
                     color: "#FFFFFF",
                   }}
                 >

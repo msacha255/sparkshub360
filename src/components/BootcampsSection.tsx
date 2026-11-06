@@ -498,3 +498,4 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
     </section>
   );
 }
+

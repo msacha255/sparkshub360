@@ -345,3 +345,4 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
     </section>
   );
 }
+

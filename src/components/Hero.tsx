@@ -1,18 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import ThreeCanvas from "./ThreeCanvas";
-import { ArrowRight, ShieldCheck, Award, Users, CheckCircle2, PhoneCall, Zap } from "lucide-react";
-import {
-  RobotVector,
-  LightbulbVector,
-  CodingVector,
-  CommunityKidsVector,
-  DocumentFlyerVector,
-  CircuitVector,
-  SparksFlameVector,
-} from "./KidVectors";
+import { ArrowRight, Sparkles, CheckCircle2, ShieldCheck, Award, MessageCircle } from "lucide-react";
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -21,103 +11,72 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProps) {
-  const [interactMessage, setInteractMessage] = useState<string | null>(null);
-
-  const handleInteraction = (msg: string) => {
-    const prefix = lang === "en" ? "Viewing: " : "Unatazama: ";
-    setInteractMessage(`${prefix}${msg}`);
-    setTimeout(() => setInteractMessage(null), 3500);
-  };
-
   return (
     <section
-      className="hero-section"
       style={{
-        paddingTop: "clamp(95px, 14vw, 130px)",
-        paddingBottom: "clamp(48px, 8vw, 80px)",
+        paddingTop: "clamp(100px, 12vw, 136px)",
+        paddingBottom: "clamp(48px, 7vw, 76px)",
+        background: "#FFFFFF",
+        borderBottom: "1px solid #F1F5F9",
         position: "relative",
-        overflow: "hidden",
-        background: "radial-gradient(ellipse at 80% 20%, rgba(255, 102, 0, 0.08) 0%, rgba(0, 112, 243, 0.05) 40%, rgba(250, 251, 254, 1) 75%)",
       }}
     >
-      {/* Decorative background glow rings */}
-      <div
-        style={{
-          position: "absolute",
-          top: "10%",
-          left: "-5%",
-          width: "400px",
-          height: "400px",
-          borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          top: "40%",
-          right: "-10%",
-          width: "550px",
-          height: "550px",
-          borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(255, 102, 0, 0.07) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
-
       <div className="container">
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
-            gap: "clamp(28px, 5vw, 48px)",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 460px), 1fr))",
+            gap: "clamp(32px, 5vw, 60px)",
             alignItems: "center",
           }}
         >
-          {/* Left Column: Hero Text & Value Proposition */}
+          {/* Left Column: Heading, Value Prop & Simple CTAs */}
           <div>
-            {/* Brand Slogan */}
+            {/* Top Badge */}
             <div
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "8px",
-                marginBottom: "16px",
-                color: "#EA580C",
-                fontSize: "clamp(0.82rem, 2.2vw, 0.95rem)",
-                fontWeight: 800,
-                letterSpacing: "0.02em",
+                padding: "6px 14px",
+                borderRadius: "9999px",
+                background: "#FFFBE6",
+                border: "1.5px solid #FDE68A",
+                color: "#B45309",
+                fontSize: "0.86rem",
+                fontWeight: 700,
+                fontFamily: "var(--font-heading)",
+                marginBottom: "18px",
               }}
             >
-              <SparksFlameVector size={20} animate={true} />
+              <Sparkles size={16} color="#D97706" />
               <span>
                 {lang === "en"
-                  ? "“Innovation Starts Here” • STEAMORA CO. LTD"
-                  : "“Ubunifu Unaanzia Hapa” • STEAMORA CO. LTD"}
+                  ? "SPARKS 360° HUB • STEAMORA CO. LTD"
+                  : "SPARKS 360° HUB • STEAMORA CO. LTD"}
               </span>
             </div>
 
-            {/* Main Headline */}
+            {/* Main Headline in Fredoka */}
             <h1
               style={{
-                fontSize: "clamp(1.95rem, 4.2vw, 3.6rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.03em",
+                fontSize: "clamp(2rem, 4.2vw, 3.4rem)",
+                fontWeight: 800,
+                letterSpacing: "-0.02em",
                 color: "#0F172A",
-                lineHeight: 1.15,
-                marginBottom: "16px",
+                lineHeight: 1.18,
+                marginBottom: "18px",
               }}
             >
               {lang === "en" ? (
                 <>
                   Inspiring Young Minds Through{" "}
-                  <span className="gradient-text">Practical STEAM</span> Learning.
+                  <span style={{ color: "#FF6600" }}>Hands-on STEAM</span> Learning.
                 </>
               ) : (
                 <>
                   Kukuza Vipaji vya Watoto Kupitia Elimu ya Vitendo ya{" "}
-                  <span className="gradient-text">STEAM na Teknolojia</span>.
+                  <span style={{ color: "#FF6600" }}>STEAM na Roboti</span>.
                 </>
               )}
             </h1>
@@ -125,143 +84,26 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
             {/* Subtitle */}
             <p
               style={{
-                fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
+                fontSize: "clamp(1rem, 1.8vw, 1.12rem)",
                 color: "#475569",
-                marginBottom: "24px",
-                lineHeight: 1.6,
+                lineHeight: 1.65,
+                marginBottom: "28px",
                 maxWidth: "540px",
               }}
             >
               {lang === "en"
-                ? "SPARKS 360° HUB is a mobile innovation hub delivering practical robotics, circuits, AI coding, 3D printing & science experiments to homes, schools, and communities across Tanzania."
-                : "SPARKS 360° HUB ni kituo bunifu cha elimu ya vitendo (Roboti, Mizunguko ya Umeme, AI, Uchapishaji wa 3D na Sayansi) kinachofika nyumbani, shuleni, na katika jamii kote Dar es Salaam na Tanzania."}
+                ? "Delivering practical robotics, electric circuits, coding, AI, and 3D printing to homes, schools, and communities across Dar es Salaam. Every child builds, tests, and innovates."
+                : "Kituo cha elimu ya vitendo (Roboti, Mizunguko ya Umeme, AI, Uchapishaji wa 3D na Sayansi) kinachofika nyumbani, shuleni, na kituoni kwetu mkabala na DIT Morogoro Road."}
             </p>
 
-            {/* 4 Pillars Mini-Row */}
+            {/* Simple Lego-Style CTA Row */}
             <div
-              className="hero-pillars-grid"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(2, 1fr)",
-                gap: "10px",
-                marginBottom: "28px",
-                maxWidth: "520px",
-              }}
-            >
-              <div
-                className="kid-card"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  background: "#FFFFFF",
-                  padding: "10px 14px",
-                  borderRadius: "14px",
-                  boxShadow: "0 2px 8px rgba(15, 23, 42, 0.05)",
-                  border: "1px solid #E2E8F0",
-                }}
-              >
-                <div className="kid-icon-box" style={{ background: "#FFE4D6", padding: "6px", borderRadius: "10px" }}>
-                  <RobotVector size={28} animate={true} />
-                </div>
-                <div>
-                  <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#1E293B" }}>
-                    {lang === "en" ? "Hands-on Learning" : "Kujifunza kwa Vitendo"}
-                  </div>
-                  <div style={{ fontSize: "0.72rem", color: "#64748B" }}>
-                    {lang === "en" ? "Real robot assembly" : "Kuunda roboti halisi"}
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className="kid-card"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  background: "#FFFFFF",
-                  padding: "10px 14px",
-                  borderRadius: "14px",
-                  boxShadow: "0 2px 8px rgba(15, 23, 42, 0.05)",
-                  border: "1px solid #E2E8F0",
-                }}
-              >
-                <div className="kid-icon-box" style={{ background: "#FEF3C7", padding: "6px", borderRadius: "10px" }}>
-                  <LightbulbVector size={28} animate={true} />
-                </div>
-                <div>
-                  <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#1E293B" }}>
-                    {lang === "en" ? "Creativity & Mindset" : "Ubunifu & Fikra"}
-                  </div>
-                  <div style={{ fontSize: "0.72rem", color: "#64748B" }}>
-                    {lang === "en" ? "Critical thinking" : "Kufikiri kwa kina"}
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className="kid-card"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  background: "#FFFFFF",
-                  padding: "10px 14px",
-                  borderRadius: "14px",
-                  boxShadow: "0 2px 8px rgba(15, 23, 42, 0.05)",
-                  border: "1px solid #E2E8F0",
-                }}
-              >
-                <div className="kid-icon-box" style={{ background: "#DCFCE7", padding: "6px", borderRadius: "10px" }}>
-                  <CodingVector size={28} animate={true} />
-                </div>
-                <div>
-                  <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#1E293B" }}>
-                    {lang === "en" ? "Tech & AI Skills" : "Teknolojia & AI"}
-                  </div>
-                  <div style={{ fontSize: "0.72rem", color: "#64748B" }}>
-                    {lang === "en" ? "Coding & circuits" : "Coding & saketi za umeme"}
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className="kid-card"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  background: "#FFFFFF",
-                  padding: "10px 14px",
-                  borderRadius: "14px",
-                  boxShadow: "0 2px 8px rgba(15, 23, 42, 0.05)",
-                  border: "1px solid #E2E8F0",
-                }}
-              >
-                <div className="kid-icon-box" style={{ background: "#E0F2FE", padding: "6px", borderRadius: "10px" }}>
-                  <CommunityKidsVector size={28} animate={true} />
-                </div>
-                <div>
-                  <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#1E293B" }}>
-                    {lang === "en" ? "Community Impact" : "Mchango wa Kijamii"}
-                  </div>
-                  <div style={{ fontSize: "0.72rem", color: "#64748B" }}>
-                    {lang === "en" ? "Homes, schools & orgs" : "Majumbani, shuleni & jamii"}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div
-              className="hero-cta-buttons"
               style={{
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "center",
                 gap: "12px",
-                marginBottom: "24px",
+                marginBottom: "32px",
               }}
             >
               <button
@@ -299,185 +141,107 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
                   textDecoration: "none",
                 }}
               >
+                <MessageCircle size={16} color="#059669" />
                 <span>WhatsApp Admin</span>
               </a>
             </div>
 
-            {/* Trust Badges */}
+            {/* Quick Trust Checklist */}
             <div
               style={{
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "center",
-                gap: "12px 18px",
-                fontSize: "0.82rem",
+                gap: "16px",
+                fontSize: "0.85rem",
                 color: "#64748B",
-                marginBottom: "20px",
+                fontWeight: 600,
               }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <CheckCircle2 size={15} color="#10B981" />
-                <span>{lang === "en" ? "Ages 3 - 17 Years Welcome" : "Watoto Miaka 3 - 17"}</span>
+                <CheckCircle2 size={16} color="#00A859" />
+                <span>{lang === "en" ? "Ages 3 - 17 Years" : "Watoto Miaka 3 - 17"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <ShieldCheck size={15} color="#0070F3" />
+                <ShieldCheck size={16} color="#006CB7" />
                 <span>{lang === "en" ? "Certified Instructors" : "Wakufunzi Walioidhinishwa"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <Award size={15} color="#FF6600" />
-                <span>{lang === "en" ? "STEAMORA Certified" : "Imethibitishwa na STEAMORA"}</span>
+                <Award size={16} color="#FF6600" />
+                <span>{lang === "en" ? "100% Practical STEM" : "100% Elimu ya Vitendo"}</span>
               </div>
-            </div>
-
-            {/* Partner Schools Ticker Pill */}
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                background: "#FFFFFF",
-                border: "1.5px solid #E2E8F0",
-                padding: "8px 16px",
-                borderRadius: "9999px",
-                fontSize: "0.78rem",
-                color: "#475569",
-                boxShadow: "0 2px 8px rgba(15, 23, 42, 0.04)",
-                maxWidth: "100%",
-                flexWrap: "wrap",
-              }}
-            >
-              <span style={{ fontWeight: 800, color: "#006CB7" }}>
-                {lang === "en" ? "Trusted in:" : "Shule Washirika:"}
-              </span>
-              <span>IST</span>
-              <span>•</span>
-              <span>The Apton</span>
-              <span>•</span>
-              <span>DIA</span>
-              <span>•</span>
-              <span>Indian School</span>
-              <span>•</span>
-              <span>Kidz Kollege</span>
-              <span>•</span>
-              <span>Tumarich & Zaidi</span>
             </div>
           </div>
 
-          {/* Right Column: Three.js Interactive 3D Lab */}
+          {/* Right Column: Clean, Large Real Hero Photography (Lego Education Style) */}
           <div style={{ position: "relative" }}>
-            {/* Interactive Feedback message if triggered */}
-            {interactMessage && (
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                aspectRatio: "4/3",
+                borderRadius: "28px",
+                overflow: "hidden",
+                boxShadow: "0 20px 45px rgba(15, 23, 42, 0.12)",
+                border: "4px solid #FFFFFF",
+              }}
+            >
+              <Image
+                src="/images/hero-showcase.jpg"
+                alt="Sparks 360 Hub STEAM Workshop with real students"
+                fill
+                sizes="(max-width: 768px) 100vw, 600px"
+                style={{ objectFit: "cover" }}
+                priority
+              />
+
+              {/* Floating Bottom Card */}
               <div
                 style={{
                   position: "absolute",
-                  top: "-14px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  zIndex: 20,
-                  background: "#FF6600",
-                  color: "#FFFFFF",
-                  padding: "6px 16px",
-                  borderRadius: "20px",
-                  fontSize: "0.82rem",
-                  fontWeight: 700,
-                  boxShadow: "0 6px 20px rgba(255, 102, 0, 0.4)",
-                  animation: "float 2s infinite ease-in-out",
+                  bottom: "16px",
+                  left: "16px",
+                  right: "16px",
+                  background: "rgba(255, 255, 255, 0.95)",
+                  backdropFilter: "blur(10px)",
+                  padding: "12px 18px",
+                  borderRadius: "18px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  boxShadow: "0 8px 24px rgba(0, 0, 0, 0.12)",
+                  border: "1px solid rgba(226, 232, 240, 0.8)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                  <CircuitVector size={16} animate={true} />
-                  <span>{interactMessage}</span>
+                <div>
+                  <div style={{ fontSize: "0.88rem", fontWeight: 800, color: "#0F172A" }}>
+                    {lang === "en" ? "Real Hands-on Projects" : "Miradi Halisi ya Vitendo"}
+                  </div>
+                  <div style={{ fontSize: "0.76rem", color: "#64748B" }}>
+                    {lang === "en"
+                      ? "Every student builds their own robot & circuit"
+                      : "Kila mtoto anaunda roboti na saketi yake binafsi"}
+                  </div>
                 </div>
-              </div>
-            )}
 
-            {/* The 3D Canvas Canvas Component */}
-            <ThreeCanvas onInteract={handleInteraction} lang={lang} />
-
-            {/* Card beneath Canvas explaining hands-on kit */}
-            <div
-              style={{
-                marginTop: "14px",
-                background: "#FFFFFF",
-                borderRadius: "18px",
-                padding: "14px 18px",
-                border: "1px solid #E2E8F0",
-                boxShadow: "0 6px 20px rgba(15, 23, 42, 0.05)",
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-                justifyContent: "space-between",
-                gap: "12px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0, flex: "1 1 240px" }}>
-                <div
+                <span
                   style={{
-                    width: "40px",
-                    height: "40px",
-                    borderRadius: "12px",
-                    background: "rgba(0, 112, 243, 0.1)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#0070F3",
-                    flexShrink: 0,
+                    background: "#00A859",
+                    color: "#FFFFFF",
+                    padding: "4px 10px",
+                    borderRadius: "9999px",
+                    fontSize: "0.76rem",
+                    fontWeight: 800,
+                    whiteSpace: "nowrap",
                   }}
                 >
-                  <Zap size={20} />
-                </div>
-                <div>
-                  <h4 style={{ fontSize: "0.9rem", fontWeight: 800, color: "#0F172A", margin: 0 }}>
-                    {lang === "en" ? "Physical Kits for Every Learner" : "Vifaa Halisi vya Kila Mwanafunzi"}
-                  </h4>
-                  <p style={{ fontSize: "0.75rem", color: "#64748B", margin: 0 }}>
-                    {lang === "en"
-                      ? "Arduino, motors, 3D printers, circuits & chemistry lab apparatus."
-                      : "Arduino, mota, printa za 3D, saketi za umeme na vifaa vya maabara."}
-                  </p>
-                </div>
+                  {lang === "en" ? "Kits Included" : "Vifaa Vimetolewa"}
+                </span>
               </div>
-
-              <button
-                onClick={onOpenBooking}
-                style={{
-                  background: "#0F172A",
-                  color: "#FFFFFF",
-                  fontSize: "0.8rem",
-                  fontWeight: 700,
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  whiteSpace: "nowrap",
-                  cursor: "pointer",
-                }}
-              >
-                {lang === "en" ? "Join Now" : "Jiunge"}
-              </button>
             </div>
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @media (max-width: 580px) {
-          .hero-cta-buttons {
-            flex-direction: column !important;
-            width: 100% !important;
-          }
-          .hero-btn-primary,
-          .hero-btn-secondary {
-            width: 100% !important;
-          }
-          .hero-pillars-grid {
-            grid-template-columns: 1fr 1fr !important;
-          }
-        }
-        @media (max-width: 380px) {
-          .hero-pillars-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
