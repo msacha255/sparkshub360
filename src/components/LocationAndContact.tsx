@@ -33,7 +33,16 @@ export default function LocationAndContact({ onOpenBooking, lang }: LocationAndC
   };
 
   return (
-    <section id="contact" style={{ padding: "80px 0", background: "#FFFFFF", position: "relative" }}>
+    <section
+      id="contact"
+      style={{
+        paddingTop: "clamp(64px, 8vw, 96px)",
+        paddingBottom: "clamp(64px, 8vw, 96px)",
+        background: "linear-gradient(180deg, #F8FAFD 0%, #EFF6FC 50%, #F8FAFD 100%)",
+        borderTop: "2px solid #BAE6FD80",
+        position: "relative",
+      }}
+    >
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "720px", margin: "0 auto 48px" }}>

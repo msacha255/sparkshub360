@@ -18,6 +18,7 @@ import {
   Compass,
   CreditCard,
   ChevronRight,
+  Award,
 } from "lucide-react";
 import {
   SparksFlameVector,
@@ -96,6 +97,14 @@ export default function Navbar({ onOpenBooking, lang, setLang }: NavbarProps) {
       icon: <BookOpen size={18} color="#7C3AED" />,
       descEn: "IST, Apton, DIA, Kidz Kollege & more",
       descSw: "IST, Apton, DIA, Kidz Kollege & zaidi",
+    },
+    {
+      href: "#impact",
+      labelEn: "Our Impact",
+      labelSw: "Mafanikio",
+      icon: <Award size={18} color="#F59E0B" />,
+      descEn: "10K+ trained, 7 awards & 1 year",
+      descSw: "Wanafunzi 10K+, tuzo 7 & kambi 10",
     },
     {
       href: "#register",

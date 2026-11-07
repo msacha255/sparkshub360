@@ -120,12 +120,12 @@ export default function ActivityGallerySection({
     <section
       id="gallery"
       style={{
-        paddingTop: "clamp(56px, 8vw, 92px)",
-        paddingBottom: "clamp(56px, 8vw, 92px)",
-        background: "linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 50%, #F8FAFC 100%)",
+        paddingTop: "clamp(64px, 8vw, 96px)",
+        paddingBottom: "clamp(64px, 8vw, 96px)",
+        background: "linear-gradient(180deg, #F0FDF8 0%, #E6F8F0 50%, #F0FDF8 100%)",
         position: "relative",
-        borderTop: "2px solid #E2E8F0",
-        borderBottom: "2px solid #E2E8F0",
+        borderTop: "2px solid #A7F3D080",
+        borderBottom: "2px solid #A7F3D080",
       }}
     >
       <div className="container">

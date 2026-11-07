@@ -152,7 +152,7 @@ export default function Hero({ onOpenBooking, onOpenFlyerModal, lang }: HeroProp
       style={{
         paddingTop: "clamp(100px, 12vw, 136px)",
         paddingBottom: "clamp(48px, 7vw, 76px)",
-        background: "#FFFFFF",
+        background: "radial-gradient(1200px 600px at 50% 0%, #FFF9F2 0%, #FFFFFF 100%)",
         borderBottom: "1px solid #F1F5F9",
         position: "relative",
       }}

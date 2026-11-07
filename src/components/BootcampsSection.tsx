@@ -140,12 +140,12 @@ export default function BootcampsSection({ onOpenBooking, lang }: BootcampsSecti
     <section
       id="bootcamps"
       style={{
-        paddingTop: "clamp(56px, 8vw, 92px)",
-        paddingBottom: "clamp(56px, 8vw, 92px)",
-        background: "linear-gradient(180deg, #FFFDFB 0%, #FFF8F3 50%, #FFFDFB 100%)",
+        paddingTop: "clamp(64px, 8vw, 96px)",
+        paddingBottom: "clamp(64px, 8vw, 96px)",
+        background: "linear-gradient(180deg, #FFF9F2 0%, #FFF1E3 50%, #FFF9F2 100%)",
         position: "relative",
-        borderTop: "2px solid #FED7AA40",
-        borderBottom: "2px solid #FED7AA40",
+        borderTop: "2px solid #FED7AA80",
+        borderBottom: "2px solid #FED7AA80",
       }}
     >
       <div className="container">

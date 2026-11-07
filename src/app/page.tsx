@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import SchoolPartnersSection from "@/components/SchoolPartnersSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import BootcampsSection from "@/components/BootcampsSection";
 import ActivityGallerySection from "@/components/ActivityGallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import SchoolPartnersSection from "@/components/SchoolPartnersSection";
+import ImpactSection from "@/components/ImpactSection";
 import ChildRegistrationSection from "@/components/ChildRegistrationSection";
 import LocationAndContact from "@/components/LocationAndContact";
 import Footer from "@/components/Footer";
@@ -77,7 +78,13 @@ export default function Home() {
         lang={lang}
       />
 
-      {/* 8. Usajili wa Watoto (Online Enrollment Form) */}
+      {/* 8. Safari Yetu kwa Namba / Our Journey in Numbers (Impact Section) */}
+      <ImpactSection
+        onOpenBooking={() => handleOpenBooking()}
+        lang={lang}
+      />
+
+      {/* 9. Usajili wa Watoto (Online Enrollment Form) */}
       <ChildRegistrationSection
         lang={lang}
       />

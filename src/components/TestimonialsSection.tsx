@@ -134,11 +134,12 @@ export default function TestimonialsSection({ onOpenBooking, lang }: Testimonial
     <section
       id="testimonials"
       style={{
-        paddingTop: "clamp(48px, 8vw, 84px)",
-        paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "#FFFFFF",
+        paddingTop: "clamp(64px, 8vw, 96px)",
+        paddingBottom: "clamp(64px, 8vw, 96px)",
+        background: "linear-gradient(180deg, #FAF7FF 0%, #F3ECFF 50%, #FAF7FF 100%)",
         position: "relative",
-        borderTop: "1.5px solid #F1F5F9",
+        borderTop: "2px solid #DDD6FE80",
+        borderBottom: "2px solid #DDD6FE80",
       }}
     >
       <div className="container">

@@ -130,12 +130,12 @@ export default function SchoolPartnersSection({ onOpenBooking, lang }: SchoolPar
     <section
       id="partners"
       style={{
-        paddingTop: "clamp(56px, 8vw, 92px)",
-        paddingBottom: "clamp(56px, 8vw, 92px)",
-        background: "linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 50%, #F8FAFC 100%)",
+        paddingTop: "clamp(64px, 8vw, 96px)",
+        paddingBottom: "clamp(64px, 8vw, 96px)",
+        background: "linear-gradient(180deg, #FFFDF5 0%, #FEF8E7 50%, #FFFDF5 100%)",
         position: "relative",
-        borderTop: "2px solid #E2E8F0",
-        borderBottom: "2px solid #E2E8F0",
+        borderTop: "2px solid #FDE68A80",
+        borderBottom: "2px solid #FDE68A80",
       }}
     >
       <div className="container">

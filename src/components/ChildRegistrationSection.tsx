@@ -84,10 +84,12 @@ export default function ChildRegistrationSection({ lang }: ChildRegistrationSect
     <section
       id="register"
       style={{
-        paddingTop: "clamp(48px, 8vw, 84px)",
-        paddingBottom: "clamp(48px, 8vw, 84px)",
-        background: "#FFFFFF",
+        paddingTop: "clamp(64px, 8vw, 96px)",
+        paddingBottom: "clamp(64px, 8vw, 96px)",
+        background: "linear-gradient(180deg, #FFFDFB 0%, #FFF5EB 50%, #FFFDFB 100%)",
         position: "relative",
+        borderTop: "2px solid #FED7AA80",
+        borderBottom: "2px solid #FED7AA80",
       }}
     >
       <div className="container">
